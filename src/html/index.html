@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  {{> (config config.partials.head) title=config.defaultPageTitle }}
+
+  <body class="{{ config.classes.body }}">
+    <!-- Navbar -->
+    {{> (config config.partials.navbar) configClassList=config.classes.navbar
+    classList="" }}
+    <!-- / Navbar-->
+  </body>
+</html>

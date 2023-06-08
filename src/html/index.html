@@ -4,9 +4,13 @@
   {{> (config config.partials.head) title=config.defaultPageTitle }}
 
   <body class="{{ config.classes.body }}">
+    <!-- Announcement -->
+    {{> (config config.partials.announcement)}}
+    <!-- / Announcement -->
     <!-- Navbar -->
     {{> (config config.partials.navbar) configClassList=config.classes.navbar
     classList="" }}
     <!-- / Navbar-->
+    
   </body>
 </html>

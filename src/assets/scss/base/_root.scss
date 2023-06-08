@@ -1,0 +1,33 @@
+@use "../abstracts" as *;
+
+:root {
+  --section-spacing: 2rem;
+  @include mq(md) {
+    --section-spacing: 5rem;
+  }
+  @each $color, $shade in $colors {
+    @each $prop, $value in $shade {
+      --clr-#{$color}-#{$prop}: #{$value};
+    }
+  }
+
+  @each $screen-size, $property in $type-scale {
+    @if $screen-size == xs {
+      @each $prop, $value in $property {
+        --fs-#{$prop}: #{$value};
+      }
+    } @else {
+      @include mq(md) {
+        @each $prop, $value in $property {
+          --fs-#{$prop}: #{$value};
+        }
+      }
+    }
+  }
+
+  /* Z-index values */
+  --zBase: 0;
+  --zAbove: 1;
+  --zBelow: -1;
+  --zHighest: 99;
+}

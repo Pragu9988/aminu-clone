@@ -1,0 +1,18 @@
+.container {
+  padding: 0 1.5rem;
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
+
+  &.full-width {
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+
+    & > .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

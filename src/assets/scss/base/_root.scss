@@ -1,6 +1,8 @@
 @use "../abstracts" as *;
 
 :root {
+  --ff-primary: "Gill Sans", sans-serif;
+  --ff-secondary: "Made Sunflower", sans-serif;
   --section-spacing: 2rem;
   @include mq(md) {
     --section-spacing: 5rem;

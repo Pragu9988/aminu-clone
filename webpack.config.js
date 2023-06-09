@@ -10,7 +10,7 @@ const mergeJSON = require("handlebars-webpack-plugin/utils/mergeJSON");
 // Project config data.
 // Go here to change stuff for the whole demo, ie, change the navbar.
 // Also go here for the various data loops, ie, category products, slideshows
-const projectData = mergeJSON(path.join(__dirname, '/src/data/**/*.json'));
+const projectData = mergeJSON(path.join(__dirname, "/src/data/**/*.json"));
 
 // paths used in various placed in webpack config
 const paths = {
@@ -49,6 +49,11 @@ const rules = [
       },
       {
         loader: "postcss-loader",
+        options: {
+          postcssOptions: {
+            path: path.join(__dirname, "/postcss.config.js"),
+          },
+        },
       },
       {
         loader: "sass-loader",
@@ -172,7 +177,7 @@ const webPackConfig = {
     rules: rules,
   },
   optimization: optimization,
-  plugins: plugins
+  plugins: plugins,
 };
 
 module.exports = webPackConfig;

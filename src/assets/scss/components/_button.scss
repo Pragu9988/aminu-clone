@@ -1,0 +1,19 @@
+.btn {
+  &--clear {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    letter-spacing: inherit;
+    text-transform: none;
+    vertical-align: baseline;
+    min-width: 0;
+    overflow: visible;
+    height: auto;
+    color: #c16452;
+    transition: color 0.1s;
+  }
+}

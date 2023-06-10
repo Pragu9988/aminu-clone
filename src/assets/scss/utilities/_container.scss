@@ -1,18 +1,37 @@
+@use "../abstracts" as *;
+
 .container {
   padding: 0 1.5rem;
   max-width: 80rem;
   width: 100%;
   margin: 0 auto;
 
-  &.full-width {
-    padding: 0;
+  &__max {
+    padding-inline: 1.25rem;
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
+    @include mq(md) {
+      padding-inline: 5rem;
+    }
 
     & > .row {
       margin-left: 0;
       margin-right: 0;
     }
+  }
+}
+
+.desk-only {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.mobile-only {
+  display: block;
+  @include mq(md) {
+    display: none;
   }
 }

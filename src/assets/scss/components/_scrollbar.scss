@@ -1,8 +1,9 @@
-body::-webkit-scrollbar {  width: 0.5rem; /* width of the entire scrollbar */
+body::-webkit-scrollbar {
+  width: 0.5rem; /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--clr-neutral-300); /* color of the tracking area */
+  background: var(--clr-gray-300); /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {

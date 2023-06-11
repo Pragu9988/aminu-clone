@@ -27,3 +27,26 @@ function displayNextAnnouncement() {
 
 // Start the timer for the first announcement
 timer = setTimeout(displayNextAnnouncement, 5000);
+
+// Get all the accordion titles
+const titles = document.querySelectorAll(
+  ".footer-main__title.accordion-header"
+);
+
+// Add a click event listener to each title
+titles.forEach(function (title) {
+  title.addEventListener("click", function () {
+    const isExpanded = this.getAttribute("aria-expanded") === "true";
+
+    // Toggle the expanded state
+    this.setAttribute("aria-expanded", !isExpanded);
+
+    // Toggle the visibility of the menu
+    const menu = this.nextElementSibling;
+    if (isExpanded) {
+      menu.style.maxHeight = "0";
+    } else {
+      menu.style.maxHeight = menu.scrollHeight + "px";
+    }
+  });
+});

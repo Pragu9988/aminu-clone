@@ -1,0 +1,116 @@
+@use "../abstracts/" as *;
+.footer-main {
+  &__container {
+    background-color: var(--clr-primary-400);
+    color: var(--clr-primary-100);
+    padding-inline: 3rem;
+  }
+
+  &__text {
+    font-size: var(--fs-350);
+    margin-bottom: 0.875rem;
+  }
+
+  &__text__social {
+    margin-bottom: 0.875rem;
+    & .social-links {
+      &__list {
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+        & li {
+          display: inline-block;
+          line-height: 15px;
+        }
+        & li > a {
+          display: inline-block;
+          background: var(--clr-primary-100);
+          border-radius: 50%;
+          padding: 0.5rem;
+
+          & svg {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  &__menu {
+    text-align: left;
+    @include mq(md) {
+      text-align: right;
+    }
+  }
+
+  &__menu-items {
+    list-style-type: none;
+    font-weight: 300;
+    & > li {
+      margin-bottom: 0.5rem;
+    }
+    & a {
+      color: var(--clr-primary-100);
+    }
+  }
+
+  &__title {
+    font-size: calc(var(--fs-500) - 1px);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+    & .footer-main__menu-items {
+      display: none;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+      max-height: 0;
+    }
+    &[aria-expanded="true"] + .footer-main__menu-items {
+      display: block;
+      max-height: 1000px; /* Adjust this value to fit your content */
+    }
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__newsletter {
+    width: 100%;
+    @include mq(md) {
+      width: 30%;
+      flex-basis: 30%;
+      padding: 4rem 3rem 3rem 0;
+      border-right: 0.3px solid var(--clr-primary-100);
+    }
+  }
+
+  &__row__col {
+    flex: 1 1 100%;
+    @include mq(md) {
+      flex: 1 0 23%;
+    }
+
+    &.footer-main__menu {
+      width: 23%;
+      @include mq(md) {
+        padding: 4rem 1.25rem 3rem;
+      }
+    }
+  }
+}
+.footer-main .footer-bottom {
+  font-size: var(--fs-200);
+  color: var(--clr-primary-400);
+  &__content {
+    padding-block-start: 0.75rem;
+    padding-block-end: 1.25rem;
+  }
+}
+
+.footer-copyright {
+  text-align: center;
+  padding-block: 0.5rem;
+  border-top: 0.3px solid var(--clr-primary-400);
+}

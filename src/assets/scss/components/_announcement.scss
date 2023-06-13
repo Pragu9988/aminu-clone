@@ -52,10 +52,17 @@
   &__announcements {
     margin-block: 0.5rem;
     text-align: center;
+    font-size: var(--fs-350);
     .announcement {
       display: block;
       &--inactive {
         display: none;
+      }
+
+      &__text {
+        & strong {
+          font-weight: 500;
+        }
       }
     }
   }

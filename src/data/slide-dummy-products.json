@@ -1,160 +1,84 @@
-[
-  {
-    "vendor": "the multitalented",
-    "title": "Overnight Peel",
-    "subtitle": "Resurfacing, spot reducing treatment, powered by glycolic acid!",
-    "price": "Rs. 1000",
-    "option_name": ["30 ml", "10 ml"],
-    "star_ratings": 4.76,
-    "review_count": 51
-  },
-  {
-    "vendor": "Skincare Essentials",
-    "title": "Hydrating Serum",
-    "subtitle": "Intensive hydration for dry and dull skin",
-    "price": "Rs. 850",
-    "option_name": ["50 ml", "20 ml"],
-    "star_ratings": 4.5,
-    "review_count": 34
-  },
-  {
-    "vendor": "Beauty Glow",
-    "title": "Brightening Cream",
-    "subtitle": "Illuminates and evens skin tone",
-    "price": "Rs. 1200",
-    "option_name": ["40 ml", "15 ml"],
-    "star_ratings": 4.8,
-    "review_count": 64
-  },
-  {
-    "vendor": "Organic Beauty",
-    "title": "Nourishing Facial Oil",
-    "subtitle": "Deeply nourishes and restores skin's radiance",
-    "price": "Rs. 950",
-    "option_name": ["30 ml", "10 ml"],
-    "star_ratings": 4.6,
-    "review_count": 42
-  },
-  {
-    "vendor": "Skin Renew",
-    "title": "Anti-Aging Cream",
-    "subtitle": "Reduces fine lines and wrinkles",
-    "price": "Rs. 1350",
-    "option_name": ["50 ml", "20 ml"],
-    "star_ratings": 4.9,
-    "review_count": 78
-  },
-  {
-    "vendor": "Glowing Beauty",
-    "title": "Radiance Serum",
-    "subtitle": "Restores natural glow and brightness",
-    "price": "Rs. 800",
-    "option_name": ["30 ml", "10 ml"],
-    "star_ratings": 4.7,
-    "review_count": 57
-  },
-  {
-    "vendor": "Youthful Skin",
-    "title": "Firming Eye Cream",
-    "subtitle": "Tightens and lifts the delicate skin around the eyes",
-    "price": "Rs. 950",
-    "option_name": ["20 ml", "5 ml"],
-    "star_ratings": 4.5,
-    "review_count": 39
-  },
-  {
-    "vendor": "Natural Radiance",
-    "title": "Exfoliating Scrub",
-    "subtitle": "Gently removes dead skin cells for a smoother complexion",
-    "price": "Rs. 750",
-    "option_name": ["50 ml", "15 ml"],
-    "star_ratings": 4.3,
-    "review_count": 26
-  },
-  {
-    "vendor": "Hydro Boost",
-    "title": "Moisturizing Gel",
-    "subtitle": "Provides long-lasting hydration without a greasy feel",
-    "price": "Rs. 900",
-    "option_name": ["40 ml", "10 ml"],
-    "star_ratings": 4.6,
-    "review_count": 48
-  }
-]
-
 {
-    "entries": [{
-            "vendor": "Hydro Boost",
-    "title": "Moisturizing Gel",
-    "subtitle": "Provides long-lasting hydration without a greasy feel",
-    "price": "Rs. 900",
-    "option_name": ["40 ml", "10 ml"],
-    "star_ratings": 4.6,
-    "review_count": 48
-            "img": "{{webRoot}}/assets/images/products/product-1.jpg"
-        },
-        {
-            "title": "Nike ZoomX Vaporfly",
-            "price": "275.45",
-            "new": true,
-            "currency": "$",
-            "options": "2 colours, 4 sizes",
-            "img": "{{webRoot}}/assets/images/products/product-2.jpg"
-        },
-        {
-            "title": "Nike Blazer Mid '77",
-            "price": "198.56",
-            "sold-out": true,
-            "currency": "$",
-            "options": "5 colours, 6 sizes",
-            "img": "{{webRoot}}/assets/images/products/product-3.jpg"
-        },
-        {
-            "title": "Nike Air Force 1",
-            "price": "425.85",
-            "currency": "$",
-            "options": "6 colours, 9 sizes",
-            "img": "{{webRoot}}/assets/images/products/product-4.jpg"
-        },
-        {
-            "title": "Nike Air Max 90",
-            "price": "196.99",
-            "sale-price": "98.66",
-            "currency": "$",
-            "options": "4 colours, 10 sizes",
-            "img": "{{webRoot}}/assets/images/products/product-5.jpg"
-        },
-        {
-            "title": "Nike Glide FlyEase",
-            "price": "329.99",
-            "sale-price": "198.66",
-            "new": true,
-            "currency": "$",
-            "options": "1 colour",
-            "img": "{{webRoot}}/assets/images/products/product-6.jpg"
-        },
-        {
-            "title": "Nike Zoom Freak",
-            "price": "444.99",
-            "currency": "$",
-            "options": "2 colours, 2 sizes",
-            "img": "{{webRoot}}/assets/images/products/product-7.jpg"
-        },
-        {
-            "title": "Nike Air Pegasus",
-            "price": "178.99",
-            "new": true,
-            "currency": "$",
-            "options": "3 colours, 10 sizes",
-            "img": "{{webRoot}}/assets/images/products/product-8.jpg"
-        },
-        {
-            "title": "Nike Air Jordans",
-            "price": "154.99",
-            "new": true,
-            "currency": "$",
-            "options": "3 colours, 10 sizes",
-            "img": "{{webRoot}}/assets/images/products/product-1.jpg"
-        }
-    ]
+  "entries": [
+    {
+      "vendor": "Hydro Boost",
+      "title": "Moisturizing Gel",
+      "subtitle": "Provides long-lasting hydration without a greasy feel",
+      "price": "Rs. 900",
+      "option_name": ["40 ml", "10 ml"],
+      "star_ratings": 4.6,
+      "review_count": 48,
+      "img": "{{webRoot}}/assets/images/products/product-1.jpg"
+    },
+    {
+      "vendor": "Skincare Essentials",
+      "title": "Hydrating Serum",
+      "subtitle": "Intensive hydration for dry and dull skin",
+      "price": "Rs. 850",
+      "option_name": ["50 ml", "20 ml"],
+      "star_ratings": 4.5,
+      "review_count": 34,
+      "img": "{{webRoot}}/assets/images/products/product-2.jpg"
+    },
+    {
+      "vendor": "Beauty Glow",
+      "title": "Brightening Cream",
+      "subtitle": "Illuminates and evens skin tone",
+      "price": "Rs. 1200",
+      "option_name": ["40 ml", "15 ml"],
+      "star_ratings": 4.8,
+      "review_count": 64,
+      "img": "{{webRoot}}/assets/images/products/product-3.jpg"
+    },
+    {
+      "vendor": "Organic Beauty",
+      "title": "Nourishing Facial Oil",
+      "subtitle": "Deeply nourishes and restores skin's radiance",
+      "price": "Rs. 950",
+      "option_name": ["30 ml", "10 ml"],
+      "star_ratings": 4.6,
+      "review_count": 42,
+      "img": "{{webRoot}}/assets/images/products/product-4.jpg"
+    },
+    {
+      "title": "Nike Air Max 90",
+      "price": "196.99",
+      "sale-price": "98.66",
+      "currency": "$",
+      "options": "4 colours, 10 sizes",
+      "img": "{{webRoot}}/assets/images/products/product-5.jpg"
+    },
+    {
+      "title": "Nike Glide FlyEase",
+      "price": "329.99",
+      "sale-price": "198.66",
+      "new": true,
+      "currency": "$",
+      "options": "1 colour",
+      "img": "{{webRoot}}/assets/images/products/product-6.jpg"
+    },
+    {
+      "title": "Nike Zoom Freak",
+      "price": "444.99",
+      "currency": "$",
+      "options": "2 colours, 2 sizes",
+      "img": "{{webRoot}}/assets/images/products/product-7.jpg"
+    },
+    {
+      "title": "Nike Air Pegasus",
+      "price": "178.99",
+      "new": true,
+      "currency": "$",
+      "options": "3 colours, 10 sizes",
+      "img": "{{webRoot}}/assets/images/products/product-8.jpg"
+    },
+    {
+      "title": "Nike Air Jordans",
+      "price": "154.99",
+      "new": true,
+      "currency": "$",
+      "options": "3 colours, 10 sizes",
+      "img": "{{webRoot}}/assets/images/products/product-1.jpg"
+    }
+  ]
 }

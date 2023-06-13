@@ -1,4 +1,30 @@
-.btn {
+.btn,
+.button {
+  background: var(--clr-primary-400);
+  border: 0.3px solid var(--clr-primary-400);
+  color: var(--clr-primary-100);
+  font-size: var(--fs-350);
+  line-height: 1em;
+  height: auto;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1.2em 1.5em;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 3px;
+  transition: background-color 0.1s, color 0.1s, border-color 0.1s, opacity 0.1s;
+  display: inline-block;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: var(--clr-secondary-400);
+    border: 1px solid var(--clr-secondary-400);
+    color: var(--clr-primary-100);
+  }
   &--clear {
     background: none;
     border: none;

@@ -1,0 +1,94 @@
+{
+  "marquee_1": [
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Vitamins_f599e156-6fbd-4a62-a84e-c4477e782566_50x.png",
+      "title": "Vitamins"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/traditional_herbs_ec94b8ad-ca6f-4d78-af23-fa996ba2f8de_50x.png",
+      "title": "Traditional Herbs"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/peptides_05e957df-8258-45a4-b34b-48e0cdd55d63_50x.png",
+      "title": "Peptides"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/minerals_0dffdcf6-80cc-4b06-89b7-11f17dd12ade_50x.png",
+      "title": "Minerals"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/marine_algae_d99c4b83-c566-41c9-b22b-d0df73256f2b_50x.png",
+      "title": "Marine Algae"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/wildharvested_boticals_65629185-7030-4868-936e-5958148f79d4_50x.png",
+      "title": "Wildharvested Botanicals"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/essential_fatty_acids_50x.png",
+      "title": "Essential Fatty Acids"
+    }
+  ],
+  "marquee_2": [
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/SkinNow_50x.png",
+      "title": "Skin Now"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_47_50x.png",
+      "title": "Botanicals and Biocompatible"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/formula_first_50x.png",
+      "title": "Formula First"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Planet-_-pet-Friendly_50x.png",
+      "title": "Planet &amp; Pet Friendly"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_39_5af7e80e-b57c-4465-b2dd-9ec31d40bedf_50x.png",
+      "title": "Purposeful"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/SkinNow_50x.png",
+      "title": "Skin Now"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_47_50x.png",
+      "title": "Botanicals and Biocompatible"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/formula_first_50x.png",
+      "title": "Formula First"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Planet-_-pet-Friendly_50x.png",
+      "title": "Planet &amp; Pet Friendly"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_39_5af7e80e-b57c-4465-b2dd-9ec31d40bedf_50x.png",
+      "title": "Purposeful"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/SkinNow_50x.png",
+      "title": "Skin Now"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_47_50x.png",
+      "title": "Botanicals and Biocompatible"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/formula_first_50x.png",
+      "title": "Formula First"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Planet-_-pet-Friendly_50x.png",
+      "title": "Planet &amp; Pet Friendly"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_39_5af7e80e-b57c-4465-b2dd-9ec31d40bedf_50x.png",
+      "title": "Purposeful"
+    }
+  ]
+}

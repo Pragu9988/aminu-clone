@@ -1,0 +1,50 @@
+<div
+  id="section-home-skin"
+  class="section-border home-skin-section section-spacing"
+>
+  <div class="container four_grid_list">
+    <div class="al-text-center">
+      <div class="section-header al-inline-block">
+        <div class="al-mb-6 al-text-left"><span class="strapline">skin-goals</span></div>
+        <h2
+          class="heading align-center spaced-row"
+          data-cc-animate
+          data-cc-animate-delay="0.15s"
+        >
+          Shop by skin concern
+        </h2>
+      </div>
+    </div>
+    {{# if (config blurbs)}}
+    <div class="logo-list__container">
+      <div
+        class="logo-list logo-list--count-8 al-grid al-grid-cols-2 md:al-grid-cols-4"
+      >
+        {{#each blurbs.concerns}}
+        <div class="logo-list__logo logo-list__logo-1 al-text-center">
+          <a
+            id="logo_1"
+            class="logo-list__link"
+            href="{{webRoot}}/category.html"
+            data-cc-animate="cc-fade-in-up"
+            data-cc-animate-delay="0.15s"
+            ><div class="logo-list__logo-image {{ active }}">
+              <div class="image-outer-wrapper">
+                <div class="image-wrapper al-inline-block al-align-middle">
+                  <img
+                    class="image__image lazyload fade-in"
+                    src="{{ icon }}"
+                    alt="{{ config.defaultImgAlt }}"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="logo-list__logo-title">{{ title }}</div></a
+          >
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    {{/if}}
+  </div>
+</div>

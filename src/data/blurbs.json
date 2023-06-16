@@ -1,0 +1,103 @@
+{
+  "concerns": [
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/1880-moon-outline_f300a8bd-64fc-4094-a5d6-e25b0dcefb08_120x.gif",
+      "title": "Breakouts & Acne-Prone",
+      "active": "active"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/1439-brightness-outline_8b652029-94e5-4f92-8509-33da5861f8a9_120x.gif",
+      "title": "Uneven Tone & Spots",
+      "active": ""
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/45-clock-time-outline_120x.gif",
+      "title": "Firmness & Fine Lines",
+      "active": ""
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/447-water-drop-outline_20743c2c-276e-420d-a472-0b89488cceaa_120x.gif",
+      "title": "Dullness & Dehydration",
+      "active": ""
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Heal_c4975dd9-c8bd-43ae-997f-ebeb7ae4b5f6_120x.gif",
+      "title": "Sensitised & Redness",
+      "active": ""
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Soften_f79188e3-d24a-4684-b16c-48107f3ea633_120x.gif",
+      "title": "Blackheads & Rough Skin",
+      "active": ""
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Protection_care-outline_d7641835-fd53-4044-84d7-265c7f1bb816_120x.gif",
+      "title": "Protection & Maintenance",
+      "active": ""
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Balance_758bc9a2-a70a-412e-ae3d-4f517f9bca38_120x.gif",
+      "title": "Pores & Congestion",
+      "active": ""
+    }
+  ],
+  "types": [
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Dry-Skin_1_90x.png",
+      "title": "Dry",
+      "active": "active"
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Normal-Skin_752a7639-dbba-45d8-84c7-1436684a2c42_90x.png",
+      "title": "Normal",
+      "active": ""
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Combination-Skin_38bc8c26-abc7-46b5-8486-de3b86cd322a_90x.png",
+      "title": "Combination",
+      "active": ""
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Oily-Skin_9a51ecb0-3e0d-4069-b172-bcf13365741e_90x.png",
+      "title": "Oily",
+      "active": ""
+    },
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Sensitive-Skin_083cbfea-a5f8-4e8e-add6-f918cc3085c7_90x.png",
+      "title": "Sensitive",
+      "active": ""
+    }
+  ],
+  "features": [
+    {
+      "image": "{{webRoot}}/assets/images/homepage/Vegan_150x.png",
+      "title": "Vegan",
+      "content": "This products contain no animal ingredients or animal byproduct including honey, beeswax, milk, or eggs."
+    },
+    {
+      "image": "{{webRoot}}/assets/images/homepage/Dermatologically_tested_150x.png",
+      "title": "Dermatologically tested",
+      "content": "This product is tested for its safety and is proven non-irritant, as per Methods of test for safety evaluation of cosmetics - 3rd Revision."
+    },
+    {
+      "image": "{{webRoot}}/assets/images/homepage/Australian_certified_150x.png",
+      "title": "Made Safe Certified",
+      "content": "The Australian Made Safe® Certified logo represents safer, cleaner practices than any government standard."
+    },
+    {
+      "image": "{{webRoot}}/assets/images/homepage/animal_test_free_150x.png",
+      "title": "Animal Test Free",
+      "content": "We do not conduct, commission or allow any tests on animals for our products anywhere in the world."
+    },
+    {
+      "image": "{{webRoot}}/assets/images/homepage/zero_plastic_inside_150x.png",
+      "title": "Zero plastic inside",
+      "content": "We are a signatory to Zero Plastic Inside, by Plastic Soup Foundation. None of our products contain micro plastics or beads."
+    },
+    {
+      "image": "{{webRoot}}/assets/images/homepage/medicert_150x.png",
+      "title": "Medicert Awarded",
+      "content": "The MediCERT® represents the expertise of specialists to test their product formulations for their intended use &amp; marketing claims."
+    }
+  ]
+}

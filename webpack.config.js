@@ -11,7 +11,6 @@ const mergeJSON = require("handlebars-webpack-plugin/utils/mergeJSON");
 // Go here to change stuff for the whole demo, ie, change the navbar.
 // Also go here for the various data loops, ie, category products, slideshows
 const projectData = mergeJSON(path.join(__dirname, "/src/data/**/*.json"));
-
 // paths used in various placed in webpack config
 const paths = {
   src: {

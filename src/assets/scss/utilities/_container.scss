@@ -36,7 +36,10 @@
   }
 }
 
-
 .ff-display {
   font-family: var(--ff-secondary);
+}
+
+.section-border {
+  border-bottom: 0.3px solid var(--clr-primary-400);
 }

@@ -1,0 +1,78 @@
+<div class="home-testimonal-section section-padding">
+  <div
+    class="container cc-fade-in-up cc-animate-init -in cc-animate-complete"
+    data-cc-animate="cc-fade-in-up"
+    data-cc-animate-delay="0.2s"
+  >
+    <div
+      class="testimonial-list testimonial-list--no-image testimonial-list--without-images"
+      data-testimonial-count="6"
+      data-autoplay="true"
+      data-autoplay-speed="5000"
+    >
+      <div
+        class="testimonial-list__inner swiper"
+        data-swiper
+        data-options='{
+        "slidesPerView": 1,
+        "spaceBetween": 32,
+        "navigation": {
+          "nextEl": ".swiper-button-next",
+          "prevEl": ".swiper-button-prev"
+        }
+      }'
+      >
+        <div class="swiper-wrapper">
+          {{#each testimonials.testimonials}}
+          <div
+            class="testimonial testimonial-6 swiper-slide"
+            data-slick-index="-1"
+            id=""
+            aria-hidden="true"
+            tabindex="-1"
+            style="width: 1200px"
+          >
+            <div class="testimonial__column testimonial__column--text">
+              <img
+                width="200px"
+                height="200px"
+                class="logo_img"
+                src="{{logo}}"
+                alt=""
+                loading="lazy"
+              />
+
+              <div class="testimonial__content al-relative">
+                <img
+                  class="al-absolute top-left-quote"
+                  src="{{webRoot}}/assets/images/homepage/1.png"
+                  width="41px"
+                  height="29px"
+                  alt="quote"
+                  loading="lazy"
+                />
+                <div class="testimonial__text">
+                  <blockquote class="testimonial__blockquote heading-font">
+                    {{blockquote}}
+                  </blockquote>
+                </div>
+                <img
+                  class="al-absolute bottom-right-quote"
+                  src="{{webRoot}}/assets/images/homepage/222e726b3c8486e0ba0d167e814a3ea1.png"
+                  alt="Quote"
+                  width="41px"
+                  height="29px"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+        <!-- Add navigation buttons (optional) -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </div>
+</div>

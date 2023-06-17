@@ -1,0 +1,31 @@
+@use "../abstracts/" as *;
+.testimonial-list {
+}
+
+.testimonial {
+  &__column {
+    padding-block-end: 5rem;
+    & img.logo_img {
+      margin-inline: auto;
+      border-bottom: 1px solid var(--clr-primary-400);
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  &__content {
+    max-width: 100%;
+    @include mq(md) {
+      max-width: 70%;
+      margin-inline: auto;
+    }
+    .top-left-quote {
+      top: -40px;
+      left: -78px;
+    }
+
+    .bottom-right-quote {
+      bottom: -40px;
+      right: -78px;
+    }
+  }
+}

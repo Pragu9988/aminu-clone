@@ -49,46 +49,36 @@
     {
       "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_39_5af7e80e-b57c-4465-b2dd-9ec31d40bedf_50x.png",
       "title": "Purposeful"
+    }
+  ],
+  "marquee_3": [
+    {
+      "icon": "{{webRoot}}/assets/images/homepage/Rare_7025811b-1a03-4464-90d8-daf0b08dd36e_50x.png",
+      "title": "You are Rare"
     },
     {
-      "icon": "{{webRoot}}/assets/images/homepage/SkinNow_50x.png",
-      "title": "Skin Now"
+      "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_40_a2cfdfaa-639d-4563-87a4-50c63ad914be_50x.png",
+      "title": "You are Beautiful"
     },
     {
-      "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_47_50x.png",
-      "title": "Botanicals and Biocompatible"
+      "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_41_412b129b-7d08-4425-bdf1-f82af83c6009_50x.png",
+      "title": "You are Cared"
     },
     {
-      "icon": "{{webRoot}}/assets/images/homepage/formula_first_50x.png",
-      "title": "Formula First"
+      "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_39_2e85f907-3674-4843-9f9a-b24ce7f87dfb_50x.png",
+      "title": "You are Heard"
     },
     {
-      "icon": "{{webRoot}}/assets/images/homepage/Planet-_-pet-Friendly_50x.png",
-      "title": "Planet &amp; Pet Friendly"
+      "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_39_e449539f-35ad-4a45-b14b-8b0759cd0156_50x.png",
+      "title": "You are Loved"
     },
     {
-      "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_39_5af7e80e-b57c-4465-b2dd-9ec31d40bedf_50x.png",
-      "title": "Purposeful"
+      "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_40_faa56ce2-ec11-4bc8-942b-58e28f118d2d_50x.png",
+      "title": "You are Now"
     },
     {
-      "icon": "{{webRoot}}/assets/images/homepage/SkinNow_50x.png",
-      "title": "Skin Now"
-    },
-    {
-      "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_47_50x.png",
-      "title": "Botanicals and Biocompatible"
-    },
-    {
-      "icon": "{{webRoot}}/assets/images/homepage/formula_first_50x.png",
-      "title": "Formula First"
-    },
-    {
-      "icon": "{{webRoot}}/assets/images/homepage/Planet-_-pet-Friendly_50x.png",
-      "title": "Planet &amp; Pet Friendly"
-    },
-    {
-      "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_39_5af7e80e-b57c-4465-b2dd-9ec31d40bedf_50x.png",
-      "title": "Purposeful"
+      "icon": "{{webRoot}}/assets/images/homepage/Untitled_design_39_d9be436a-d2fa-4fa5-91f8-f6a073e24f13_50x.png",
+      "title": "You are Precious"
     }
   ]
 }

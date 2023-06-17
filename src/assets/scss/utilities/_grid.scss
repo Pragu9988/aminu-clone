@@ -1,13 +1,14 @@
 @use "../abstracts" as *;
-.row {
+
+.columns {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -$bp-gutter-left;
-  margin-right: -$bp-gutter-right;
+  margin-left: -$gutter-left;
+  margin-right: -$gutter-right;
 
   & > * {
-    padding-left: $bp-gutter-left;
-    padding-right: $bp-gutter-right;
+    padding-left: $gutter-left;
+    padding-right: $gutter-right;
   }
 
   &.no-gutter > * {
@@ -17,10 +18,10 @@
   }
 
   & > [class*="col"] {
-    padding-bottom: 1rem;
-    @include mq(md) {
-      padding-bottom: 0;
-    }
+    // padding-bottom: 1rem;
+    // @include mq(md) {
+    //   padding-bottom: 0;
+    // }
 
     &.gutter-md {
       padding-inline: 1em;
@@ -33,7 +34,7 @@
 
 @include mq(xs) {
   @for $i from 1 through $grid-columns {
-    .col-xs-#{$i} {
+    .column-#{$i} {
       flex: 0 0 calc((100% / $grid-columns) * $i);
       max-width: calc((100% / $grid-columns) * $i);
     }
@@ -42,11 +43,11 @@
 
 @include mq(md) {
   @for $i from 1 through $grid-columns {
-    .col-md-#{$i} {
+    .column-md-#{$i} {
       flex: 0 0 calc((100% / $grid-columns) * $i);
       max-width: calc((100% / $grid-columns) * $i);
     }
-    .col-md-offset-#{$i} {
+    .column-md-offset-#{$i} {
       margin-left: calc((100% / $grid-columns) * $i);
     }
   }
@@ -54,11 +55,11 @@
 
 @include mq(lg) {
   @for $i from 1 through $grid-columns {
-    .col-lg-#{$i} {
+    .column-lg-#{$i} {
       flex: 0 0 calc((100% / $grid-columns) * $i);
       max-width: calc((100% / $grid-columns) * $i);
     }
-    .col-lg-offset-#{$i} {
+    .column-lg-offset-#{$i} {
       margin-left: calc((100% / $grid-columns) * $i);
     }
   }
@@ -66,11 +67,11 @@
 
 @include mq(xl) {
   @for $i from 1 through $grid-columns {
-    .col-xl-#{$i} {
+    .column-xl-#{$i} {
       flex: 0 0 calc((100% / $grid-columns) * $i);
       max-width: calc((100% / $grid-columns) * $i);
     }
-    .col-xl-offset-#{$i} {
+    .column-xl-offset-#{$i} {
       margin-left: calc((100% / $grid-columns) * $i);
     }
   }

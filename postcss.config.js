@@ -43,9 +43,9 @@ const safelist = [
 const postcssConfig = {
   syntax: postcssScss,
   plugins: [
-    postcssImport(),
     postcssUrl(),
     autoprefixer(),
+    // postcssImport(),
     // postcssMixins(),
     // postcssSimpleVars(),
     postcssPresetEnv(),

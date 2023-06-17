@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 .logo-list {
   &__logo {
     margin: 1.5rem 1.5rem 3rem;
@@ -34,4 +36,29 @@
 .home-skin-section {
   background-color: #f9f7ec;
   padding-block: 3rem;
+}
+
+.home-thoughtfullness-section {
+  background-color: var(--clr-neutral-50);
+  padding-block: var(--section-spacing);
+}
+
+.icon-blurb {
+  padding-inline: 1rem;
+  padding-block-start: 1rem;
+  margin-block-end: 2rem;
+  &__list {
+    display: grid;
+    @include mq(md) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .image-wrapper {
+    margin-bottom: 1.5rem;
+  }
+  &__text p {
+    margin-top: 1rem;
+    line-height: 1.2;
+  }
 }

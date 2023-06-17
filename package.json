@@ -27,6 +27,7 @@
     "del-cli": "^5.0.0",
     "handlebars-webpack-plugin": "^2.2.1",
     "mini-css-extract-plugin": "^2.7.6",
+    "plyr": "^3.7.8",
     "postcss": "^8.4.24",
     "postcss-import": "^15.1.0",
     "postcss-loader": "^7.3.2",

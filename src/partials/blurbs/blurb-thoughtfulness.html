@@ -1,41 +1,35 @@
 <div class="home-thoughtfullness-section section-border">
   <div class="container orig_multi_col btm_mlt">
-    <div class="subheading subheading--over align-center">
-      OUR THOUGHTFULNESS &amp; CARE
+    <div class="section-header al-text-center">
+      <h4 class="subheading subheading--uppercase al-align-center">
+        OUR THOUGHTFULNESS &amp; CARE
+      </h4>
+      <h2
+        class="hometitle h4-style align-center cc-animate-init -in cc-animate-complete"
+        data-cc-animate=""
+      >
+        DELIVERING SAFE &amp; EFFECTIVE RESULTS
+      </h2>
     </div>
-    <h2
-      class="hometitle h4-style align-center cc-animate-init -in cc-animate-complete"
-      data-cc-animate=""
-    >
-      DELIVERING SAFE &amp; EFFECTIVE RESULTS
-    </h2>
 
     <div
-      class="flexible-layout flexible-layout--variable-columns flexible-layout--columns-6 twoSlides align-left"
+      class="icon-blurb__list icon-blurb--thoughfulness icon-blurb--columns-6"
     >
       {{#each blurbs.features}}
       <div
-        id="block-id-165520162262482c4f-0"
-        class="column text-column cc-fade-in-up cc-animate-init -in cc-animate-complete"
+        id="feature-icon-blurb"
+        class="icon-blurb al-text-center cc-fade-in-up cc-animate-init -in cc-animate-complete"
         data-cc-animate="cc-fade-in-up"
         data-cc-animate-delay="0.15s"
-        style=""
       >
-        <div class="text-column__image lightly-spaced-row">
-          <img
-            width="150px"
-            height="150px"
-            src="{{image}}"
-            alt="{{title}}"
-          />
+        <div class="al-inline-block lightly-spaced-row image-wrapper">
+          <img width="150px" height="150px" src="{{image}}" alt="{{title}}" />
         </div>
 
-        <h3 class="text-column__title align-center">{{title}}</h3>
+        <h3 class="icon-blurb__title al-uppercase">{{title}}</h3>
 
-        <div class="text-column__text rte">
-          <p>
-            {{content}}
-          </p>
+        <div class="icon-blurb__text al-text-left rte">
+          <p>{{content}}</p>
         </div>
       </div>
       {{/each}}

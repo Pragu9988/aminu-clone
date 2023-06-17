@@ -1,0 +1,32 @@
+{
+  "testimonials": [
+    {
+      "logo": "{{webRoot}}/assets/images/homepage/Vogue_200x.png",
+      "blockquote": " If its' spicy-citrusy aroma doesn't get you hooked, the after-glow most definitely will. This beauty bottle is a must-have for firm, softer and brighter skin."
+    },
+    {
+      "logo": "{{webRoot}}/assets/images/homepage/Grazia_200x.png",
+      "blockquote": "Aminu’s Longevity Serum is your best bet if you’re not into extensive routines. This serum could be an excellent addition to your skincare stash to protect &amp; nourish your skin."
+    },
+    {
+      "logo": "{{webRoot}}/assets/images/homepage/Business_traveller_200x.png",
+      "blockquote": "The Marine Clay mask by Aminu is must-try for the season."
+    },
+    {
+      "logo": "{{webRoot}}/assets/images/homepage/Elle_200x.png",
+      "blockquote": "The Copper Peptide serum helps in refining pores and enhancing skin barrier function, elasticity and skin integrity."
+    },
+    {
+      "logo": "{{webRoot}}/assets/images/homepage/Femina_200x.png",
+      "blockquote": "Looking for a cleanser that doesn’t strip off the moisture but replenishes it instead? Try Aminu's Cream Cleanser"
+    },
+    {
+      "logo": "{{webRoot}}/assets/images/homepage/Lifestyle_asia_200x.png",
+      "blockquote": "This high-performance, luxe label targets inflammations, environmental damage, uneven tones, spots, premature ageing concerns, their main focus is preventive skincare."
+    },
+    {
+      "logo": "{{webRoot}}/assets/images/homepage/Elle_200x.png",
+      "blockquote": "The Copper Peptide serum helps in refining pores and enhancing skin barrier function, elasticity and skin integrity."
+    }
+  ]
+}

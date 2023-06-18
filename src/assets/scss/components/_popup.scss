@@ -1,0 +1,43 @@
+.popup {
+  background: rgba(100, 100, 100, 0.6);
+  position: fixed;
+  display: none;
+  z-index: var(--zModal);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  &__content {
+    border-radius: 10px;
+    position: fixed;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    padding: 30px 15px;
+    width: 70%;
+    max-width: 600px;
+    z-index: calc(var(--zModal) + 1);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    text-align: left;
+  }
+
+  &__btn-close {
+    position: absolute;
+    background-color: #ccc;
+    color: white;
+    top: -15px;
+    right: -15px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Arial Black", Arial, sans-serif;
+    cursor: pointer;
+    box-shadow: -3px 1px 6px 0px rgba(0, 0, 0, 0.1);
+  }
+}

@@ -250,3 +250,22 @@
     /* Safari, Android, iOS */
       url("../fonts/gill_sans/gill_sans_heavy.svg#Lato") format("svg"); /* Legacy iOS */
 }
+
+/* run_wild */
+@font-face {
+  font-family: "Run Wild";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/run_wild/run_wild.eot"); /* IE9 Compat Modes */
+  src: local("Run Wild"), local("run_wild"),
+    url("../fonts/run_wild/run_wild.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/run_wild/run_wild.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/run_wild/run_wild.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/run_wild/run_wild.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/run_wild/run_wild.svg#Lato") format("svg"); /* Legacy iOS */
+}

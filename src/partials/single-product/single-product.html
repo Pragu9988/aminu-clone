@@ -1,0 +1,101 @@
+<div
+  data-section-type="main-product"
+  data-components="accordion,custom-select,modal"
+>
+  <div class="product-detail quickbuy-content container container__max">
+    <div class="columns">
+      <div
+        class="column-12 column-md-6 gallery gallery--layout-carousel-beside gallery-size-medium product-column-left has-thumbnails"
+        data-cc-animate
+        data-cc-animate-delay="0.2s"
+        data-variant-image-grouping="true"
+        data-variant-image-grouping-option="Color,Colour,Couleur,Farbe"
+        data-variant-image-grouping-option-index=""
+      >
+        <!-- <div
+        class="containerr not-in-quickbuy"
+        data-cc-animate
+        data-cc-animate-delay="0.2s"
+      >
+        <div class="page-header">{{> single-product/breadcrumb }}</div>
+      </div> -->
+
+        <div class="gallery__inner sticky-content-container">
+          <!-- Product Image  -->
+          {{> single-product/product-image}}
+          <!-- /Product Image  -->
+          <!-- Product Thumbnail  -->
+          <!-- {{> single-product/product-thumbnails}} -->
+          <!-- product Thumbnail  -->
+        </div>
+      </div>
+      <!-- COULUMN RIGHT  -->
+      <div
+        class="column-12 column-md-6 detail product-column-right"
+        data-cc-animate
+        data-cc-animate-delay="0.2s"
+      >
+        <!-- Product Sticky  -->
+        {{> single-product/product-sticky }}
+        <!-- / Product Sticky  -->
+        <div
+          class="product-form sticky-content-container"
+          data-ajax-add-to-cart="true"
+          data-product-id="6839898734657"
+          data-enable-history-state="true"
+          data-show-sale-price-label="true"
+          data-show-preorder-label="false"
+        >
+          <!-- Title  -->
+          {{> single-product/title}}
+          <!-- / Title  -->
+          <!-- Price  -->
+          {{> single-product/price }}
+          <!-- / Price  -->
+          <!-- Benefits  -->
+          {{> single-product/product-benefits}}
+          <!-- / Benefits  -->
+          <!-- Description  -->
+          {{> single-product/short-description}}
+          <!-- / Description  -->
+
+          <span class="mobile-only judgeme_mobile">
+            <!-- Rating Mobile  -->
+            {{> single-product/rating }}
+            <!-- / Rating Mobile  -->
+          </span>
+
+          <div class="product-offer-box">
+            <p>₹1000 OFF on Purchase of ₹5999</p>
+          </div>
+
+          <div class="buy-buttons-row">
+            <!-- Add to Cart  -->
+            {{> single-product/add-to-cart }}
+            <!-- / Add to Cart  -->
+
+            <a
+              class="button chatwithus"
+              href="../index.html#quiz-QYHZ7V"
+              target="_blank"
+              >Is This Right For Me?</a
+            >
+          </div>
+
+          <!-- Payment Gateways  -->
+          <!-- {{> single-product/payment-gateways }} -->
+          <!-- / Payment Gateways -->
+
+          <!-- Accordion  -->
+          {{> accordion/accordion}}
+          <!-- / Accordion  -->
+
+          <!-- Tabs  -->
+          {{> mobile-tabs/tabs}}
+          <!-- / Tabs  -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.product-detail -->
+</div>

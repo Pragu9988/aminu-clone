@@ -1,0 +1,230 @@
+{
+  "id": 6839898734657,
+  "title": "A-HA Body Wash",
+  "handle": "a-ha-body-wash",
+  "description": "\u003cstyle type=\"text/css\" data-mce-fragment=\"1\"\u003e\u003c!--\ntd {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}\n--\u003e\u003c/style\u003e\n\u003cspan data-sheets-value='{\"1\":2,\"2\":\"Packed with an intelligent blend of fruit drrived AHA, rare botanicals, activated charcoal \u0026amp; plant-powered cleanser, this light-weight AHA Body Wash effectively removes excess oil and surface impurities, improves natural cell turnover \u0026amp; brightens the complexion. All this while leaving skin’s natural pH level \u0026amp; hydration level intact.  This cleanser is gentle enough for daily use.\"}' data-sheets-userformat='{\"2\":7165,\"3\":{\"1\":0},\"5\":{\"1\":[{\"1\":2,\"2\":0,\"5\":{\"1\":2,\"2\":0}},{\"1\":0,\"2\":0,\"3\":3},{\"1\":1,\"2\":0,\"4\":1}]},\"6\":{\"1\":[{\"1\":2,\"2\":0,\"5\":{\"1\":2,\"2\":0}},{\"1\":0,\"2\":0,\"3\":3},{\"1\":1,\"2\":0,\"4\":1}]},\"7\":{\"1\":[{\"1\":2,\"2\":0,\"5\":{\"1\":2,\"2\":0}},{\"1\":0,\"2\":0,\"3\":3},{\"1\":1,\"2\":0,\"4\":1}]},\"8\":{\"1\":[{\"1\":2,\"2\":0,\"5\":{\"1\":2,\"2\":0}},{\"1\":0,\"2\":0,\"3\":3},{\"1\":1,\"2\":0,\"4\":1}]},\"9\":0,\"10\":2,\"11\":0,\"12\":0,\"14\":{\"1\":2,\"2\":0},\"15\":\"Arial, sans-serif\"}' data-mce-fragment=\"1\"\u003ePacked with an intelligent blend of fruit derived AHA, rare botanicals, activated charcoal \u0026amp; plant-powered cleanser, this light-weight AHA Body Wash effectively removes excess oil and surface impurities, improves natural cell turnover \u0026amp; brightens the complexion. All this while leaving skin’s natural pH level \u0026amp; hydration level intact. This cleanser is gentle enough for daily use.\u003c/span\u003e",
+  "published_at": "2022-07-12T19:10:12+05:30",
+  "created_at": "2022-07-12T19:10:12+05:30",
+  "vendor": "the zen mood",
+  "type": "Cleanse - Wash \u0026 Gels",
+  "tags": [
+    "AHA",
+    "AHA Body Wash",
+    "body acne",
+    "Body Care",
+    "Body Tan and Dullness",
+    "Brightens",
+    "Calms",
+    "Combination Skin",
+    "Exfoliates",
+    "exfoliator",
+    "Normal Skin",
+    "Oily Skin",
+    "Smoothes",
+    "Title_AMPM"
+  ],
+  "price": 165000,
+  "price_min": 165000,
+  "price_max": 165000,
+  "available": true,
+  "price_varies": false,
+  "compare_at_price": null,
+  "compare_at_price_min": 0,
+  "compare_at_price_max": 0,
+  "compare_at_price_varies": false,
+  "variants": [
+    {
+      "id": 40031513673793,
+      "title": "150 ML",
+      "option1": "150 ML",
+      "option2": null,
+      "option3": null,
+      "sku": "AWBW001",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": null,
+      "available": true,
+      "name": "A-HA Body Wash - 150 ML",
+      "public_title": "150 ML",
+      "options": ["150 ML"],
+      "price": 165000,
+      "weight": 0,
+      "compare_at_price": null,
+      "inventory_management": "shopify",
+      "barcode": "8906139890227",
+      "quantity_rule": { "min": 1, "max": null, "increment": 1 }
+    }
+  ],
+  "images": [
+    "{{webRoot}}/assets/images/product/1_15.jpg",
+    "{{webRoot}}/assets/images/product/2_14.jpg",
+    "{{webRoot}}/assets/images/product/3_13.jpg",
+    "{{webRoot}}/assets/images/product/4_929c6f62-fe90-4be2-b0be-f80dc3e43df5.jpg",
+    "{{webRoot}}/assets/images/product/5_3dbc0533-a053-4044-9472-3fe14eed7db3.jpg",
+    "{{webRoot}}/assets/images/product/6_598d9e8c-6666-4b60-8ae0-cd20a544c236.jpg"
+  ],
+  "featured_image": "{{webRoot}}/assets/images/product/1_15.jpg",
+  "options": ["Size"],
+  "media": [
+    {
+      "alt": "A-HA Body Wash - AMINU",
+      "id": 22360438767681,
+      "position": 1,
+      "preview_image": {
+        "aspect_ratio": 1.066,
+        "height": 797,
+        "width": 850,
+        "src": "{{webRoot}}/assets/images/product/1_15.jpg"
+      },
+      "aspect_ratio": 1.066,
+      "height": 797,
+      "media_type": "image",
+      "src": "{{webRoot}}/assets/images/product/1_15.jpg",
+      "width": 850
+    },
+    {
+      "alt": "A-HA Body Wash - AMINU",
+      "id": 22360438734913,
+      "position": 2,
+      "preview_image": {
+        "aspect_ratio": 1.066,
+        "height": 797,
+        "width": 850,
+        "src": "{{webRoot}}/assets/images/product/2_14.jpg"
+      },
+      "aspect_ratio": 1.066,
+      "height": 797,
+      "media_type": "image",
+      "src": "{{webRoot}}/assets/images/product/2_14.jpg",
+      "width": 850
+    },
+    {
+      "alt": "A-HA Body Wash - AMINU",
+      "id": 22360438702145,
+      "position": 3,
+      "preview_image": {
+        "aspect_ratio": 1.066,
+        "height": 797,
+        "width": 850,
+        "src": "{{webRoot}}/assets/images/product/3_13.jpg"
+      },
+      "aspect_ratio": 1.066,
+      "height": 797,
+      "media_type": "image",
+      "src": "{{webRoot}}/assets/images/product/3_13.jpg",
+      "width": 850
+    },
+    {
+      "alt": "A-HA Body Wash - AMINU",
+      "id": 22361063817281,
+      "position": 4,
+      "preview_image": {
+        "aspect_ratio": 1.066,
+        "height": 797,
+        "width": 850,
+        "src": "{{webRoot}}/assets/images/product/4_929c6f62-fe90-4be2-b0be-f80dc3e43df5.jpg"
+      },
+      "aspect_ratio": 1.066,
+      "height": 797,
+      "media_type": "image",
+      "src": "{{webRoot}}/assets/images/product/4_929c6f62-fe90-4be2-b0be-f80dc3e43df5.jpg",
+      "width": 850
+    },
+    {
+      "alt": "A-HA Body Wash - AMINU",
+      "id": 22361064276033,
+      "position": 5,
+      "preview_image": {
+        "aspect_ratio": 1.066,
+        "height": 797,
+        "width": 850,
+        "src": "{{webRoot}}/assets/images/product/5_3dbc0533-a053-4044-9472-3fe14eed7db3.jpg"
+      },
+      "aspect_ratio": 1.066,
+      "height": 797,
+      "media_type": "image",
+      "src": "{{webRoot}}/assets/images/product/5_3dbc0533-a053-4044-9472-3fe14eed7db3.jpg",
+      "width": 850
+    },
+    {
+      "alt": "A-HA Body Wash - AMINU",
+      "id": 22361064996929,
+      "position": 6,
+      "preview_image": {
+        "aspect_ratio": 1.066,
+        "height": 797,
+        "width": 850,
+        "src": "{{webRoot}}/assets/images/product/6_598d9e8c-6666-4b60-8ae0-cd20a544c236.jpg"
+      },
+      "aspect_ratio": 1.066,
+      "height": 797,
+      "media_type": "image",
+      "src": "{{webRoot}}/assets/images/product/6_598d9e8c-6666-4b60-8ae0-cd20a544c236.jpg",
+      "width": 850
+    }
+  ],
+  "content": "\u003cstyle type=\"text/css\" data-mce-fragment=\"1\"\u003e\u003c!--\ntd {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}\n--\u003e\u003c/style\u003e\n\u003cspan data-sheets-value='{\"1\":2,\"2\":\"Packed with an intelligent blend of fruit drrived AHA, rare botanicals, activated charcoal \u0026amp; plant-powered cleanser, this light-weight AHA Body Wash effectively removes excess oil and surface impurities, improves natural cell turnover \u0026amp; brightens the complexion. All this while leaving skin’s natural pH level \u0026amp; hydration level intact.  This cleanser is gentle enough for daily use.\"}' data-sheets-userformat='{\"2\":7165,\"3\":{\"1\":0},\"5\":{\"1\":[{\"1\":2,\"2\":0,\"5\":{\"1\":2,\"2\":0}},{\"1\":0,\"2\":0,\"3\":3},{\"1\":1,\"2\":0,\"4\":1}]},\"6\":{\"1\":[{\"1\":2,\"2\":0,\"5\":{\"1\":2,\"2\":0}},{\"1\":0,\"2\":0,\"3\":3},{\"1\":1,\"2\":0,\"4\":1}]},\"7\":{\"1\":[{\"1\":2,\"2\":0,\"5\":{\"1\":2,\"2\":0}},{\"1\":0,\"2\":0,\"3\":3},{\"1\":1,\"2\":0,\"4\":1}]},\"8\":{\"1\":[{\"1\":2,\"2\":0,\"5\":{\"1\":2,\"2\":0}},{\"1\":0,\"2\":0,\"3\":3},{\"1\":1,\"2\":0,\"4\":1}]},\"9\":0,\"10\":2,\"11\":0,\"12\":0,\"14\":{\"1\":2,\"2\":0},\"15\":\"Arial, sans-serif\"}' data-mce-fragment=\"1\"\u003ePacked with an intelligent blend of fruit derived AHA, rare botanicals, activated charcoal \u0026amp; plant-powered cleanser, this light-weight AHA Body Wash effectively removes excess oil and surface impurities, improves natural cell turnover \u0026amp; brightens the complexion. All this while leaving skin’s natural pH level \u0026amp; hydration level intact. This cleanser is gentle enough for daily use.\u003c/span\u003e",
+  "meta_features": [
+    {
+      "image": "{{webRoot}}/assets/images/homepage/Vegan_150x.png",
+      "title": "Vegan",
+      "content": "This products contain no animal ingredients or animal byproduct including honey, beeswax, milk, or eggs."
+    },
+    {
+      "image": "{{webRoot}}/assets/images/homepage/Dermatologically_tested_150x.png",
+      "title": "Dermatologically tested",
+      "content": "This product is tested for its safety and is proven non-irritant, as per Methods of test for safety evaluation of cosmetics - 3rd Revision."
+    },
+    {
+      "image": "{{webRoot}}/assets/images/homepage/Australian_certified_150x.png",
+      "title": "Made Safe Certified",
+      "content": "The Australian Made Safe® Certified logo represents safer, cleaner practices than any government standard."
+    },
+    {
+      "image": "{{webRoot}}/assets/images/homepage/animal_test_free_150x.png",
+      "title": "Animal Test Free",
+      "content": "We do not conduct, commission or allow any tests on animals for our products anywhere in the world."
+    },
+    {
+      "image": "{{webRoot}}/assets/images/homepage/zero_plastic_inside_150x.png",
+      "title": "Zero plastic inside",
+      "content": "We are a signatory to Zero Plastic Inside, by Plastic Soup Foundation. None of our products contain micro plastics or beads."
+    },
+    {
+      "image": "{{webRoot}}/assets/images/homepage/medicert_150x.png",
+      "title": "Medicert Awarded",
+      "content": "The MediCERT® represents the expertise of specialists to test their product formulations for their intended use &amp; marketing claims."
+    }
+  ],
+  "meta_ingredients": [
+    {
+      "title": "Fruit AHA Complex",
+      "content": "The Lactic Acid (Bilberry), Glycolic Acid (Sugar Cane), Citric Acid (Orange &amp; Lemon), Malic and Tartaric Acids (Sugar Maple) all work to renew skin cells, brings brightness to dull skin, break pore-clogging debris and treat uneven tone.",
+      "image": "{{webRoot}}/assets/images/product/1_AHA_Fruit_Complex_f027ffc0-9dcd-4db7-bb90-201599e99982_220x218.webp"
+    },
+    {
+      "title": "Charcoal",
+      "content": "Activated charcoal can unclog pores by adsorbing excess oil, impurities, and dead skin cells. We use bamboo-derived charcoal for its high surface area, which increases its potency as a cleanser..",
+      "image": "{{webRoot}}/assets/images/product/2_Charcol_220x218.webp"
+    },
+    {
+      "title": "Botanical Complex",
+      "content": "Anti-inflammatory plant extracts of Elderberry, Licorice, Uva ursi provide soothing properties to the skin. They help to reduce uneven skin tone and protect the skin from oxidative damage by fighting free radicals.",
+      "image": "{{webRoot}}/assets/images/product/1_AHA_Fruit_Complex_f027ffc0-9dcd-4db7-bb90-201599e99982_220x218.webp"
+    }
+  ],
+  "meta_directions": [
+    {
+      "image": "{{webRoot}}/assets/images/product/1_How_To_Use_copy_34bf95aa-a096-4cca-9280-5e85b2bf574d_200x200.webp",
+      "direction": "New to exfoliants? Start Slow. Start out using A-HA Body Wash 3-4 times per week, gradually working up to daily or 2x a daily use."
+    },
+    {
+      "image": "{{webRoot}}/assets/images/product/2_How_To_Use_copy_30705348-25a8-4ea8-ad5e-617e95c7db17_200x200.webp",
+      "direction": "Multi-Tasking Tips Can be used as a gentle exfoliating mask by leaving on dry skin for 5-10mins, rinse and pat dry."
+    },
+    {
+      "image": "{{webRoot}}/assets/images/product/3_How_To_Use_copy_5bc378c3-6c15-4776-9ade-cc1b35ff5c21_200x200.webp",
+      "direction": "Good To Know AHA/BHAs, retinol and retinoids, scrubs, exfoliants can cause irritation if used incorrectly depending on your skin’s condition. If you are prone to reaction or have sensitive skin, avoid these."
+    }
+  ]
+}

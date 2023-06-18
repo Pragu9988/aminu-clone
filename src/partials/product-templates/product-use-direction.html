@@ -1,0 +1,37 @@
+<div
+  class="product-use-directions use-directions container container__max container__max--no-space"
+>
+  <div class="al-grid al-grid-cols-10 al-items-center">
+    <div class="use-directions__content--left al-col-span-10 md:al-col-span-3">
+      <div class="use-directions__heading">
+        <h2>DIRECTIONS OF USE</h2>
+        <p>
+          <b>HOW:</b> Take a pump dose of wash, gently massage on damp body,
+          rinse with water, pat dry. Follow up with oil/lotion. Use SPF in day.
+          In some tingling and redness may occur. <br />
+
+          <b>WHERE:</b> Entire Body <br />
+
+          <b>WHEN:</b> AM and PM
+        </p>
+      </div>
+    </div>
+    <div
+      class="use-directions__content--right al-col-span-10 md:al-col-span-7"
+      style="background: #fff8ed"
+    >
+      <div class="columns use-directions__list">
+        {{#each product.meta_directions}}
+        <div class="use-direction column-12 column-md-4">
+          <div class="use-direction__img">
+            <img src="{{image}}" />
+          </div>
+          <div class="use-direction__content">
+            <p>{{direction}}</p>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

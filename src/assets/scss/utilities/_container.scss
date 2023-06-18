@@ -14,8 +14,11 @@
     @include mq(md) {
       padding-inline: 5rem;
     }
+    &--no-space {
+      padding-inline: 0;
+    }
 
-    & > .row {
+    & .columns {
       margin-left: 0;
       margin-right: 0;
     }

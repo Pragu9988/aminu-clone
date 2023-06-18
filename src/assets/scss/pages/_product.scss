@@ -1,0 +1,240 @@
+@use "../abstracts/" as *;
+
+.product-sticky-form {
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: var(--zSticky);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background: rgb(255, 254, 253);
+  border-bottom: 1px solid rgb(219, 226, 229);
+  box-shadow: 0 6px 5px -5px rgba(219, 226, 229, 0.4),
+    0 1px rgb(219, 226, 229) inset;
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out,
+    visibility 0.25s ease-in-out;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.product-title {
+  .product-vendor {
+    font-family: var(--ff-display);
+    font-size: var(--fs-500);
+  }
+
+  .title {
+    margin-bottom: 1rem;
+    &__text {
+      font-size: var(--fs-575);
+    }
+    &__icon {
+      & > img {
+        width: 32px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.product-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
+  &__text {
+    color: var(--clr-neutral-700);
+  }
+}
+
+.product-rating {
+  &-badge {
+    &__stars {
+      & > i {
+        color: #fbcd0a;
+      }
+    }
+  }
+}
+
+.product-price {
+  margin-bottom: 1rem;
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.25rem;
+    @include mq(md) {
+      flex-direction: row;
+    }
+  }
+
+  .price {
+    font-size: var(--fs-500);
+  }
+}
+
+.product-benefits {
+  margin-bottom: 2rem;
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    text-align: center;
+  }
+}
+
+.product-description {
+  margin-bottom: 1.5rem;
+}
+
+.product-purchase-form {
+  .attribute-selector {
+    width: 100%;
+    font-size: var(--fs-300);
+    font-weight: 500;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .quantity-submit-row {
+    margin-bottom: 1.5rem;
+    &__submit {
+      .button {
+        width: 100%;
+        padding-block: 1rem;
+      }
+    }
+  }
+}
+
+.button.chatwithus {
+  width: 100%;
+  padding: 15px 25px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  background: #fff9db;
+  color: #000;
+}
+
+.product-offer-box {
+  width: fit-content;
+  padding: 0 80px 0 60px;
+  border: 0.3px solid #ddd;
+  margin-inline: auto;
+  margin-block-end: 2rem;
+}
+
+.how-it-works {
+  &__inner {
+  }
+  &__image {
+  }
+  &__heading {
+  }
+
+  &__title {
+    font-size: var(--fs-900);
+  }
+}
+
+.product-feature {
+  &__title.icon-blurb__title {
+    font-size: var(--fs-200);
+  }
+}
+
+.ingredients {
+  &__top {
+    border-bottom: 1px solid var(--clr-neutral-700);
+    padding-inline: 2rem;
+    padding-block-end: 2rem;
+  }
+  &__blocks {
+    border-bottom: 1px solid var(--clr-neutral-700);
+    .ingredient {
+      padding: 2rem 1.5rem;
+      border-right: 1px solid var(--clr-neutral-700);
+      position: relative;
+
+      &__img {
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        z-index: -1;
+        width: 80%;
+        max-width: 220px;
+      }
+    }
+  }
+  &__ctas {
+    padding-block: 2rem;
+    border-bottom: 1px solid var(--clr-neutral-700);
+  }
+}
+
+.use-directions {
+  border-bottom: 1px solid var(--clr-neutral-700);
+  &__content {
+    &--left {
+      padding: 1.25rem;
+      @include mq(md) {
+        padding: 3rem 1.25rem 3rem 2.5rem;
+      }
+    }
+    &--right {
+      padding: 1.25rem;
+      @include mq(md) {
+        padding: 3rem 2.5rem 3rem 1.25rem;
+      }
+    }
+  }
+
+  &__heading {
+    h2 {
+      font-size: var(--fs-800);
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    p {
+      color: var(--clr-neutral-500);
+      line-height: 1.5;
+      font-size: var(--fs-500);
+      & > b {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .use-direction {
+    &__img {
+      & > img {
+        margin-inline: auto;
+      }
+    }
+    &__content {
+      margin-top: 1.25rem;
+      & > p {
+        line-height: 1.5;
+        font-size: var(--fs-500);
+      }
+    }
+  }
+}

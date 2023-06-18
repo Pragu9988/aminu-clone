@@ -1,6 +1,6 @@
 .btn,
-.button {
-  background: var(--clr-primary-400);
+.button, button {
+  background-color: var(--clr-primary-400);
   border: 0.3px solid var(--clr-primary-400);
   color: var(--clr-primary-100);
   font-size: var(--fs-350);

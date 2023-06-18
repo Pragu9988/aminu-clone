@@ -1,0 +1,96 @@
+<div
+  class="product-key-ingredients container container__max container__max--no-space"
+>
+  <div class="product-key-ingredients__haeding section-header al-text-center">
+    <h2 class="section-titlte uppercase align-center">KEY INGREDIENTS</h2>
+  </div>
+  <div class="panel">
+    <div class="ingredients">
+      <div class="ingredients__top">
+        <div class="subtitle al-text-center">
+          <p>
+            Our products are formulated with the highest-quality botanical,
+            earth &amp; marine ingredients, combined with innovative scientific
+            alternatives and technologies.
+          </p>
+        </div>
+      </div>
+      <div class="ingredients__blocks columns">
+        {{#each product.meta_ingredients}}
+        <div class="ingredient column-12 column-md-4">
+          <div class="ingredient__inner">
+            <div class="ingredient__text">
+              <h4 class="ingredient__title">{{title}}</h4>
+              <div class="ingredient__content">
+                <p>{{content}}</p>
+              </div>
+            </div>
+            <div class="ingredient__img">
+              <img src="{{image}}" />
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      <div class="ingredients__ctas al-text-center">
+        <div class="popup-wrapper al-inline-block">
+          <div class="popup-container">
+            <a class="popup-trigger button" data-target="#popup1"
+              >All Ingredients</a
+            >
+
+            <a class="popup-trigger button" data-target="#popup2"
+              >More&nbsp;information</a
+            >
+          </div>
+
+          <div id="popup1" class="popup">
+            <div class="popup__content">
+              <div class="popup__text">
+                Aqua, Coco-Glucoside, Glycerine, Heptyl Glucoside
+                (plant-derived), BilberryFruit/Leaf Extract, Sugar Cane Extract,
+                Orange Fruit Extract, Lemon Fruit Extract, Sugar Maple Extract,
+                Methylpropanediol (humectant), Caprylyl Glycol (humectant),
+                Phenylpropanol, Hydroxypropyl Starch Phosphate (maize starch),
+                Sodium Benzoate, Potassium Sorbate (food grade preservative),
+                Acacia Senegal Gum, Xanthan Gum, Hydroxy Ethyl Cellulose
+                (cellulose gum), Sodium Cocoyl Apple Amino Acids, Licorice Root
+                Extract, Asafetida Gum Extract, Damiana Leaf Oil, Elderflower
+                Extract, Mulberry Leaf Extract, Grape Seed Extract, Uva Ursi
+                Leaf Extract, Charcoal Powder, Trisodium Ethylenediamine
+                Disuccinate (antioxidant), Peppermint Leaf Oil, Pine Leaf Oil,
+                Mixed Tocopherol/Natural Vitamin E. At Aminu, we constantly
+                strive for transparency &amp; being at the forefront of
+                innovation. We are dedicated to maintaining the accuracy of the
+                ingredient lists on this website and on other third-party
+                websites. However, because ingredients and regulatory guidelines
+                are subject to change, for an accurate listing of ingredients,
+                please refer to your product packaging. We will always keep
+                evolving and improving!
+              </div>
+              <span class="popup__btn-close">×</span>
+            </div>
+          </div>
+
+          <div id="popup2" class="popup">
+            <div class="popup__content">
+              <div class="popup__text">
+                <p>Name - Aminu Wellness Pvt. Ltd.</p>
+                <p>
+                  <br />Manufacturer/Importer/Brand: Aminu Wellness Pvt Ltd, 9/B
+                  Government Industrial Estate, Near Hindustan Naka, Charkop,
+                  Kandivali (W), Mumbai-400067, Maharashtra, India
+                </p>
+                <p>
+                  <br />Country of Origin: Proudly Made in India with a mix of
+                  hard work &amp; hysterical laughter.
+                </p>
+              </div>
+              <span class="popup__btn-close">×</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

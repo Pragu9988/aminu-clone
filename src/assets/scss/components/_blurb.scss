@@ -49,8 +49,16 @@
   margin-block-end: 2rem;
   &__list {
     display: grid;
-    @include mq(md) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+    &--columns-6 {
+      @include mq(md) {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+      }
+    }
+
+    &--columns-3 {
+      @include mq(md) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
     }
   }
 

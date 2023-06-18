@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  {{> (config config.partials.head) title=config.defaultPageTitle }}
+
+  <body class="{{ config.classes.body }}">
+    <!-- Announcement -->
+    {{> (config config.partials.announcement)}}
+    <!-- / Announcement -->
+    <!-- Navbar -->
+    {{> (config config.partials.navbar) configClassList=config.classes.navbar
+    classList="" }}
+    <!-- / Navbar-->
+    <main id="content" class="page-content" role="main">
+      <div class="container__wrap">
+        <div id="section-main-product" class="main-product-section">
+          <!-- Single Main Product  -->
+          {{> single-product/single-product }}
+          <!-- / Single Main Product  -->
+        </div>
+        <div
+          id="section-how-it-works"
+          class="how-it-works-section section-padding"
+        >
+          <!-- How It Works  -->
+          {{> columns/columns-2-how-it-works }}
+          <!-- /How It Works  -->
+        </div>
+        <div
+          id="section-product-ingredients"
+          class="product-ingredients-section"
+        >
+          <!-- Product Ingredients  -->
+          {{> product-templates/product-ingredients }}
+          <!-- /Product Ingredients  -->
+        </div>
+        <div id="section-use-direction" class="use-direction-section">
+          <!-- Use Direction  -->
+          {{> product-templates/product-use-direction  }}
+          <!-- / Use Direction  -->
+        </div>
+        <div
+          id="section-product-features"
+          class="product-feature-section section-padding"
+        >
+          <!-- Product Feature  -->
+          {{> product-templates/product-features }}
+          <!-- /Product Feature  -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    {{> (config config.partials.footer) configClassList=config.classes.footer
+    classList="" }}
+    <!-- / Footer-->
+
+    <!-- Theme JS -->
+    {{> footer/scripts }}
+  </body>
+</html>

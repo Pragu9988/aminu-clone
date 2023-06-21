@@ -1,0 +1,38 @@
+.tabs {
+  .tabs-nav {
+    &__list {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 5rem;
+    }
+
+    &__item {
+      border-radius: 10px;
+      border: 1px solid #c4c4c4;
+      padding: 12px 20px;
+      text-align: center;
+      display: inline-block;
+      cursor: pointer;
+      letter-spacing: 0;
+      &.active {
+        background: #ebac8d;
+        border-radius: 10px;
+        border: none;
+      }
+    }
+  }
+
+  .nav-item {
+    & h5 {
+      font-size: var(--fs-500);
+      font-weight: 500;
+    }
+  }
+
+  .tab-content {
+    display: none;
+  }
+}

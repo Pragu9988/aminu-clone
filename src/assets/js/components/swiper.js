@@ -16,14 +16,12 @@ import Swiper from "swiper";
 (function () {
   document.addEventListener("DOMContentLoaded", () => {
     const swipers = document.querySelectorAll("[data-swiper]") || [];
-    console.log("swipers", swipers);
 
     swipers.forEach((elem) => {
       let options =
         elem.dataset && elem.dataset.options
           ? JSON.parse(elem.dataset.options)
           : {};
-          console.log(options);
       var swiper = new Swiper(elem, options);
     });
   });

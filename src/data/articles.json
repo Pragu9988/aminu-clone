@@ -1,0 +1,19 @@
+{
+  "entries": [
+    {
+      "title": "Burning question this summer - Is your skin getting drier?",
+      "content": "So many of you have reached out to us recently about your skin feeling increasingly dry in the last few weeks. You are not alone. Dry skin in summe...",
+      "img": "{{webRoot}}/assets/images/products/product-1.jpg"
+    },
+    {
+      "title": "How to treat Melasma at home?",
+      "content": "In this article, we will explore the causes of melasma, the available treatments, and how our product can help.",
+      "img": "{{webRoot}}/assets/images/products/product-2.jpg"
+    },
+    {
+      "title": "Is Body Care The Next Skin Care?",
+      "content": "Ria Bhatia, beauty columnist, believes so. Here’s why.  The beauty industry has seen a metamorphosis of sorts lately. Blame the pandemic or simply ...",
+      "img": "{{webRoot}}/assets/images/products/product-3.jpg"
+    }
+  ]
+}

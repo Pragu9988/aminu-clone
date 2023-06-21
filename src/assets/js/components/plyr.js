@@ -10,7 +10,6 @@ import Plyr from "plyr";
     // Update thumbnail
     playr.on("ready", (event) => {
       const thumbnailUrl = event.target.getAttribute("data-thumbnail-url");
-      console.log(thumbnailUrl, event.detail);
       const thumbnailElement = event.detail.plyr.elements.poster;
 
       if (thumbnailElement && thumbnailUrl) {

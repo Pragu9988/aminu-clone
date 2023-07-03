@@ -3,13 +3,6 @@ import Swiper from "swiper";
 // Swiper.use([
 //   Navigation,
 //   Pagination,
-//   Scrollbar,
-//   Autoplay,
-//   Mousewheel,
-//   Keyboard,
-//   Parallax,
-//   EffectFade,
-//   Thumbs,
 //   Controller,
 // ]);
 

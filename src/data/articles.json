@@ -15,5 +15,17 @@
       "content": "Ria Bhatia, beauty columnist, believes so. Here’s why.  The beauty industry has seen a metamorphosis of sorts lately. Blame the pandemic or simply ...",
       "img": "{{webRoot}}/assets/images/products/product-3.jpg"
     }
+  ],
+  "technologies": [
+    {
+      "title": "3D Hydration with Natural Sugar Complex",
+      "content": "The patented technology help create reservoirs of moisture in the skin by boosting the synthesis of hyaluronic acid. It helps ensure even hydration through different layers of skin, reinforces the synthesis of ceramides & proteins that strengthen the natural moisturising factor (NMF) and effectively provides an “anti-dehydration shield”.",
+      "image": "{{webRoot}}/assets/images/product/1-AHA-Body-Wash-Key-Technology-copy_565x565.jpg"
+    },
+    {
+      "title": "Apple Amino-Acid Wash",
+      "content": "Apple amino-acids derived surfactant help boost the cleansing power, working in synergy to gently whisk away dirt, toxins and oils with a hint of moisture. It supports the skin barrier function (TEWL), reduces dryness & helps maintening the skin integrity.",
+      "image": "{{webRoot}}/assets/images/product/2-AHA-Body-Wash-Key-Technology-copy_565x565.jpg"
+    }
   ]
 }

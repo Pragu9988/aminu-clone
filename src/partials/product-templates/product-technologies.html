@@ -1,0 +1,16 @@
+<div class="product-technologies container">
+  <div class="product-technologies__heading section-header al-text-center">
+    <h2 class="section-title al-uppercase align-center">Key Technologies</h2>
+    <p class="section-subheading">
+      We believe in the power of nature + advancements of science. We believe
+      the best and safest formulas are made by tapping into both worlds
+    </p>
+  </div>
+  <div class="columns align-middle">
+    {{#each articles.technologies}}
+    <div class="column-12 column-md-6">
+      {{> cards/cards-technologies this }}
+    </div>
+    {{/each}}
+  </div>
+</div>

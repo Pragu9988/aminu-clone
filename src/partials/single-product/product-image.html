@@ -1,4 +1,4 @@
-<div class="product-image">
+<div class="product-media">
   <div class="slideshow product-slideshow">
     <div
       class="product-slideshow__wrapper swiper"
@@ -15,7 +15,7 @@
       <div class="swiper-wrapper">
         {{#each product.media }}
         <div
-          class="product-image__slide swiper-slide"
+          class="product-media__slide swiper-slide"
           data-media-id="22355370573889"
           data-slick-index="0"
           aria-hidden="false"
@@ -24,30 +24,26 @@
           id="slick-slide20"
           aria-describedby="slick-slide-control20"
         >
-          <a
-            class="show-gallery"
-            href="//cdn.shopify.com/s/files/1/0566/6521/0945/products/1_11.jpg?v=1679292245"
-            ><div
-              id="FeaturedMedia-template--19075229352238__main-22355370573889-wrapper"
-              class="product-media-wrapper"
-              data-media-id="template--19075229352238__main-22355370573889"
-            >
-              <div class="product-media product-media--image">
-                <div class="rimage-outer-wrapper">
-                  <div class="rimage-wrapper">
-                    <img
-                      width="358px"
-                      height="358px"
-                      class="rimage__image fade-in lazyautosizes lazyloaded"
-                      alt="Copper Peptide Serum - AMINU"
-                      loading="lazy"
-                      src="{{preview_image.src}}"
-                    />
-                  </div>
+          <div
+            id="FeaturedMedia-template--19075229352238__main-22355370573889-wrapper"
+            class="product-media-wrapper"
+            data-media-id="template--19075229352238__main-22355370573889"
+          >
+            <div class="product-media__item product-media__item--image">
+              <div class="rimage-outer-wrapper">
+                <div class="rimage-wrapper">
+                  <img
+                    width="358px"
+                    height="358px"
+                    class="rimage__image fade-in lazyautosizes lazyloaded"
+                    alt="Copper Peptide Serum - AMINU"
+                    loading="lazy"
+                    src="{{preview_image.src}}"
+                  />
                 </div>
               </div>
             </div>
-          </a>
+          </div>
         </div>
         {{/each}}
       </div>
@@ -56,9 +52,8 @@
 
   <div class="slideshow-controls">
     <div class="slideshow-controls__arrows">
-      <button
-        type="button"
-        class="slick-product-prev slick-arrow slick-disabled"
+      <div
+        class="swiper-button-prev"
         aria-label="Previous"
         aria-disabled="true"
         style=""
@@ -77,10 +72,11 @@
         >
           <title>Left</title>
           <polyline points="15 18 9 12 15 6"></polyline>
-        </svg></button
-      ><button
+        </svg>
+      </div>
+      <div
         type="button"
-        class="slick-product-next slick-arrow"
+        class="swiper-button-next"
         aria-label="Next"
         aria-disabled="false"
         style=""
@@ -100,7 +96,7 @@
           <title>Right</title>
           <polyline points="9 18 15 12 9 6"></polyline>
         </svg>
-      </button>
+      </div>
     </div>
   </div>
 </div>

@@ -1,0 +1,24 @@
+.breadcrumbs {
+  .breadcrumbs-list {
+    list-style-type: none;
+    display: flex;
+    font-size: var(--fs-200);
+    align-items: center;
+    &__item {
+    }
+
+    &__link {
+    }
+  }
+
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+
+    & svg {
+      display: block;
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+}

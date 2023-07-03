@@ -1,0 +1,120 @@
+.filters {
+  // width: 25%;
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__heading-text {
+    font-size: var(--fs-500);
+    font-family: var(--ff-primary);
+  }
+}
+
+.filter-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__label {
+  }
+  &__options {
+    background-color: var(--clr-neutral-200);
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+    border-radius: 4px;
+  }
+  &__input-label {
+    position: relative;
+  }
+
+  &__input-label-text {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+  &__input {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    overflow: hidden;
+    margin: -0.1rem;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+
+    &:checked + .filter-toggle__input-label-text {
+      background-color: white;
+      border: 1px solid black;
+    }
+  }
+}
+
+.filter-price-range {
+}
+
+.filter-group {
+  &__items {
+    .toggle-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    margin: 0 0 0.5rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-left: 1.875rem;
+    font-size: var(--fs-300);
+  }
+
+  &__item-text {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.8em;
+      margin-top: -9px;
+      width: 18px;
+      height: 18px;
+      border-radius: 3px;
+      border: 0.3px solid currentColor;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: 0.8em;
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+      background-image: url("data:image/svg+xml,%3Csvg fill='rgb(255, 255, 255)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M8.315 13.859l-3.182-3.417a.506.506 0 0 1 0-.684l.643-.683a.437.437 0 0 1 .642 0l2.22 2.393 4.942-5.327a.436.436 0 0 1 .643 0l.643.684a.504.504 0 0 1 0 .683l-5.91 6.35a.437.437 0 0 1-.642 0'%3E%3C/path%3E%3C/svg%3E");
+      background-size: cover;
+      transform: scale(0);
+      transition: transform 0.1s ease;
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    overflow: hidden;
+    margin: -0.1rem;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    &:checked {
+      & + .filter-group__item-text::before {
+        background-color: black;
+      }
+
+      & + .filter-group__item-text::after {
+        transform: scale(1);
+      }
+    }
+  }
+}

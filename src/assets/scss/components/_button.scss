@@ -1,5 +1,6 @@
 .btn,
-.button, button {
+.button,
+button {
   background-color: var(--clr-primary-400);
   border: 0.3px solid var(--clr-primary-400);
   color: var(--clr-primary-100);
@@ -41,5 +42,12 @@
     height: auto;
     color: #c16452;
     transition: color 0.1s;
+  }
+
+  &--select,
+  &--select:hover {
+    background: none;
+    border: none;
+    color: var(--clr-primary-400);
   }
 }

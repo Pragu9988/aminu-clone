@@ -1,0 +1,681 @@
+<div class="filters">
+  <div class="filters__inner sticky-content-container">
+    <div class="filters__heading">
+      <h4 class="filters__heading-text">Filter</h4>
+      <a class="filters__close" href="#" data-toggle-filters=""
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-x"
+        >
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line></svg
+      ></a>
+    </div>
+    <form id="filterForm">
+      <div class="filter-group filter-group--availability">
+        <div class="filter-toggle filter-toggle--inline">
+          <span class="filter-toggle__label">Out of stock</span>
+          <div class="filter-toggle__options">
+            <label class="filter-toggle__input-label">
+              <input
+                class="filter-toggle__input"
+                id="availability-show"
+                type="radio"
+                name="filter[availability]"
+                value=""
+                checked=""
+              />
+              <span class="filter-toggle__input-label-text">Show</span>
+            </label>
+            <label class="filter-toggle__input-label">
+              <input
+                class="filter-toggle__input"
+                id="availability-hide"
+                type="radio"
+                name="filter[availability]"
+                value="1"
+              />
+              <span class="filter-toggle__input-label-text">Hide</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="filter-group">
+        <a
+          href="#"
+          class="filter-group__heading"
+          data-toggle-target=".filter-group--3"
+        >
+          <div class="filter-group__heading__text">Price</div>
+          <span class="filter-group__heading__indicator"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevron-down"
+            >
+              <title>Down</title>
+              <polyline points="6 9 12 15 18 9"></polyline></svg
+          ></span>
+        </a>
+        <div class="filter-group__items filter-group--3 toggle-target">
+          <div class="toggle-container">
+            <div class="filter-price-range cc-initialized">
+              <div class="filter-price-range__input-row">
+                <div class="filter-price-range__input-container">
+                  <span class="filter-price-range__input-currency-symbol">₹</span>
+                  <input
+                    class="filter-price-range__input filter-price-range__input--min"
+                    id="CCPriceRangeMin"
+                    name="filter.v.price.gte"
+                    placeholder="0"
+                    type="text"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                    step="10"
+                    min="0"
+                    max="4600"
+                    aria-label="From"
+                  />
+                </div>
+                <div class="filter-price-range__input-container">
+                  <span class="filter-price-range__input-currency-symbol">₹</span>
+                  <input
+                    class="filter-price-range__input filter-price-range__input--max"
+                    id="CCPriceRangeMax"
+                    name="filter.v.price.lte"
+                    placeholder="4600"
+                    type="text"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                    step="10"
+                    min="0"
+                    max="4600"
+                    aria-label="To"
+                  />
+                </div>
+              </div>
+
+              <div class="filter-price-range__bar">
+                <div class="filter-price-range__bar-inactive"></div>
+                <div
+                  class="filter-price-range__bar-active"
+                  style="left: 0%; right: 0%"
+                ></div>
+                <div
+                  class="filter-price-range__control filter-price-range__control--min"
+                  aria-valuemin="0"
+                  aria-valuemax="4600"
+                  tabindex="0"
+                  aria-valuenow="0"
+                  style="left: 0%"
+                ></div>
+                <div
+                  class="filter-price-range__control filter-price-range__control--max"
+                  aria-valuemin="0"
+                  aria-valuemax="4600"
+                  tabindex="0"
+                  aria-valuenow="4600"
+                  style="left: 100%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-group filter-group--layout-two-column">
+        <a
+          href="#"
+          class="filter-group__heading"
+          data-toggle-target=".filter-group--4"
+        >
+          <div class="filter-group__heading__text">Product type</div>
+          <span class="filter-group__heading__indicator"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevron-down"
+            >
+              <title>Down</title>
+              <polyline points="6 9 12 15 18 9"></polyline></svg
+          ></span>
+        </a>
+        <div class="filter-group__items filter-group--4 toggle-target">
+          <div class="toggle-container">
+            <label class="filter-group__item" data-tag="cleanse-wash-gels">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.product_type-cleanse-wash-amp-gels"
+                type="checkbox"
+                name="filter.p.product_type"
+                value="Cleanse - Wash &amp; Gels"
+              />
+
+              <span class="filter-group__item-text"
+                >Cleanse - Wash &amp; Gels</span
+              > </label
+            ><label
+              class="filter-group__item"
+              data-tag="exfoliate-scrubs-peels"
+            >
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.product_type-exfoliate-scrubs-amp-peels"
+                type="checkbox"
+                name="filter.p.product_type"
+                value="Exfoliate - Scrubs &amp; Peels"
+              />
+
+              <span class="filter-group__item-text"
+                >Exfoliate - Scrubs &amp; Peels</span
+              > </label
+            ><label class="filter-group__item" data-tag="masks-clay-mud">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.product_type-masks-clay-amp-mud"
+                type="checkbox"
+                name="filter.p.product_type"
+                value="Masks - Clay &amp; Mud"
+              />
+
+              <span class="filter-group__item-text"
+                >Masks - Clay &amp; Mud</span
+              > </label
+            ><label
+              class="filter-group__item"
+              data-tag="moisturize-creams-oils"
+            >
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.product_type-moisturize-creams-amp-oils"
+                type="checkbox"
+                name="filter.p.product_type"
+                value="Moisturize - Creams &amp; Oils"
+              />
+
+              <span class="filter-group__item-text"
+                >Moisturize - Creams &amp; Oils</span
+              > </label
+            ><label
+              class="filter-group__item"
+              data-tag="treate-serums-concentrates"
+            >
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.product_type-treate-serums-amp-concentrates"
+                type="checkbox"
+                name="filter.p.product_type"
+                value="Treate - Serums &amp; Concentrates"
+              />
+
+              <span class="filter-group__item-text"
+                >Treate - Serums &amp; Concentrates</span
+              >
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="filter-group filter-group--layout-two-column">
+        <a
+          href="#"
+          class="filter-group__heading"
+          data-toggle-target=".filter-group--5"
+        >
+          <div class="filter-group__heading__text">Skin Concerns</div>
+          <span class="filter-group__heading__indicator"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevron-down"
+            >
+              <title>Down</title>
+              <polyline points="6 9 12 15 18 9"></polyline></svg
+          ></span>
+        </a>
+        <div class="filter-group__items filter-group--5 toggle-target">
+          <div class="toggle-container">
+            <label
+              class="filter-group__item"
+              data-tag="blackheads-and-rough-texture"
+            >
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.skin_concerns_-blackheads-and-rough-texture"
+                type="checkbox"
+                name="filter.p.m.custom.skin_concerns_"
+                value="Blackheads and Rough texture"
+              />
+
+              <span class="filter-group__item-text"
+                >Blackheads and Rough texture</span
+              > </label
+            ><label class="filter-group__item" data-tag="body-tan-and-dullness">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.skin_concerns_-body-tan-and-dullness"
+                type="checkbox"
+                name="filter.p.m.custom.skin_concerns_"
+                value="Body Tan and Dullness  "
+              />
+
+              <span class="filter-group__item-text"
+                >Body Tan and Dullness
+              </span> </label
+            ><label
+              class="filter-group__item"
+              data-tag="breakouts-and-acne-prone"
+            >
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.skin_concerns_-breakouts-and-acne-prone"
+                type="checkbox"
+                name="filter.p.m.custom.skin_concerns_"
+                value="Breakouts and Acne-Prone "
+              />
+
+              <span class="filter-group__item-text"
+                >Breakouts and Acne-Prone
+              </span> </label
+            ><label
+              class="filter-group__item"
+              data-tag="dryness-and-tired-body"
+            >
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.skin_concerns_-dryness-and-tired-body"
+                type="checkbox"
+                name="filter.p.m.custom.skin_concerns_"
+                value="Dryness and Tired Body"
+              />
+
+              <span class="filter-group__item-text"
+                >Dryness and Tired Body</span
+              > </label
+            ><label
+              class="filter-group__item"
+              data-tag="dullness-and-dehydration"
+            >
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.skin_concerns_-dullness-and-dehydration"
+                type="checkbox"
+                name="filter.p.m.custom.skin_concerns_"
+                value="Dullness and Dehydration"
+              />
+
+              <span class="filter-group__item-text"
+                >Dullness and Dehydration</span
+              > </label
+            ><label
+              class="filter-group__item"
+              data-tag="firmness-lines-and-tired-skin"
+            >
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.skin_concerns_-firmness-lines-and-tired-skin"
+                type="checkbox"
+                name="filter.p.m.custom.skin_concerns_"
+                value="Firmness, Lines and Tired Skin"
+              />
+
+              <span class="filter-group__item-text"
+                >Firmness, Lines and Tired Skin</span
+              > </label
+            ><label class="filter-group__item" data-tag="pores-and-congestion">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.skin_concerns_-pores-and-congestion"
+                type="checkbox"
+                name="filter.p.m.custom.skin_concerns_"
+                value="Pores and Congestion"
+              />
+
+              <span class="filter-group__item-text"
+                >Pores and Congestion</span
+              > </label
+            ><label
+              class="filter-group__item"
+              data-tag="protection-and-maintenance"
+            >
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.skin_concerns_-protection-and-maintenance"
+                type="checkbox"
+                name="filter.p.m.custom.skin_concerns_"
+                value="Protection and Maintenance"
+              />
+
+              <span class="filter-group__item-text"
+                >Protection and Maintenance</span
+              > </label
+            ><label
+              class="filter-group__item"
+              data-tag="sensitised-and-redness-prone"
+            >
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.skin_concerns_-sensitised-and-redness-prone"
+                type="checkbox"
+                name="filter.p.m.custom.skin_concerns_"
+                value="Sensitised and Redness prone"
+              />
+
+              <span class="filter-group__item-text"
+                >Sensitised and Redness prone</span
+              > </label
+            ><label class="filter-group__item" data-tag="uneven-tone-and-spots">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.skin_concerns_-uneven-tone-and-spots"
+                type="checkbox"
+                name="filter.p.m.custom.skin_concerns_"
+                value="Uneven Tone and Spots"
+              />
+
+              <span class="filter-group__item-text"
+                >Uneven Tone and Spots</span
+              >
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="filter-group filter-group--layout-two-column">
+        <a
+          href="#"
+          class="filter-group__heading"
+          data-toggle-target=".filter-group--6"
+        >
+          <div class="filter-group__heading__text">Skin Type</div>
+          <span class="filter-group__heading__indicator"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevron-down"
+            >
+              <title>Down</title>
+              <polyline points="6 9 12 15 18 9"></polyline></svg
+          ></span>
+        </a>
+        <div class="filter-group__items filter-group--6 toggle-target">
+          <div class="toggle-container">
+            <label class="filter-group__item" data-tag="combination-skin">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.skin_type_moods-combination-skin"
+                type="checkbox"
+                name="filter.p.m.custom.skin_type_moods"
+                value="Combination Skin"
+              />
+
+              <span class="filter-group__item-text"
+                >Combination Skin</span
+              > </label
+            ><label class="filter-group__item" data-tag="dry-skin">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.skin_type_moods-dry-skin"
+                type="checkbox"
+                name="filter.p.m.custom.skin_type_moods"
+                value="Dry Skin"
+              />
+
+              <span class="filter-group__item-text">Dry Skin</span> </label
+            ><label class="filter-group__item" data-tag="normal-skin">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.skin_type_moods-normal-skin"
+                type="checkbox"
+                name="filter.p.m.custom.skin_type_moods"
+                value="Normal Skin"
+              />
+
+              <span class="filter-group__item-text">Normal Skin</span> </label
+            ><label class="filter-group__item" data-tag="oily-skin">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.skin_type_moods-oily-skin"
+                type="checkbox"
+                name="filter.p.m.custom.skin_type_moods"
+                value="Oily Skin"
+              />
+
+              <span class="filter-group__item-text">Oily Skin</span> </label
+            ><label class="filter-group__item" data-tag="sensitive-skin">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.skin_type_moods-sensitive-skin"
+                type="checkbox"
+                name="filter.p.m.custom.skin_type_moods"
+                value="Sensitive Skin"
+              />
+
+              <span class="filter-group__item-text">Sensitive Skin</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="filter-group filter-group--layout-two-column">
+        <a
+          href="#"
+          class="filter-group__heading"
+          data-toggle-target=".filter-group--7"
+        >
+          <div class="filter-group__heading__text">Collections</div>
+          <span class="filter-group__heading__indicator"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevron-down"
+            >
+              <title>Down</title>
+              <polyline points="6 9 12 15 18 9"></polyline></svg
+          ></span>
+        </a>
+        <div class="filter-group__items filter-group--7 toggle-target">
+          <div class="toggle-container">
+            <label class="filter-group__item" data-tag="all-collections">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.collections-all-collections"
+                type="checkbox"
+                name="filter.p.m.custom.collections"
+                value="All Collections"
+              />
+
+              <span class="filter-group__item-text"
+                >All Collections</span
+              > </label
+            ><label class="filter-group__item" data-tag="body-care">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.collections-body-care"
+                type="checkbox"
+                name="filter.p.m.custom.collections"
+                value="Body Care"
+              />
+
+              <span class="filter-group__item-text">Body Care</span> </label
+            ><label class="filter-group__item" data-tag="face-care">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-filter.p.m.custom.collections-face-care"
+                type="checkbox"
+                name="filter.p.m.custom.collections"
+                value="Face Care"
+              />
+
+              <span class="filter-group__item-text">Face Care</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="filter-group mobile-only">
+        <a
+          href="#"
+          class="filter-group__heading"
+          data-toggle-target=".filter-group--sort"
+        >
+          <div class="filter-group__heading__text">Sort by</div>
+          <span class="filter-group__heading__indicator"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevron-down"
+            >
+              <title>Down</title>
+              <polyline points="6 9 12 15 18 9"></polyline></svg
+          ></span>
+        </a>
+        <div class="filter-group__items filter-group--sort toggle-target">
+          <div class="toggle-container">
+            <label class="filter-group__item">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-Sort-manual"
+                type="radio"
+                name="sort_by"
+                value="manual"
+              />
+
+              <span class="filter-group__item-text">Featured</span> </label
+            ><label class="filter-group__item">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-Sort-best-selling"
+                type="radio"
+                name="sort_by"
+                value="best-selling"
+              />
+
+              <span class="filter-group__item-text">Best selling</span> </label
+            ><label class="filter-group__item filter-group__item--active">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-Sort-title-ascending"
+                type="radio"
+                name="sort_by"
+                value="title-ascending"
+                checked=""
+              />
+
+              <span class="filter-group__item-text"
+                >Alphabetically, A-Z</span
+              > </label
+            ><label class="filter-group__item">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-Sort-title-descending"
+                type="radio"
+                name="sort_by"
+                value="title-descending"
+              />
+
+              <span class="filter-group__item-text"
+                >Alphabetically, Z-A</span
+              > </label
+            ><label class="filter-group__item">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-Sort-price-ascending"
+                type="radio"
+                name="sort_by"
+                value="price-ascending"
+              />
+
+              <span class="filter-group__item-text"
+                >Price, low to high</span
+              > </label
+            ><label class="filter-group__item">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-Sort-price-descending"
+                type="radio"
+                name="sort_by"
+                value="price-descending"
+              />
+
+              <span class="filter-group__item-text"
+                >Price, high to low</span
+              > </label
+            ><label class="filter-group__item">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-Sort-created-ascending"
+                type="radio"
+                name="sort_by"
+                value="created-ascending"
+              />
+
+              <span class="filter-group__item-text"
+                >Date, old to new</span
+              > </label
+            ><label class="filter-group__item">
+              <input
+                class="filter-group__checkbox"
+                id="Filter-Sort-created-descending"
+                type="radio"
+                name="sort_by"
+                value="created-descending"
+              />
+
+              <span class="filter-group__item-text">Date, new to old</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <noscript>
+        <button type="submit" class="btn">Submit</button>
+      </noscript>
+    </form>
+  </div>
+</div>

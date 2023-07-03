@@ -57,6 +57,9 @@
   border: 1px solid var(--clr-primary-400);
   border-radius: 1.2rem;
   overflow: hidden;
+  &--no-border {
+    border: none;
+  }
   &__inner {
   }
 
@@ -139,5 +142,20 @@
     & > a {
       width: 100%;
     }
+  }
+}
+
+.product-technology-card {
+  &.card {
+    & .card-title {
+      font-size: var(--fs-550);
+      line-height: 1.2;
+    }
+    & .card-subtitle {
+      color: black;
+    }
+  }
+  .rimage__image {
+    @include aspect-ratio(1, 1);
   }
 }

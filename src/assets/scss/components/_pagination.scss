@@ -1,0 +1,18 @@
+.pagination {
+  margin-block: 1.5rem;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--ff-display);
+    color: var(--clr-secondary-400);
+
+    .icon {
+      & svg {
+        vertical-align: middle;
+        display: inline-block;
+      }
+    }
+  }
+}
+

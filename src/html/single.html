@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  {{> (config config.partials.head) title=config.defaultPageTitle }}
+
+  <body class="{{ config.classes.body }}">
+    <!-- Announcement -->
+    {{> (config config.partials.announcement)}}
+    <!-- / Announcement -->
+    <!-- Navbar -->
+    {{> (config config.partials.navbar) configClassList=config.classes.navbar
+    classList="" }}
+    <!-- / Navbar-->
+    <main id="content" class="page-content" role="main">
+      <!-- Single Header  -->
+      {{> single/single-header }}
+      <!-- / Single Header  -->
+      <div id="main-content" class="single-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column-12 column-md-9">
+              <!-- Single Content -->
+              {{> single/single-content }}
+              <!-- /Single Content -->
+            </div>
+            <div class="column-12 column-md-3">
+              <!-- Single Sidebar  -->
+              {{> sidebar/sidebar-single }}
+              <!-- /Single Sidebar  -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single Pagination -->
+      {{> pagination/pagination-single }}
+      <!-- / Single Pagination -->
+
+      <!-- Marquee Home Middle  -->
+      {{> marquee/marquee-home-middle }}
+      <!-- /Marquee Home Middle  -->
+
+      <!-- Product Credit  -->
+      {{> single/single-product-credit }}
+      <!-- / Product Credit  -->
+    </main>
+
+    <!-- Footer -->
+    {{> (config config.partials.footer) configClassList=config.classes.footer
+    classList="" }}
+    <!-- / Footer-->
+
+    <!-- Theme JS -->
+    {{> footer/scripts }}
+  </body>
+</html>

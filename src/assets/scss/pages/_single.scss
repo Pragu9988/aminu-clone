@@ -1,0 +1,128 @@
+@use "../abstracts/" as *;
+
+.single-tags {
+  border-bottom: 0.3px solid black;
+  &__list {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 1280px;
+    margin-inline: auto;
+    font-size: var(--fs-300);
+  }
+}
+
+.single-header {
+  display: flex;
+  border-bottom: 0.3px solid black;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 10px;
+  &__title {
+    margin-bottom: 0.5rem;
+    .article-title {
+      font-size: var(--fs-650);
+      font-family: var(--ff-primary);
+      font-weight: 500;
+    }
+  }
+  .article-meta {
+    .meta-time {
+      font-size: var(--fs-350);
+    }
+  }
+
+  &__aside {
+    .journal-title {
+      font-family: var(--ff-primary);
+      font-weight: 500;
+      font-size: var(--fs-850);
+      border-inline: 0.3px solid black;
+      padding: 0.5rem 0.25rem;
+      text-align: center;
+    }
+  }
+}
+
+.single-body .container {
+  border: 0.3px solid black;
+  border-top: none;
+}
+
+.article-aside {
+  &__sidebar {
+    padding-block: 1.25rem;
+    .aside-title {
+      font-family: var(--ff-primary);
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.related-article {
+  line-height: 1.5;
+  &__list {
+    list-style-type: none;
+    & li {
+      margin-top: 2rem;
+    }
+  }
+
+  .article-title {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-400);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .meta-time {
+    font-size: var(--fs-340);
+  }
+
+  .article-content {
+    font-size: var(--fs-350);
+  }
+}
+
+.article-main {
+  &__content {
+    border-right: 0.3px solid black;
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: var(--ff-primary);
+    }
+  }
+}
+
+.article-credit {
+  .section-title {
+    position: relative;
+    text-align: center;
+    font-family: var(--ff-display);
+    font-size: var(--fs-575);
+    font-weight: 400;
+
+    hr {
+      height: 2px;
+      border: none;
+      background: #000;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      width: 80%;
+    }
+
+    span {
+      background-color: white;
+      z-index: var(--zAbove);
+    }
+  }
+}

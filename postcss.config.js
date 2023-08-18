@@ -50,7 +50,7 @@ const postcssConfig = {
     // postcssSimpleVars(),
     postcssPresetEnv(),
     tailwindcss(),
-    cssNano(),
+    // cssNano(),
     purgecss({
       content: ["./src/**/*.html", "./src/**/*.js"], // Specify the files to analyze for unused CSS
       safelist: {

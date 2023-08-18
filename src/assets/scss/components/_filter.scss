@@ -52,69 +52,150 @@
 .filter-price-range {
 }
 
-.filter-group {
-  &__items {
-    .toggle-container {
+.filters__inner {
+  .filter-group {
+    &__heading {
       display: flex;
-      flex-direction: column;
+      align-items: center;
+      justify-content: space-between !important;
+      font-family: var(--ff-primary);
+      &[aria-expanded="true"] {
+        & + .filter-group__items {
+          opacity: 1;
+          visibility: visible;
+          max-height: fit-content; /* Adjust this value to fit your content */
+        }
+      }
+      &[aria-expanded="false"] {
+        .filter-group__heading__indicator svg {
+          transform: rotate(-90deg);
+        }
+      }
     }
-  }
+    &__items {
+      transition: all 0.3s ease-in-out;
+      max-height: 0;
+      visibility: hidden;
+      opacity: 0;
+      overflow: hidden;
+      .toggle-container {
+        display: flex;
+        flex-direction: column;
+      }
+    }
 
-  &__item {
-    position: relative;
-    display: flex;
-    margin: 0 0 0.5rem;
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
-    padding-left: 1.875rem;
-    font-size: var(--fs-300);
-  }
+    &__item {
+      position: relative;
+      display: flex;
+      margin: 0 0 0.5rem;
+      padding-top: 0.1rem;
+      padding-bottom: 0.1rem;
+      padding-left: 1.875rem;
+      font-size: var(--fs-300);
+    }
 
-  &__item-text {
-    &::before {
-      content: "";
+    &__item-text {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.8em;
+        margin-top: -9px;
+        width: 18px;
+        height: 18px;
+        border-radius: 3px;
+        border: 0.3px solid currentColor;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: -1px;
+        top: 0.8em;
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        background-image: url("data:image/svg+xml,%3Csvg fill='rgb(255, 255, 255)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M8.315 13.859l-3.182-3.417a.506.506 0 0 1 0-.684l.643-.683a.437.437 0 0 1 .642 0l2.22 2.393 4.942-5.327a.436.436 0 0 1 .643 0l.643.684a.504.504 0 0 1 0 .683l-5.91 6.35a.437.437 0 0 1-.642 0'%3E%3C/path%3E%3C/svg%3E");
+        background-size: cover;
+        transform: scale(0);
+        transition: transform 0.1s ease;
+      }
+    }
+
+    &__checkbox {
       position: absolute;
-      left: 0;
-      top: 0.8em;
-      margin-top: -9px;
-      width: 18px;
-      height: 18px;
-      border-radius: 3px;
-      border: 0.3px solid currentColor;
+      width: 0.1rem;
+      height: 0.1rem;
+      overflow: hidden;
+      margin: -0.1rem;
+      padding: 0;
+      border: 0;
+      clip: rect(0, 0, 0, 0);
+      &:checked {
+        & + .filter-group__item-text::before {
+          background-color: black;
+        }
+
+        & + .filter-group__item-text::after {
+          transform: scale(1);
+        }
+      }
     }
+  }
+}
+
+.filter-price-range {
+  &__input-row {
+    display: flex;
+    gap: 1rem;
+  }
+  &__bar {
+    position: relative;
+    margin: 40px 15px 10px;
+  }
+  &__bar-inactive {
+    height: 4px;
+    background: #e6e6e6;
+    border-radius: 4px;
+  }
+
+  &__bar-active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: #222222;
+    border-radius: 4px;
+  }
+
+  &__control {
+    position: absolute;
+    left: 0;
+    top: -9px;
+    margin-left: -11px;
+    width: 22px;
+    height: 22px;
 
     &::after {
       content: "";
-      position: absolute;
-      left: -1px;
-      top: 0.8em;
-      width: 20px;
-      height: 20px;
-      margin-top: -10px;
-      background-image: url("data:image/svg+xml,%3Csvg fill='rgb(255, 255, 255)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M8.315 13.859l-3.182-3.417a.506.506 0 0 1 0-.684l.643-.683a.437.437 0 0 1 .642 0l2.22 2.393 4.942-5.327a.436.436 0 0 1 .643 0l.643.684a.504.504 0 0 1 0 .683l-5.91 6.35a.437.437 0 0 1-.642 0'%3E%3C/path%3E%3C/svg%3E");
-      background-size: cover;
-      transform: scale(0);
-      transition: transform 0.1s ease;
+      display: block;
+      width: 22px;
+      height: 22px;
+      background: #ffffff;
+      border: 0.3px solid #222222;
+      border-radius: 22px;
+      cursor: pointer;
+      transition: 0.15s transform ease-out;
     }
-  }
-
-  &__checkbox {
-    position: absolute;
-    width: 0.1rem;
-    height: 0.1rem;
-    overflow: hidden;
-    margin: -0.1rem;
-    padding: 0;
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    &:checked {
-      & + .filter-group__item-text::before {
-        background-color: black;
-      }
-
-      & + .filter-group__item-text::after {
-        transform: scale(1);
-      }
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: calc(50% - 22px);
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
     }
   }
 }

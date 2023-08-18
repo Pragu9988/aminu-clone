@@ -1,0 +1,52 @@
+{
+  "blogs": [
+    {
+      "title": "Acne Sufferers & Acne Healers",
+      "date": "2021-07-26",
+      "excerpt": "Ever wondered how someone with acne goes about her/his day?",
+      "img": "{{webRoot}}/assets/images/product/Acne-Sufferers-Acne-Healers.jpg"
+    },
+    {
+      "title": "Benefits of Beauty Sleep",
+      "date": "2021-07-25",
+      "excerpt": "We all know good sleep hygiene is necessary. But why is it essential for healthy, younger-looking skin?",
+      "img": "{{webRoot}}/assets/images/product/Benefits-of-Beauty-Sleep.jpg"
+    },
+    {
+      "title": "Five (Emotional) Stages of Acne",
+      "date": "2021-07-22",
+      "excerpt": "Here is an acne prone skin's version of the five stages of grief.",
+      "img": "{{webRoot}}/assets/images/product/Five-Emotional-Stages-of-Acne.jpg"
+    },
+    {
+      "title": "Polycystic Ovarian Syndrome",
+      "date": "2021-07-02",
+      "excerpt": "This journal entry by a gynaecologist aims at improving your understanding of the disorder and how to prevent/ control it.",
+      "img": "{{webRoot}}/assets/images/product/Polycystic-Ovarian-Syndrome.jpg"
+    },
+    {
+      "title": "10 Skincare mistakes I am guilty of making",
+      "date": "2022-07-29",
+      "excerpt": "...and I hope you never do the same.",
+      "img": "{{webRoot}}/assets/images/product/10-Skincare-mistakes-I-am-guilty-of-making.jpg"
+    },
+    {
+      "title": "Diaries Of A Dusky Girl Growing Up With Extra Melanin",
+      "date": "2021-10-24",
+      "excerpt": "Fair is not the only lovely skintone out there, you know?",
+      "img": "{{webRoot}}/assets/images/product/Diaries-Of-A-Dusky-Girl-Growing-Up-With-Extra-Melanin.jpg"
+    },
+    {
+      "title": "It is all about striking the right balance for healthy living",
+      "date": "2021-09-28",
+      "excerpt": "Because no one else is responsible for your happiness!",
+      "img": "{{webRoot}}/assets/images/product/It-is-all-about-striking-the-right-balance-for-healthy-living.jpg"
+    },
+    {
+      "title": "How I overcame my phobia of facial oils",
+      "date": "2021-08-23",
+      "excerpt": "It took 10 years and an Instagram trend to conquer it.",
+      "img": "{{webRoot}}/assets/images/product/How-I-overcame-my-phobia-of-facial-oils.jpg"
+    }
+  ]
+}

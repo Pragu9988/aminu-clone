@@ -3,14 +3,19 @@
 .logo-list {
   &__logo {
     margin: 1.5rem 1.5rem 3rem;
+    flex-shrink: 0;
   }
 
   &__logo-title {
-    font-size: var(--fs-500);
+    font-size: var(--fs-300);
     font-weight: 500;
     line-height: 1.2;
     margin: 2rem auto 0;
     max-width: 70%;
+    @include mq(md) {
+          font-size: var(--fs-500);
+
+    }
   }
 
   &__logo-image {
@@ -68,5 +73,9 @@
   &__text p {
     margin-top: 1rem;
     line-height: 1.2;
+    display: none;
+    @include mq(md) {
+      display: block;
+    }
   }
 }

@@ -21,35 +21,39 @@
       <line x1="3" y1="18" x2="21" y2="18"></line>
     </svg>
   </button>
-
-  <div
-    class="header-navi header-navi--left"
-    role="header-navi"
-    aria-label="Primary header-navi"
-  >
-    <div class="header-navi-container">
-      <nav class="custom-menu">
-        <ul class="parent header-navi">
-          <li class="header-navi__item dropdown header-navi__item--with-children">
-            <a class="header-navi__link" href="{{webRoot}}/index.html">Shop</a>
-            <!-- Dropdown  -->
-            <!-- {{> navbar/dropdown }}  -->
-            <!-- / Dropdown  -->
-          </li>
-
-          <li class="header-navi__item">
-            <a class="header-navi__link" href="{{webRoot}}/single.html">JOURNAL</a>
-          </li>
-
-          <li class="header-navi__item">
-            <a class="header-navi__link" href="#"
-              >Take the Skin Quiz</a
+  <div class="desk-only">
+    <div
+      class="header-navi header-navi--left"
+      role="header-navi"
+      aria-label="Primary header-navi"
+    >
+      <div class="header-navi-container">
+        <nav class="custom-menu">
+          <ul class="parent header-navi">
+            <li
+              class="header-navi__item dropdown header-navi__item--with-children"
             >
-          </li>
-        </ul>
-      </nav>
+              <a class="header-navi__link" href="{{webRoot}}/index.html"
+                >Shop</a
+              >
+              <!-- Dropdown  -->
+              {{> navbar/dropdown }}
+              <!-- / Dropdown  -->
+            </li>
 
-      <!-- <script>
+            <li class="header-navi__item">
+              <a class="header-navi__link" href="{{webRoot}}/archive.html"
+                >JOURNAL</a
+              >
+            </li>
+
+            <li class="header-navi__item">
+              <a class="header-navi__link" href="#">Take the Skin Quiz</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- <script>
         $(document).ready(function () {
           $(this).find(".dropdown-menu").hide();
           $(".custom-menu .dropdown").hover(
@@ -65,30 +69,31 @@
         });
       </script> -->
 
-      <ul class="header-navi" style="display: none">
-        <li
-          class="header-navi__item header-navi__item--with-children header-navi__item--with-small-menu"
-        >
-          <a
-            href="index.html#"
-            class="header-navi__link"
-            aria-haspopup="true"
-            aria-expanded="false"
-            aria-controls="header-naviTier2-1"
-            >Shop</a
+        <ul class="header-navi" style="display: none">
+          <li
+            class="header-navi__item header-navi__item--with-children header-navi__item--with-small-menu"
           >
-        </li>
+            <a
+              href="index.html#"
+              class="header-navi__link"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="header-naviTier2-1"
+              >Shop</a
+            >
+          </li>
 
-        <li class="header-navi__item">
-          <a href="{{webRoot}}/single.html" class="header-navi__link">JOURNAL</a>
-        </li>
+          <li class="header-navi__item">
+            <a href="{{webRoot}}/single.html" class="header-navi__link"
+              >JOURNAL</a
+            >
+          </li>
 
-        <li class="header-navi__item">
-          <a href="#" class="header-navi__link"
-            >Take the Skin Quiz</a
-          >
-        </li>
-      </ul>
+          <li class="header-navi__item">
+            <a href="#" class="header-navi__link">Take the Skin Quiz</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

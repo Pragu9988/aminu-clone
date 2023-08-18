@@ -1,5 +1,80 @@
+@use "../abstracts/" as *;
+
 .archive-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .pagetitle {
+    font-size: var(--fs-450);
+    @include mq(md) {
+      font-size: var(--fs-800);
+    }
+  }
+  &__left {
+    .toggle-btn {
+      &__chevron, .button-icon {
+        svg {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  &__wrapper {
+    padding-block: 1rem;
+    border-block: 0.3px solid black;
+  }
+}
+
+.filter-container {
+  position: relative;
+  padding-block: 1.5rem;
+  .product-filter {
+    background: #fff;
+    border-right: 0.3px solid #dfe3e8;
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    left: -1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 60px);
+    position: fixed;
+    text-align: left;
+    top: 0;
+    transform: translate(-100%);
+    transition: transform 0.35s cubic-bezier(0.55, 0.03, 0.37, 0.96);
+    width: 88%;
+    will-change: transform;
+    z-index: 1060;
+    z-index: var(--zPopover);
+    padding-top: 1rem;
+    @include mq(md) {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(0);
+
+      & + .column-md-9 {
+        flex: 1 0 100%;
+        max-width: 100%;
+      }
+      &.active {
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+
+        & + .column-md-9 {
+          flex: 1 0 75%;
+          max-width: 75%;
+        }
+      }
+    }
+    &.active {
+      transform: translate(0);
+    }
+  }
+
+  .filters__heading {
+    margin-bottom: 2rem;
+  }
 }

@@ -1,22 +1,29 @@
+@use "../abstracts/" as *;
 .tabs {
   .tabs-nav {
     &__list {
       list-style-type: none;
       display: flex;
       align-items: center;
-      justify-content: center;
       gap: 1rem;
       margin-bottom: 5rem;
+      flex-wrap: wrap;
+      @include mq(md) {
+        justify-content: center;
+      }
     }
 
     &__item {
       border-radius: 10px;
       border: 1px solid #c4c4c4;
-      padding: 12px 20px;
+      padding: 4px;
       text-align: center;
       display: inline-block;
       cursor: pointer;
       letter-spacing: 0;
+      @include mq(md) {
+        padding: 12px 20px;
+      }
       &.active {
         background: #ebac8d;
         border-radius: 10px;
@@ -27,12 +34,36 @@
 
   .nav-item {
     & h5 {
-      font-size: var(--fs-500);
+      font-size: 0.875rem;
+      @include mq(md) {
+        font-size: var(--fs-500);
+      }
       font-weight: 500;
     }
   }
 
   .tab-content {
     display: none;
+  }
+}
+
+.product-details-tabs {
+  .tabs {
+    .tabs-nav {
+      &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-block: 2rem;
+      }
+      &__item {
+        background: transparent;
+        border-radius: 0;
+        border: none;
+        &.active {
+          border-bottom: 1px solid;
+        }
+      }
+    }
   }
 }

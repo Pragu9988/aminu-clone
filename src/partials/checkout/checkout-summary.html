@@ -1,0 +1,49 @@
+<div class="checkout-summary__cart-items">
+  <!-- Cart Item-->
+
+  <!-- / Cart Item-->
+</div>
+<div class="al-py-4 al-border-b-1 al-text-base al-font-medium checkout-total checkout-total__meta">
+  <div class="al-flex al-justify-between al-items-center al-mb-2">
+    <p class="m-0 fw-bolder fs-6">Subtotal</p>
+    <p class="m-0 fs-6 fw-bolder">$422.99</p>
+  </div>
+  <div class="al-flex al-justify-between al-items-center">
+    <p class="m-0 fw-bolder fs-6">Shipping</p>
+    <p class="m-0 fs-6 fw-bolder">$8.95</p>
+  </div>
+</div>
+<div class="al-py-4 al-border-b-1 checkout-total checkout-total__grand al-font-bold">
+  <div class="al-flex al-justify-between">
+    <div>
+      <p class="m-0 al-text-xl">Grand Total</p>
+      <span class="al-text-sm al-text-gray-500 al-font-normal">Inc $45.89 sales tax</span>
+    </div>
+    <p class="m-0 fs-5 fw-bold">$422.99</p>
+  </div>
+</div>
+<div class="py-4">
+  <div class="input-group mb-0">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter your coupon code"
+    />
+    <button class="btn btn-dark btn-sm px-4">Apply</button>
+  </div>
+</div>
+{{#if show-action-buttons}}
+<!-- Accept Terms Checkbox-->
+<div class="form-group form-check my-4">
+  <input type="checkbox" class="form-check-input" id="accept-terms" checked />
+  <label class="form-check-label fw-bolder" for="accept-terms"
+    >I agree to Outdoorly's <a href="#">terms & conditions</a></label
+  >
+</div>
+<a
+  href="{{webRoot}}/order-success.html"
+  class="btn btn-dark w-100"
+  role="button"
+  >Complete Order</a
+>
+{{/if}}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  {{> (config config.partials.head) title=config.defaultPageTitle }}
+
+  <body class="{{ config.classes.body }}">
+    <!-- Announcement -->
+    {{> (config config.partials.announcement)}}
+    <!-- / Announcement -->
+    <!-- Navbar -->
+    {{> (config config.partials.navbar) configClassList=config.classes.navbar
+    classList="" }}
+    <!-- / Navbar-->
+    <main id="content" class="page-content" role="main">
+      <div class="container">
+        <!-- Banner  -->
+        {{> forms/form-login }}
+        <!-- / Banner  -->
+      </div>
+    </main>
+
+    <!-- Footer -->
+    {{> (config config.partials.footer) configClassList=config.classes.footer
+    classList="" }}
+    <!-- / Footer-->
+
+    <!-- Theme JS -->
+    {{> footer/scripts }}
+  </body>
+</html>

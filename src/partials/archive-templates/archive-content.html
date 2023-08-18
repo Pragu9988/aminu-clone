@@ -7,7 +7,7 @@
     </div>
     <div class="column-12 column-md-9">
       <div
-        class="al-grid al-grid-cols-3 al-gap-8 product-list product-list--per-row-3 product-list--image-shape-shortest product-list--per-row-mob-2"
+        class="al-grid al-grid-cols-1 md:al-grid-cols-3 al-gap-8 product-list product-list--per-row-3 product-list--image-shape-shortest product-list--per-row-mob-2"
       >
         {{#if (config products) }} {{#each products.entries}}
         <div class="product-list__item">{{> cards/product-card this }}</div>

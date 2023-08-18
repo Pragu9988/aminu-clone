@@ -90,14 +90,14 @@ const optimization = {
         ],
       },
     }),
-    new TerserPlugin({
-      extractComments: false,
-      terserOptions: {
-        output: {
-          comments: false,
-        },
-      },
-    }),
+    // new TerserPlugin({
+    //   extractComments: false,
+    //   terserOptions: {
+    //     output: {
+    //       comments: false,
+    //     },
+    //   },
+    // }),
   ],
 };
 
@@ -158,7 +158,7 @@ const plugins = [
     },
   }),
   new MiniCssExtractPlugin({
-    filename: paths.dist.css + "/[name].min.css",
+    filename: paths.dist.css + "/[name].css",
   }),
 ];
 
@@ -168,7 +168,7 @@ const webPackConfig = {
     theme: [paths.src.js + "/theme.js", paths.src.scss + "/theme.scss"],
   },
   output: {
-    filename: paths.dist.js + "/[name].min.js",
+    filename: paths.dist.js + "/[name].js",
   },
   devtool: "source-map",
   mode: "development",

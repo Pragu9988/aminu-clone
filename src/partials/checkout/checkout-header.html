@@ -1,0 +1,38 @@
+<!-- Logo-->
+<a class="navbar-brand" href="{{webRoot}}/index.html"> {{> navbar/logo }} </a>
+<!-- / Logo-->
+<nav class="desk-only checkout-nav">
+  <ul class="checkout-nav__list">
+    <li class="checkout-nav__item">
+      <a
+        class="nav-link-checkout {{#if active-cart}}active{{/if}}"
+        href="{{webRoot}}/cart.html"
+        >Your Cart</a
+      >
+      <i class="ri-arrow-drop-right-line"></i>
+    </li>
+    <li class="checkout-nav__item">
+      <a
+        class="nav-link-checkout {{#if active-information}}active{{/if}}"
+        href="{{webRoot}}/checkout.html"
+        >Information</a
+      >
+      <i class="ri-arrow-drop-right-line"></i>
+    </li>
+    <li class="checkout-nav__item">
+      <a
+        class="nav-link-checkout {{#if active-shipping}}active{{/if}}"
+        href="{{webRoot}}/checkout-shipping.html"
+        >Shipping</a
+      >
+      <i class="ri-arrow-drop-right-line"></i>
+    </li>
+    <li class="checkout-nav__item">
+      <a
+        class="nav-link-checkout nav-link-last {{#if active-payment}}active{{/if}}"
+        href="{{webRoot}}/checkout-payment.html"
+        >Payment</a
+      >
+    </li>
+  </ul>
+</nav>

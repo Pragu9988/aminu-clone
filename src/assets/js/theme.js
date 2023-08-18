@@ -1,5 +1,14 @@
 import "./components/swiper";
+import "./components/navbar";
 import "./components/utils";
 import "./components/plyr";
 import "./components/popup";
 import "./components/tabs";
+import "./components/qty-counter";
+import "./components/cart";
+import "./components/search";
+import "./components/dropdown";
+import "./components/customer";
+import "./components/accordion";
+import "./components/filter";
+import "./components/price";

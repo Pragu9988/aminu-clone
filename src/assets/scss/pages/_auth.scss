@@ -1,0 +1,11 @@
+.auth {
+  &__header {
+    margin-bottom: 2rem;
+    .title {
+      font-size: var(--fs-600);
+      font-weight: 400;
+      font-family: var(--ff-primary);
+      text-align: center;
+    }
+  }
+}

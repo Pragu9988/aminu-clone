@@ -1,0 +1,89 @@
+@use "../abstracts/" as *;
+
+.main-search {
+  position: fixed;
+  z-index: var(--zModal);
+  overflow: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100%;
+  color: #000;
+  background: #ffffff;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.35s cubic-bezier(0, 0, 0.2, 1);
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  &__container {
+    max-width: 1200px;
+    position: relative;
+  }
+
+  &__form {
+    position: relative;
+    margin: 60px auto;
+    max-width: 650px;
+  }
+
+  &__input-container {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    padding: 0;
+  }
+
+  &__input {
+    width: 100%;
+    background: transparent;
+    border: none !important;
+    box-shadow: none;
+    color: inherit;
+    font-size: inherit;
+    line-height: 1.5em;
+    padding: 12px 12px 12px 24px;
+    &::placeholder {
+      color: black;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+  }
+
+  &__close {
+    position: absolute;
+    right: 0;
+    top: -55px;
+    padding: 10px;
+    color: black;
+    &:hover {
+      background-color: transparent;
+      color: black;
+      border: none;
+    }
+    svg {
+      width: 34px;
+      height: 34px;
+      stroke-width: 1;
+    }
+
+    @include mq(md) {
+      top: -2px;
+      right: 50px;
+    }
+  }
+
+  &__track {
+    text-align: center;
+    margin-block: 70px;
+  }
+}

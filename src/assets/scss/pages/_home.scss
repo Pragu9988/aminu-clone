@@ -54,6 +54,7 @@
     align-items: center;
     margin-top: 2rem;
     gap: 2rem;
+    flex-wrap: wrap;
   }
 
   &__icon {
@@ -79,5 +80,11 @@
     .newsletter-title {
       font-size: var(--fs-450);
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-list {
+    display: flex;
   }
 }

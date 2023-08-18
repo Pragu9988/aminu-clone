@@ -9,20 +9,17 @@
       "navigation": {
         "nextEl": ".swiper-button-next",
         "prevEl": ".swiper-button-prev"
-      }
+      },
+      "thumbs": ".product-thumbnail__swiper"
     }'
     >
       <div class="swiper-wrapper">
         {{#each product.media }}
         <div
           class="product-media__slide swiper-slide"
-          data-media-id="22355370573889"
-          data-slick-index="0"
           aria-hidden="false"
           tabindex="0"
           role="tabpanel"
-          id="slick-slide20"
-          aria-describedby="slick-slide-control20"
         >
           <div
             id="FeaturedMedia-template--19075229352238__main-22355370573889-wrapper"
@@ -53,7 +50,7 @@
   <div class="slideshow-controls">
     <div class="slideshow-controls__arrows">
       <div
-        class="swiper-button-prev"
+        class="swiper-button swiper-button-prev"
         aria-label="Previous"
         aria-disabled="true"
         style=""
@@ -76,7 +73,7 @@
       </div>
       <div
         type="button"
-        class="swiper-button-next"
+        class="swiper-button swiper-button-next"
         aria-label="Next"
         aria-disabled="false"
         style=""
@@ -99,4 +96,5 @@
       </div>
     </div>
   </div>
+  {{> single-product/product-thumbnails }}
 </div>

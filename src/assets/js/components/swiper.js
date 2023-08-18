@@ -1,10 +1,7 @@
 import Swiper from "swiper";
+import { Navigation, Pagination, Thumbs } from "swiper";
 
-// Swiper.use([
-//   Navigation,
-//   Pagination,
-//   Controller,
-// ]);
+Swiper.use([Navigation, Pagination, Thumbs ]);
 
 (function () {
   document.addEventListener("DOMContentLoaded", () => {
@@ -15,6 +12,15 @@ import Swiper from "swiper";
         elem.dataset && elem.dataset.options
           ? JSON.parse(elem.dataset.options)
           : {};
+
+          if(options.thumbs) {
+            const thumbsElem = document.querySelector(options.thumbs);
+            if (thumbsElem) {
+              options.thumbs = {
+                swiper: new Swiper(thumbsElem, {})
+              }
+            }
+          }
       var swiper = new Swiper(elem, options);
     });
   });

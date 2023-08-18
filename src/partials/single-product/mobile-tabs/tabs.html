@@ -1,22 +1,22 @@
-<div class="product-tabs mobile-only">
+<div class="product-details-tabs mobile-only">
   <div class="tabs">
-    <ul id="tabs-nav">
-      <li>
-        <span href="#tab1"
+    <ul id="tabs-nav" class="tabs-nav__list">
+      <li class="tabs-nav__item active">
+        <a href="#tab-benefit-1"
           ><div class="nav_itm">
             <h5 class="h5">Product Details</h5>
           </div>
-        </span>
+        </a>
       </li>
-      <li>
-        <span href="#tab2"
+      <li class="tabs-nav__item">
+        <a href="#tab-benefit-2"
           ><div class="nav_itm">
             <h5 class="h5">Ingredients & Facts</h5>
           </div>
-        </span>
+        </a>
       </li>
     </ul>
-    <div class="tab-content">
+    <div id="tabs-content" class="tabs-content">
       {{> mobile-tabs/product-details}} {{>
       mobile-tabs/ingredients}}
     </div>

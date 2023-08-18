@@ -1,0 +1,35 @@
+<div class="cart-drawer-co empty">
+  <div class="cart-drawer-co__wrap">
+    <div class="cart-drawer-co__content">
+      <div class="cart-drawer-co__total-cart">
+        <div class="cart-drawer-co__subtotal">
+          <div class="subtotal-text">Subtotal</div>
+          <div class="subtotal">
+            <span class="subtotal-compare-at"></span>
+            <span class="subtotal-amount"
+              ><span class="money">Rs. 0</span></span
+            >
+            <span class="subtotal-discount"></span>
+          </div>
+        </div>
+      </div>
+      <form action="/cart" method="post" novalidate="">
+        <div class="cart-drawer-co__finalize-purchase">
+          <div class="cart-drawer-co__checkout-btn-wrap">
+            <button
+              type="button"
+              id="checkout"
+              onclick="handleFloCheckoutBtn()"
+              class="cart-drawer-co__checkout-btn"
+              name="checkout"
+            >
+              CHECKOUT
+            </button>
+          </div>
+          <span class="cart-drawer-co__continue">Continue Shopping</span>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="hs-product-option"></div>
+</div>

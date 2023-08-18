@@ -1,92 +1,16 @@
-<div
-  class="cart-drawer hs-active"
->
-  <div class="cart-drawer__container">
+<div class="cart-drawer">
+  <div class="cart-drawer__popup">
     <!-- HS HEADER LAYOUT -->
-    {{> cart/cart-drawer-header.html }}
+    {{> cart/cart-drawer-header }}
 
     <!-- HS BODY LAYOUT -->
-    {{> cart/cart-drawer-empty.html }}
+    {{> cart/cart-drawer-body }}
     <!-- HS FOOTER LAYOUT -->
-    <div class="hs-footer-layout empty">
-      <div class="hs-drawer-checkout">
-        <div class="hs-drawer-content-checkout">
-          <div class="hs-content-additional"></div>
-          <div class="hs-content-total-cart">
-            <!-- <div class="hs-sub-total-cart hs-shipping-next" style="display:none;">
-                <span>Versand</span>
-                <span class="hs_shipping_amount">Berechnet im nächsten Schritt</span>
-              </div> -->
-            <div class="hs-sub-total-cart-padding" style="padding-bottom: 10px">
-              <div class="hs-sub-total-cart">
-                <div class="hs-text-subtotal">Subtotal</div>
-                <div class="hs-mount-sub-total">
-                  <span class="hs_subtotal_compare_at_price"></span>
-                  <span class="hs_subtotal_discount_automatic"></span>
-                  <span class="hs_subtotal_amount"
-                    ><span class="money">Rs. 0</span></span
-                  >
-                  <span class="hs_subtotal_amount_discount"> </span>
-                </div>
-                <input type="hidden" value="0" class="hs-total-price-global" />
-                <input
-                  type="hidden"
-                  value="0"
-                  class="hs-discount-price-global"
-                />
-              </div>
-            </div>
-            <div class="hs-terms-and-conditions"></div>
-          </div>
-          <form action="/cart" method="post" novalidate="">
-            <div class="hs-finalize-purchase">
-              <div class="flo-checkout">
-                <button
-                  type="button"
-                  id="checkout2"
-                  onclick="handleFloCheckoutBtn()"
-                  class="hs-checkout-purchase checkout-x-buy-now-btn hs-button-100-w btn hs-event-static"
-                  style="color: #fff !important; font-weight: 700 !important"
-                  name="checkout2"
-                >
-                  CHECKOUT
-                </button>
-              </div>
-              <div class="hs-content-buttons" style="display: none">
-                <div class="hs-content-checkout-button hs-button-100-w">
-                  <button
-                    data-ocu-checkout="true"
-                    name="checkout"
-                    type="submit"
-                    class="hs-checkout-purchase checkout-x-buy-now-btn hs-button-100-w btn hs-event-static"
-                  >
-                    <span class="hs-add--to--cart">Checkout</span
-                    ><span class="hs--loading"
-                      ><div class="hs-spinner"></div
-                    ></span>
-                  </button>
-                </div>
-              </div>
-              <div class="hs-content-additional-buttons">
-                <div id="hs-additional-buttons" style="display: none"></div>
-              </div>
-              <div class="si-widget"></div>
-              <div class="route-div"></div>
-              <div class="giraffly-trust-badge"></div>
-              <span
-                class="hs-continue-shopping hs-event-static"
-                style="cursor: pointer"
-                >Continue Shopping</span
-              >
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="hs-product-option"></div>
-    </div>
+
+    {{> cart/cart-drawer-footer }}
   </div>
-  <div class="hs-bg-slide-cart hs-event-static"></div>
-  <div class="hs-result-loading" style="display: none">
+  <!-- <div class="hs-result-loading" style="display: none">
     <div class="hs-spinner"></div>
-  </div>
+  </div> -->
+  <div class="cart-drawer__bg-overlay"></div>
 </div>

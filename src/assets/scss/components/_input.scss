@@ -4,7 +4,7 @@ input[type="email"],
 input[type="password"],
 input[type="address"],
 input[type="tel"],
-textarea {
+textarea, select {
   font-size: var(--fs-350);
   line-height: 1;
   font-family: Futura, sans-serif;
@@ -19,4 +19,13 @@ textarea {
   max-width: 100%;
   border-radius: 3px;
   box-sizing: border-box;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+
+  .btn {
+    padding-block: 1rem;
+  }
 }

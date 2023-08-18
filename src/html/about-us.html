@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  {{> (config config.partials.head) title=config.defaultPageTitle }}
+
+  <body class="{{ config.classes.body }}">
+    <!-- Announcement -->
+    {{> (config config.partials.announcement)}}
+    <!-- / Announcement -->
+    <!-- Navbar -->
+    {{> (config config.partials.navbar) configClassList=config.classes.navbar
+    classList="" }}
+    <!-- / Navbar-->
+    <main id="content" class="page-content" role="main">
+      <!-- Banner  -->
+      {{> about/about-banner }}
+      <!-- / Banner  -->
+
+      <!-- Introduction  -->
+      {{> about/about-introduction }}
+      <!-- / Introduction  -->
+
+      <!-- Video  -->
+      {{> about/about-video }}
+      <!-- /Video  -->
+
+      <!-- Feature  -->
+      {{> about/about-feature }}
+      <!-- /Feature  -->
+
+      <!-- Instagram Feed  -->
+      {{> columns/columns-2-insta-feed }}
+      <!-- / Instagram Feed  -->
+    </main>
+
+    <!-- Footer -->
+    {{> (config config.partials.footer) configClassList=config.classes.footer
+    classList="" }}
+    <!-- / Footer-->
+
+    <!-- Theme JS -->
+    {{> footer/scripts }}
+  </body>
+</html>

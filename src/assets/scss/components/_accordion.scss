@@ -1,0 +1,39 @@
+.accordion-item {
+  border-bottom: 0.3px solid black;
+  &__title {
+    display: flex;
+    font-family: var(--ff-secondary);
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    list-style: none;
+    padding: 15px 30px 15px 0;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    i.ri-subtract-line {
+        display: none;
+      }
+      i.ri-add-line {
+        display: block;
+      }
+    &[aria-expanded="true"] {
+      i.ri-subtract-line {
+        display: block;
+      }
+      i.ri-add-line {
+        display: none;
+      }
+      & + .accordion-item__panel {
+        display: block;
+        max-height: 1000px; /* Adjust this value to fit your content */
+      }
+    }
+  }
+
+  &__panel {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+  }
+}

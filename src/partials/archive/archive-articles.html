@@ -1,0 +1,17 @@
+<div class="article-grid-section al-mx-3">
+  <div class="container container__max container__max--no-space">
+    <div class="al-grid al-grid-cols-2 md:al-grid-cols-4 article-grid article-grid--per-row-4">
+      {{#if (config products) }}
+      <!-- Start Loop  -->
+      {{#each blogs.blogs}}
+      <div class="article-grid__item">
+        <!-- Article  -->
+        {{> cards/article-card-v2 this }}
+        <!-- /Article  -->
+      </div>
+      {{/each}}
+      <!-- End Loop  -->
+      {{/if}}
+    </div>
+  </div>
+</div>

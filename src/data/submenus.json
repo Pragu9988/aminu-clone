@@ -1,0 +1,56 @@
+{
+  "menuItems": [
+    { "link": "{{webRoot}}/product-archive.html", "label": "Body Care" },
+    { "link": "{{webRoot}}/product-archive.html", "label": "Cleansers" },
+    { "link": "{{webRoot}}/product-archive.html", "label": "Combination Skin" },
+    { "link": "{{webRoot}}/product-archive.html", "label": "Dry Skin" },
+    { "link": "{{webRoot}}/product-archive.html", "label": "Exfoliate" },
+    { "link": "{{webRoot}}/product-archive.html", "label": "Face Care" },
+    { "link": "{{webRoot}}/product-archive.html", "label": "Masks" },
+    { "link": "{{webRoot}}/product-archive.html", "label": "Moisturizers" },
+    { "link": "{{webRoot}}/product-archive.html", "label": "Normal Skin" },
+    { "link": "{{webRoot}}/product-archive.html", "label": "Oily Skin" },
+    { "link": "{{webRoot}}/product-archive.html", "label": "Serum" },
+    { "link": "{{webRoot}}/product-archive.html", "label": "Sensitive Skin" },
+    {
+      "link": "{{webRoot}}/product-archive.html",
+      "label": "Body Tan and Dullness"
+    },
+    {
+      "link": "{{webRoot}}/product-archive.html",
+      "label": "Dryness and Tired Body"
+    },
+    {
+      "link": "{{webRoot}}/product-archive.html",
+      "label": "Pores and Congestion"
+    },
+    {
+      "link": "{{webRoot}}/product-archive.html",
+      "label": "Dullness and Dehydration"
+    },
+    {
+      "link": "{{webRoot}}/product-archive.html",
+      "label": "Breakouts and Acne Prone"
+    },
+    {
+      "link": "{{webRoot}}/product-archive.html",
+      "label": "Firmness Lines and Tired Skin"
+    },
+    {
+      "link": "{{webRoot}}/product-archive.html",
+      "label": "Protection and Maintenance"
+    },
+    {
+      "link": "{{webRoot}}/product-archive.html",
+      "label": "Sensitised and Redness prone"
+    },
+    {
+      "link": "{{webRoot}}/product-archive.html",
+      "label": "Uneven Tone and Spots"
+    },
+    {
+      "link": "{{webRoot}}/product-archive.html",
+      "label": "Blackheads and Rough texture"
+    }
+  ]
+}

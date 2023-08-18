@@ -13,6 +13,9 @@
   text-transform: uppercase;
   font-weight: 500;
   font-size: var(--fs-350);
+  &.container {
+    padding: 0 0.5rem;
+  }
 
   &__left,
   &__right {
@@ -42,6 +45,10 @@
   }
 }
 
+.header-main__left .btn {
+  color: black;
+}
+
 .header-logo {
   display: inline-block;
   vertical-align: middle;
@@ -64,5 +71,200 @@
 }
 
 .header-account-link {
+}
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 25px #0003;
+  background: #fff;
+  width: auto;
+  max-width: 900px;
+  min-width: 900px;
+  transition: all 0.4s;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  display: none;
+  .navigation {
+    &__item {
+      font-size: var(--fs-250);
+    }
+
+    &__link {
+      padding: 5px 40px 5px 0;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: initial;
+      transition: all 0.5s;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.mobile-nav-drawer {
+  display: block;
+  position: fixed;
+  box-sizing: border-box;
+  text-align: left;
+  background: #ffffff;
+  border-right: 0.3px solid #dfe3e8;
+  left: -1px;
+  width: 88%;
+  top: 0;
+  height: 100%;
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 60px);
+  transform: translate(-100%);
+  will-change: transform;
+  z-index: var(--zPopover);
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: transform 0.35s cubic-bezier(0.55, 0.03, 0.37, 0.96);
+
+  @include mq(md) {
+    display: none;
+  }
+
+  &.child-nav--open {
+    .mobile-nav-back {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &.active {
+    transform: translate(0);
+  }
+  .mobile-nav-back {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .mobile-nav-toggle {
+  }
+
+  .mobile-nav-title {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .nav {
+    &__main-container {
+    }
+
+    &__mobile-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 12px 20px;
+    }
+
+    &__tier-1-container {
+      position: relative;
+    }
+
+    &__tier-1,
+    &__tier-2 {
+      list-style-type: none;
+    }
+
+    &__item {
+      text-transform: uppercase;
+      border-bottom: 0.3px solid black;
+      font-size: 0.875rem;
+      font-weight: 500;
+      &--with-children {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &--open {
+        .nav__tier-2-container {
+          transform: translateZ(0);
+          top: 52px;
+        }
+      }
+    }
+
+    &__children-toggle {
+      padding: 18px 20px;
+      svg {
+        transform: rotate(-90deg);
+      }
+    }
+
+    &__link {
+      padding: 18px 10px;
+      display: inline-block;
+    }
+
+    &__tier-2-container {
+      overflow: auto;
+      position: absolute;
+      z-index: 1;
+      top: 47px;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 60px);
+      transform: translate3d(100%, 0, 0);
+      transition: transform 0.35s cubic-bezier(0.55, 0.03, 0.37, 0.96);
+      will-change: transform;
+      background-color: white;
+    }
+  }
+  &__footer {
+    padding: 1rem;
+    .social-links {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      &__list {
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+        li svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.navigation-mobile {
+  &__contact {
+    padding: 1rem;
+    .need-help {
+      p {
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+      &__info {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        border-bottom: 0.3px solid #d9d9d9;
+
+        li {
+          text-transform: uppercase;
+          font-size: 14px;
+        }
+
+        svg {
+          width: 18px;
+          height: 22px;
+          vertical-align: middle;
+          display: inline-block;
+        }
+      }
+    }
+  }
 }

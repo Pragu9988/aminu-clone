@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <!-- Page Meta Tags-->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <!-- Remix Icon  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="./assets/images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.min.css" />
+  
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css" />
+  
+    <!-- Fix for custom scrollbar if JS is disabled-->
+    <noscript>
+      <style>
+        /**
+            * Reinstate scrolling for non-JS clients
+            */
+        .simplebar-content-wrapper {
+          overflow: auto;
+        }
+      </style>
+    </noscript>
+  
+    <!-- Page Title -->
+    <title>Aminu Life</title>
+  </head>
+
+  <body class="">
+    <!-- Main Section-->
+    <section class="mt-0  vh-lg-100">
+      <!-- Page Content Goes Here -->
+      <div class="container">
+        <div class="columns vh-lg-100">
+          <div class="column-12 column-lg-7 checkout-column checkout-column__left">
+            <div class="checkout-column__information al-pr-0 md:al-pr-8">
+              <!-- Logo-->
+              <a class="navbar-brand" href="./index.html"> <div class="header-logo">
+                <a class="header-logo__link" href="index.html" title="AMINU"
+                  ><img
+                    class="header-logo__image"
+                    src="./assets/images/logo/aminu-logo.webp"
+                    alt="Aminu Life"
+                    itemprop="logo"
+                    width="1000"
+                    height="500"
+                /></a>
+              </div>
+               </a>
+              <!-- / Logo-->
+              <nav class="desk-only checkout-nav">
+                <ul class="checkout-nav__list">
+                  <li class="checkout-nav__item">
+                    <a
+                      class="nav-link-checkout "
+                      href="./cart.html"
+                      >Your Cart</a
+                    >
+                    <i class="ri-arrow-drop-right-line"></i>
+                  </li>
+                  <li class="checkout-nav__item">
+                    <a
+                      class="nav-link-checkout active"
+                      href="./checkout.html"
+                      >Information</a
+                    >
+                    <i class="ri-arrow-drop-right-line"></i>
+                  </li>
+                  <li class="checkout-nav__item">
+                    <a
+                      class="nav-link-checkout "
+                      href="./checkout-shipping.html"
+                      >Shipping</a
+                    >
+                    <i class="ri-arrow-drop-right-line"></i>
+                  </li>
+                  <li class="checkout-nav__item">
+                    <a
+                      class="nav-link-checkout nav-link-last "
+                      href="./checkout-payment.html"
+                      >Payment</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <div class="checkout-infomation">
+                <!-- Checkout Information Summary -->
+                <ul class="list-group mb-5 d-none d-lg-block rounded-0">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-start align-items-center">
+                            <span class="text-muted small me-2 f-w-36 fw-bolder">Contact</span>
+                            <span class="small">test@email.com</span>
+                        </div>
+                        <a href="./checkout.html" class="text-muted small" role="button">Change</a>
+                    </li>
+                </ul><!-- / Checkout Information Summary-->
+                
+                <!-- Checkout Panel Information-->
+                <h3 class="fs-5 fw-bolder mb-4 border-bottom pb-4">Shipping Method</h3>
+                
+                <!-- Shipping Option-->
+                <div class="form-check form-group form-check-custom form-radio-custom form-radio-highlight mb-3">
+                  <input class="form-check-input" type="radio" name="checkoutShippingMethod" id="checkoutShippingMethodOne" checked>
+                  <label class="form-check-label" for="checkoutShippingMethodOne">
+                    <span class="d-flex justify-content-between align-items-start">
+                      <span>
+                        <span class="mb-0 fw-bolder d-block">Click & Collect Shipping</span>
+                        <small class="fw-bolder">Collect from our London store</small>
+                      </span>
+                      <span class="small fw-bolder text-uppercase">Free</span>
+                    </span>
+                  </label>
+                </div>
+                
+                <!-- Shipping Option-->
+                <div class="form-check form-group form-check-custom form-radio-custom form-radio-highlight mb-3">
+                  <input class="form-check-input" type="radio" name="checkoutShippingMethod" id="checkoutShippingMethodTwo">
+                  <label class="form-check-label" for="checkoutShippingMethodTwo">
+                    <span class="d-flex justify-content-between align-items-start">
+                      <span>
+                        <span class="mb-0 fw-bolder d-block">UPS Next Day</span>
+                        <small class="fw-bolder">For all orders placed before 1pm Monday to Thursday</small>
+                      </span>
+                      <span class="small fw-bolder text-uppercase">$19.99</span>
+                    </span>
+                  </label>
+                </div>
+                
+                <!-- Shipping Option-->
+                <div class="form-check form-group form-check-custom form-radio-custom form-radio-highlight mb-3">
+                  <input class="form-check-input" type="radio" name="checkoutShippingMethod" id="checkoutShippingMethodThree">
+                  <label class="form-check-label" for="checkoutShippingMethodThree">
+                    <span class="d-flex justify-content-between align-items-start">
+                      <span>
+                        <span class="mb-0 fw-bolder d-block">DHL Priority Service</span>
+                        <small class="fw-bolder">24 - 36 hour delivery</small>
+                      </span>
+                      <span class="small fw-bolder text-uppercase">$9.99</span>
+                    </span>
+                  </label>
+                </div>
+                
+                <div class="pt-5 mt-5 pb-5 border-top d-flex flex-column flex-md-row justify-content-between align-items-center">
+                  <a href="./checkout.html" class="btn ps-md-0 btn-link fw-bolder w-100 w-md-auto mb-2 mb-md-0" role="button">Back to information</a>
+                  <a href="./checkout-payment.html" class="btn btn-dark w-100 w-md-auto" role="button">Proceed to payment</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column-12 column-lg-5 checkout-column checkout-column__right">
+            <div class="checkout-summary"><div class="checkout-summary__cart-items">
+  <!-- Cart Item-->
+
+  <!-- / Cart Item-->
+</div>
+<div class="al-py-4 al-border-b-1 al-text-base al-font-medium checkout-total checkout-total__meta">
+  <div class="al-flex al-justify-between al-items-center al-mb-2">
+    <p class="m-0 fw-bolder fs-6">Subtotal</p>
+    <p class="m-0 fs-6 fw-bolder">$422.99</p>
+  </div>
+  <div class="al-flex al-justify-between al-items-center">
+    <p class="m-0 fw-bolder fs-6">Shipping</p>
+    <p class="m-0 fs-6 fw-bolder">$8.95</p>
+  </div>
+</div>
+<div class="al-py-4 al-border-b-1 checkout-total checkout-total__grand al-font-bold">
+  <div class="al-flex al-justify-between">
+    <div>
+      <p class="m-0 al-text-xl">Grand Total</p>
+      <span class="al-text-sm al-text-gray-500 al-font-normal">Inc $45.89 sales tax</span>
+    </div>
+    <p class="m-0 fs-5 fw-bold">$422.99</p>
+  </div>
+</div>
+<div class="py-4">
+  <div class="input-group mb-0">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter your coupon code"
+    />
+    <button class="btn btn-dark btn-sm px-4">Apply</button>
+  </div>
+</div>
+</div>
+          </div>
+        </div>
+      </div>
+      <!-- /Page Content -->
+    </section>
+    <!-- / Main Section-->
+
+    <!-- Theme JS -->
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.min.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+  </body>
+</html>

@@ -34,13 +34,21 @@
   }
 
   &__aside {
+    display: flex;
+    justify-content: space-between;
+    @include mq(md) {
+      display: block;
+    }
     .journal-title {
       font-family: var(--ff-primary);
       font-weight: 500;
       font-size: var(--fs-850);
-      border-inline: 0.3px solid black;
+
       padding: 0.5rem 0.25rem;
       text-align: center;
+      @include mq(md) {
+        border-inline: 0.3px solid black;
+      }
     }
   }
 }
@@ -123,6 +131,8 @@
     span {
       background-color: white;
       z-index: var(--zAbove);
+      position: relative;
+      padding-inline: 0.5rem;
     }
   }
 }

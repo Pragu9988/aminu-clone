@@ -1,3 +1,21 @@
 .my-banner {
   background-color: red;
 }
+
+.banner {
+  &--full-page {
+    border-bottom: 0.3px solid black;
+  }
+}
+
+.home-routine-slideshow,
+.home-skin-section {
+  padding-block: var(--section-spacing);
+}
+
+.feature-section-infinite_slider,
+.home-products-section,
+.featured-video-section,
+.home-articles-section {
+  border-bottom: 0.3px solid black;
+}

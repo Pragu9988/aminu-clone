@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+.slideshow-controls__arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .swiper-button {
+    position: relative;
+    height: 44px;
+    width: 44px;
+    background: white;
+    color: #000;
+    @include mq("md") {
+      position: absolute;
+    }
+    svg {
+      fill: transparent;
+      stroke: #000;
+      stroke-width: 1;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  {{> (config config.partials.head) title=config.defaultPageTitle }}
+
+  <body class="{{ config.classes.body }}">
+    <!-- Main Section-->
+    <section class="mt-0 {{ config.classes.content }} vh-lg-100">
+      <!-- Page Content Goes Here -->
+      <div class="container">
+        <div class="columns vh-lg-100">
+          <div class="column-12 column-lg-7 checkout-column__left">
+            <div class="checkout-column__information al-pr-0 md:al-pr-8">
+              {{> checkout/checkout-header active-information="true" }}
+              <div class="checkout-infomation">{{> checkout/checkout-information }}</div>
+            </div>
+          </div>
+          <div
+            class="column-12 column-lg-5 checkout-column__right"
+          >
+            <div class="checkout-summary">
+              {{> checkout/checkout-summary }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Page Content -->
+    </section>
+    <!-- / Main Section-->
+
+    <!-- Theme JS -->
+    {{> footer/scripts }}
+  </body>
+</html>

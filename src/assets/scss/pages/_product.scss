@@ -29,6 +29,12 @@
   }
 }
 
+.detail.product-column-right {
+  @include mq(md) {
+    border-left: 0.3px solid black;
+  }
+}
+
 .product-title {
   .product-vendor {
     font-family: var(--ff-display);
@@ -87,6 +93,19 @@
   }
 }
 
+.product-benefits-section,
+.technologies-section {
+  border-bottom: 0.3px solid black;
+}
+
+.product-ingredients-section {
+  padding-block-start: var(--section-spacing);
+  border-bottom: 0.3px solid black;
+}
+.product-use-directions {
+  padding-block: calc(var(--section-spacing) / 2);
+}
+
 .product-benefits {
   margin-bottom: 2rem;
   &__list {
@@ -142,11 +161,24 @@
 }
 
 .how-it-works {
+  border-top: 0.3px solid black;
+  border-bottom: 0.3px solid black;
   &__inner {
   }
   &__image {
+    align-self: center;
+    .al-absolute {
+      position: unset;
+      @include mq(md) {
+        position: absolute;
+      }
+    }
   }
   &__heading {
+    @include mq(md) {
+      border-left: 0.3px solid black;
+      padding: 2rem;
+    }
   }
 
   &__title {
@@ -243,7 +275,9 @@
       margin-top: 1.25rem;
       & > p {
         line-height: 1.5;
-        font-size: var(--fs-500);
+        @include mq(md) {
+          font-size: var(--fs-500);
+        }
       }
     }
   }
@@ -268,27 +302,33 @@
   }
 
   &__images {
+    display: flex;
+    flex-direction: column;
+    @include mq(md) {
+      display: block;
+    }
+    .al-absolute {
+      position: unset;
+      @include mq(md) {
+        position: absolute;
+      }
+    }
     img {
       border: 0.3px solid black;
       border-radius: 2rem;
     }
     .main-img {
-      max-width: 550px;
-      margin-inline: auto;
+      max-width: 45%;
+      order: 1;
+      @include mq(md) {
+        max-width: 550px;
+        margin-inline: auto;
+      }
       &.image-wrapper {
         @include aspect-ratio(137, 188);
       }
     }
 
-    .image-1 {
-      bottom: 4%;
-      left: 9%;
-    }
-    .image-2 {
-      top: 56%;
-      right: 15%;
-      transform: translateY(-50%);
-    }
     .image-1,
     .image-2 {
       max-width: 300px;
@@ -296,30 +336,64 @@
         @include aspect-ratio(41, 37);
       }
     }
+    .image-1 {
+      max-width: 45%;
+      order: 3;
+      @include mq(md) {
+        bottom: 4%;
+        left: 9%;
+        max-width: 100%;
+      }
+    }
+    .image-2 {
+      order: 5;
+      max-width: 45%;
+      @include mq(md) {
+        max-width: 100%;
+        top: 56%;
+        right: 15%;
+        transform: translateY(-6);
+      }
+    }
     .text-box {
       border: 0.3px solid black;
-      max-width: 468px;
+      max-width: 60%;
+      margin-left: auto;
       padding: 1rem;
       border-radius: 1rem;
+      margin-top: -20%;
+      @include mq(md) {
+        max-width: 468px;
+        margin-top: 0;
+      }
 
       &--beige {
         background: #f7e8d8;
         top: 8%;
         left: 1%;
+        order: 2;
       }
 
       &--pink {
-        max-width: 411px;
+        order: 4;
+        max-width: 60%;
         top: 2%;
         right: 0;
         background: #fce8e6;
+        @include mq(md) {
+          max-width: 411px;
+        }
       }
 
       &--green {
-        max-width: 577px;
+        order: 6;
+        max-width: 60%;
         right: 0;
         bottom: -2%;
         background: #fcfff5;
+        @include mq(md) {
+          max-width: 577px;
+        }
       }
     }
   }
@@ -338,6 +412,58 @@
           width: 100%;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .product-detail {
+    &.container__max {
+      padding-inline: 1rem;
+    }
+    .columns {
+      & > div {
+        padding-inline: 0;
+      }
+    }
+  }
+}
+
+.product-slideshow {
+}
+
+.product-media {
+  &__item {
+    .rimage-wrapper {
+      @include aspect-ratio(1, 1);
+    }
+  }
+}
+
+.product-thumbnail {
+  &--media-image {
+    .rimage-wrapper {
+      @include aspect-ratio(1, 1);
+      & > img {
+        border: 1px solid black;
+      }
+    }
+  }
+}
+
+.use-direction {
+  display: flex;
+  gap: 1rem;
+  @include mq(md) {
+    display: block;
+  }
+
+  &__img {
+    width: 30%;
+    flex: 1 0 30%;
+    @include mq(md) {
+      width: 100%;
+      flex-basis: 100%;
     }
   }
 }

@@ -75,6 +75,7 @@
     display: inline-block;
   }
   & .currency {
+    position: relative;
     &__toggle {
       position: relative;
       background: transparent;

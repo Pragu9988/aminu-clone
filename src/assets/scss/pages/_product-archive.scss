@@ -12,7 +12,8 @@
   }
   &__left {
     .toggle-btn {
-      &__chevron, .button-icon {
+      &__chevron,
+      .button-icon {
         svg {
           vertical-align: middle;
         }
@@ -45,7 +46,6 @@
     transition: transform 0.35s cubic-bezier(0.55, 0.03, 0.37, 0.96);
     width: 88%;
     will-change: transform;
-    z-index: 1060;
     z-index: var(--zPopover);
     padding-top: 1rem;
     @include mq(md) {
@@ -53,6 +53,7 @@
       opacity: 0;
       visibility: hidden;
       transform: translate(0);
+      z-index: 0;
 
       & + .column-md-9 {
         flex: 1 0 100%;
@@ -77,4 +78,13 @@
   .filters__heading {
     margin-bottom: 2rem;
   }
+}
+
+.product-chatnow {
+}
+
+.archive-section.feature-marquee {
+  border-top: var(--border);
+  border-color: black;
+  margin-top: var(--section-spacing);
 }

@@ -20,7 +20,7 @@
 
   &__logo-image {
     position: relative;
-    &.active {
+    &.active, &:hover {
       &::after {
         content: "";
         background: transparent;

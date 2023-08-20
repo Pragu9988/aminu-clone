@@ -35,9 +35,9 @@
   $top: unset,
   $bottom: -4px,
   $left: 0,
-  $height: 3px,
-  $bgClr: var(--clr-secondary-400),
-  $clr: white
+  $height: 2px,
+  $bgClr: var(--clr-primary-400),
+  $clr: var(--clr-primary-400)
 ) {
   position: relative;
   z-index: var(--zAbove);
@@ -52,21 +52,21 @@
     bottom: $bottom;
     left: $left;
     background-color: $bgClr;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.25s ease-in-out;
+    scale: 0 1;
+    transform-origin: center;
+    transition: scale 250ms ease-in-out;
     z-index: var(--zBelow);
   }
 
   &:hover {
     color: $clr;
-    transition: color 0.25s ease-in-out;
+    transition: color 250ms ease-in-out;
     z-index: var(--zAbove);
 
     &::#{$loc} {
-      transform: scaleX(1);
-      transform-origin: left;
-      transition: transform 0.25s ease-in-out;
+      scale: 1 1;
+      transform-origin: center;
+      transition: scale 250ms ease-in-out;
     }
   }
 }
@@ -75,7 +75,7 @@
   overflow: hidden;
 
   & img {
-    transition: transform 0.25s ease-in-out;
+    transition: scale 0.25s ease-in-out;
   }
 
   &:hover img {

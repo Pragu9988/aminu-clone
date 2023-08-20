@@ -430,6 +430,7 @@
 }
 
 .product-slideshow {
+  margin-bottom: 2rem;
 }
 
 .product-media {
@@ -441,6 +442,13 @@
 }
 
 .product-thumbnail {
+
+  &__swiper {
+    .swiper-slide {
+      max-width: 100px !important;
+      height: 100px;
+    }
+  }
   &--media-image {
     .rimage-wrapper {
       @include aspect-ratio(1, 1);

@@ -12,3 +12,4 @@ import "./components/customer";
 import "./components/accordion";
 import "./components/filter";
 import "./components/price";
+import "./components/lightbox";

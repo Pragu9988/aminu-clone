@@ -1,0 +1,27 @@
+<div class="cart-content-table">
+  <div class="cart-content-table__head desk-only">
+    <div
+      class="cart-content-table__heading cart-content-table__heading--product"
+    >
+      Product
+    </div>
+    <div
+      class="cart-content-table__heading cart-content-table__heading--price al-text-right"
+    >
+      Price
+    </div>
+    <div
+      class="cart-content-table__heading cart-content-table__heading--quantity al-text-right"
+    >
+      Quantity
+    </div>
+    <div
+      class="cart-content-table__heading cart-content-table__heading--total al-text-right"
+    >
+      Total
+    </div>
+  </div>
+  <div class="cart-content-table__body">{{> cart/cart-items }}</div>
+</div>
+
+{{> cart/cart-checkout }}

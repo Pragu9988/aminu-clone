@@ -661,7 +661,7 @@
 
 /***/ }),
 
-/***/ 862:
+/***/ 840:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -761,7 +761,28 @@ var accordion = __webpack_require__(668);
 var filter = __webpack_require__(618);
 // EXTERNAL MODULE: ./src/assets/js/components/price.js
 var price = __webpack_require__(505);
+// EXTERNAL MODULE: ./node_modules/@fancyapps/ui/dist/index.esm.js
+var index_esm = __webpack_require__(252);
+;// CONCATENATED MODULE: ./src/assets/js/components/lightbox.js
+
+
+(function () {
+  index_esm/* Fancybox */.KR.bind("[data-fancybox]", {
+    Thumbs: {
+      type: "classic",
+    },
+    Toolbar: {
+      display: {
+        left: ["infobar"],
+
+        right: ["close"],
+      },
+    },
+  });
+})();
+
 ;// CONCATENATED MODULE: ./src/assets/js/theme.js
+
 
 
 
@@ -940,7 +961,7 @@ var price = __webpack_require__(505);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, [736], () => (__webpack_require__(862)))
+/******/ 	__webpack_require__.O(undefined, [736], () => (__webpack_require__(840)))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [736], () => (__webpack_require__(793)))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	

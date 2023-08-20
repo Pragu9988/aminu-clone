@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 .cart-drawer {
   &__bg-overlay {
     background-color: rgba(0, 0, 0, 0.5);
@@ -412,6 +414,8 @@
   }
 
   &__qty-wrapper {
+    flex: 1 0 50%;
+    max-width: 50%;
   }
 
   &__qty-btn {
@@ -448,5 +452,130 @@
   &__qty-lbl {
     position: absolute;
     opacity: 0;
+  }
+}
+
+.page-cart {
+  .cart-content {
+    padding-block: calc(var(--section-spacing) / 2);
+  }
+
+  .cart-banner {
+    border-bottom: 1px solid;
+  }
+
+  .cart-drawer-empty {
+    text-align: center;
+    &__button {
+      width: fit-content;
+      display: inline-block;
+    }
+  }
+}
+
+.cart-content-table {
+  max-width: 1200px;
+  margin: auto;
+  &__head {
+    display: grid;
+    grid-template-columns: 7fr 2fr 1.5fr 1.5fr;
+    font-size: var(--fs-350);
+  }
+
+  &__heading {
+    padding-bottom: 0.75rem;
+  }
+}
+
+.cart-content-product {
+  .cart-item {
+    border-top: 0.3px solid #e2e2e2;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include mq(md) {
+      padding-inline: 0;
+    }
+    display: grid;
+
+    &__title {
+      @include mq(md) {
+        font-size: var(--fs-400);
+      }
+      a {
+        color: var(--clr-secondary-400);
+      }
+    }
+
+    &__item {
+      grid-template-columns: 1fr 11fr;
+    }
+    &__description {
+      display: grid;
+      grid-template-columns: 6fr 2fr 1.5fr 1.5fr;
+    }
+
+    &__price-qty {
+      @include mq(md) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+      }
+    }
+
+    &__qty-wrapper {
+      flex-grow: 0;
+    }
+  }
+}
+
+.cart-checkout {
+  border-top: var(--border);
+  padding-block: 2rem;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__left {
+    .checkout-note {
+      label {
+        font-size: var(--fs-350);
+      }
+
+      textarea {
+        width: 370px;
+        max-width: 100%;
+        height: 70px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__right {
+    text-align: right;
+    .subtotal {
+      font-size: var(--fs-600);
+      font-family: var(--ff-primary);
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+
+    .cart-policies {
+      margin-bottom: 1.5rem;
+      a {
+        color: var(--clr-secondary-400);
+      }
+    }
+
+    .checkout-col {
+      .button {
+        padding: 1rem 2rem;
+        margin-bottom: 1.5rem;
+      }
+      .continue-shopping {
+        color: var(--clr-secondary-400);
+        font-size: var(--fs-350);
+      }
+    }
   }
 }

@@ -6,12 +6,14 @@
       data-options='{
       "slidesPerView": 1,
       "spaceBetween": 0,
+      "loopedSlides": 6,
       "navigation": {
         "nextEl": ".swiper-button-next",
         "prevEl": ".swiper-button-prev"
       },
       "thumbs": ".product-thumbnail__swiper"
     }'
+      id="my-gallery"
     >
       <div class="swiper-wrapper">
         {{#each product.media }}
@@ -26,20 +28,22 @@
             class="product-media-wrapper"
             data-media-id="template--19075229352238__main-22355370573889"
           >
-            <div class="product-media__item product-media__item--image">
-              <div class="rimage-outer-wrapper">
-                <div class="rimage-wrapper">
-                  <img
-                    width="358px"
-                    height="358px"
-                    class="rimage__image fade-in lazyautosizes lazyloaded"
-                    alt="Copper Peptide Serum - AMINU"
-                    loading="lazy"
-                    src="{{preview_image.src}}"
-                  />
+            <a href="{{preview_image.src}}" data-fancybox="gallery-product">
+              <div class="product-media__item product-media__item--image">
+                <div class="rimage-outer-wrapper">
+                  <div class="rimage-wrapper">
+                    <img
+                      width="358px"
+                      height="358px"
+                      class="rimage__image fade-in lazyautosizes lazyloaded"
+                      alt="Copper Peptide Serum - AMINU"
+                      loading="lazy"
+                      src="{{preview_image.src}}"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         {{/each}}

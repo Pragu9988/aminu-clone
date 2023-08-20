@@ -1,0 +1,9 @@
+@use "../abstracts/" as *;
+
+.section-bg{
+  &__outer {
+    .image-wrapper {
+      @include aspect-ratio(1465, 300)
+    }
+  }
+}

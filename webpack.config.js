@@ -160,6 +160,10 @@ const plugins = [
   new MiniCssExtractPlugin({
     filename: paths.dist.css + "/[name].css",
   }),
+  new webpack.ProvidePlugin({
+    $: "jquery",
+    jQuery: "jquery",
+  }),
 ];
 
 const webPackConfig = {

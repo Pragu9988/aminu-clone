@@ -8,7 +8,9 @@
       "option_name": ["40 ml", "10 ml"],
       "star_ratings": 4.6,
       "review_count": 48,
-      "img": "{{webRoot}}/assets/images/products/product-1.jpg"
+      "img": "{{webRoot}}/assets/images/product/product-1.jpg",
+      "reveal": "{{webRoot}}/assets/images/product/product-3.jpg"
+      
     },
     {
       "vendor": "Skincare Essentials",
@@ -18,7 +20,8 @@
       "option_name": ["50 ml", "20 ml"],
       "star_ratings": 4.5,
       "review_count": 34,
-      "img": "{{webRoot}}/assets/images/products/product-2.jpg"
+      "img": "{{webRoot}}/assets/images/product/product-2.jpg",
+      "reveal": "{{webRoot}}/assets/images/product/product-4.jpg"
     },
     {
       "vendor": "Beauty Glow",
@@ -28,7 +31,8 @@
       "option_name": ["40 ml", "15 ml"],
       "star_ratings": 4.8,
       "review_count": 64,
-      "img": "{{webRoot}}/assets/images/products/product-3.jpg"
+      "img": "{{webRoot}}/assets/images/product/product-3.jpg",
+      "reveal": "{{webRoot}}/assets/images/product/product-2.jpg"
     },
     {
       "vendor": "Organic Beauty",
@@ -38,7 +42,8 @@
       "option_name": ["30 ml", "10 ml"],
       "star_ratings": 4.6,
       "review_count": 42,
-      "img": "{{webRoot}}/assets/images/products/product-4.jpg"
+      "img": "{{webRoot}}/assets/images/product/product-4.jpg",
+      "reveal": "{{webRoot}}/assets/images/product/product-3.jpg"
     }
   ]
 }

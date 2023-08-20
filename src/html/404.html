@@ -11,18 +11,13 @@
     {{> (config config.partials.navbar) configClassList=config.classes.navbar
     classList="" }}
     <!-- / Navbar-->
-    <main id="content" class="page-content page-cart" role="main">
-      {{> cart/cart-banner }}
-
-      <section class="cart-content cart-content__empty section-padding">
-        <div class="container">
-          <h1 class="page-header">Shopping Cart</h1>
-          {{> cart/cart-drawer-empty }}
+    <main id="content" class="page-content page-404" role="main">
+      <div class="container section-padding">
+        <div class="al-text-center">
+          <h4 class="page-header tw-mb-8">404 Page Not Found</h4>
+          <p class="redirect-text">You may want to return to the <a href="{{webRoot}}/index.html">home page</a> or <a href="/">try a search</a>.</p>
         </div>
-      </section>
-      <section class="cart-content cart-content__item">
-        <div class="container">{{> cart/cart-content }}</div>
-      </section>
+      </div>
     </main>
 
     <!-- Footer -->

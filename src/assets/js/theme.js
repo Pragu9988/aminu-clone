@@ -11,5 +11,7 @@ import "./components/dropdown";
 import "./components/customer";
 import "./components/accordion";
 import "./components/filter";
-import "./components/price";
+// import "./components/price";
 import "./components/lightbox";
+import "./components/aos";
+import './components/price_range_script';

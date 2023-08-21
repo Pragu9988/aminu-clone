@@ -70,7 +70,7 @@
         id="section-id-announcement-bar"
         class="announcement-bar"
         data-section-type="announcement-bar"
-        data-cc-animate
+        data-aos="fade-in"
       >
         <div class="container container__max">
           <div class="announcement-bar__left desk-only">
@@ -417,7 +417,7 @@
     <!-- / Announcement -->
     <!-- Navbar -->
     <div id="section-header" class="header-section section-page-header">
-      <div class="border_space_btm" data-section-type="header" data-cc-animate>
+      <div class="border_space_btm" data-section-type="header" data-aos="fade-in">
         <div id="page-header" class="page-header page-header--sticky">
           <div class="header-main container">
             <div class="header-main__left">
@@ -1690,7 +1690,8 @@
                   <div class="filter-group">
                     <a
                       href="#"
-                      class="filter-group__heading accordion-item__title" aria-expanded="true"
+                      class="filter-group__heading accordion-item__title"
+                      aria-expanded="true"
                       data-toggle-target=".filter-group--3"
                     >
                       <div class="filter-group__heading__text">Price</div>
@@ -1716,62 +1717,40 @@
                         <div class="filter-price-range cc-initialized">
                           <div class="filter-price-range__input-row">
                             <div class="filter-price-range__input-container">
-                              <span class="filter-price-range__input-currency-symbol">₹</span>
+                              <span class="filter-price-range__input-currency-symbol"
+                                >₹</span
+                              >
                               <input
-                                class="filter-price-range__input filter-price-range__input--min"
-                                id="CCPriceRangeMin"
-                                name="filter.v.price.gte"
-                                placeholder="0"
-                                type="text"
-                                inputmode="numeric"
-                                pattern="[0-9]*"
-                                step="10"
+                                type="number"
                                 min="0"
-                                max="4600"
-                                aria-label="From"
+                                max="9900"
+                                oninput="validity.valid||(value='0');"
+                                id="min_price"
+                                class="price-range-field filter-price-range__input"
                               />
                             </div>
                             <div class="filter-price-range__input-container">
-                              <span class="filter-price-range__input-currency-symbol">₹</span>
+                              <span class="filter-price-range__input-currency-symbol"
+                                >₹</span
+                              >
                               <input
-                                class="filter-price-range__input filter-price-range__input--max"
-                                id="CCPriceRangeMax"
-                                name="filter.v.price.lte"
-                                placeholder="4600"
-                                type="text"
-                                inputmode="numeric"
-                                pattern="[0-9]*"
-                                step="10"
+                                type="number"
                                 min="0"
-                                max="4600"
-                                aria-label="To"
+                                max="10000"
+                                oninput="validity.valid||(value='10000');"
+                                id="max_price"
+                                class="price-range-field filter-price-range__input"
                               />
                             </div>
                           </div>
-            
-                          <div class="filter-price-range__bar">
-                            <div class="filter-price-range__bar-inactive"></div>
-                            <div
-                              class="filter-price-range__bar-active"
-                              style="left: 0%; right: 0%"
-                            ></div>
-                            <div
-                              class="filter-price-range__control filter-price-range__control--min"
-                              aria-valuemin="0"
-                              aria-valuemax="4600"
-                              tabindex="0"
-                              aria-valuenow="0"
-                              style="left: 0%"
-                            ></div>
-                            <div
-                              class="filter-price-range__control filter-price-range__control--max"
-                              aria-valuemin="0"
-                              aria-valuemax="4600"
-                              tabindex="0"
-                              aria-valuenow="4600"
-                              style="left: 100%"
-                            ></div>
-                          </div>
+                          <div
+                            id="slider-range"
+                            class="price-filter-range"
+                            name="rangeInput"
+                          ></div>
+                          <button class="price-range-search" id="price-range-submit" style="display: none;">
+                            Search
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -1779,7 +1758,8 @@
                   <div class="filter-group filter-group--layout-two-column">
                     <a
                       href="#"
-                      class="filter-group__heading accordion-item__title" aria-expanded="true"
+                      class="filter-group__heading accordion-item__title"
+                      aria-expanded="true"
                       data-toggle-target=".filter-group--4"
                     >
                       <div class="filter-group__heading__text">Product type</div>
@@ -1878,7 +1858,8 @@
                   <div class="filter-group filter-group--layout-two-column">
                     <a
                       href="#"
-                      class="filter-group__heading accordion-item__title" aria-expanded="true"
+                      class="filter-group__heading accordion-item__title"
+                      aria-expanded="true"
                       data-toggle-target=".filter-group--5"
                     >
                       <div class="filter-group__heading__text">Skin Concerns</div>
@@ -2039,9 +2020,7 @@
                             value="Uneven Tone and Spots"
                           />
             
-                          <span class="filter-group__item-text"
-                            >Uneven Tone and Spots</span
-                          >
+                          <span class="filter-group__item-text">Uneven Tone and Spots</span>
                         </label>
                       </div>
                     </div>
@@ -2049,7 +2028,8 @@
                   <div class="filter-group filter-group--layout-two-column">
                     <a
                       href="#"
-                      class="filter-group__heading accordion-item__title" aria-expanded="true"
+                      class="filter-group__heading accordion-item__title"
+                      aria-expanded="true"
                       data-toggle-target=".filter-group--6"
                     >
                       <div class="filter-group__heading__text">Skin Type</div>
@@ -2131,7 +2111,8 @@
                   <div class="filter-group filter-group--layout-two-column">
                     <a
                       href="#"
-                      class="filter-group__heading accordion-item__title" aria-expanded="true"
+                      class="filter-group__heading accordion-item__title"
+                      aria-expanded="true"
                       data-toggle-target=".filter-group--7"
                     >
                       <div class="filter-group__heading__text">Collections</div>
@@ -2193,7 +2174,8 @@
                   <div class="filter-group mobile-only">
                     <a
                       href="#"
-                      class="filter-group__heading accordion-item__title" aria-expanded="true"
+                      class="filter-group__heading accordion-item__title"
+                      aria-expanded="true"
                       data-toggle-target=".filter-group--sort"
                     >
                       <div class="filter-group__heading__text">Sort by</div>
@@ -2737,10 +2719,107 @@
         </div>
       </div>
       <!-- /Content  -->
-      <div class="fully-spaced-row--small cc-animate-init -in cc-animate-complete">
+      <section
+        class="feature-section-infinite_slider archive-section feature-marquee feature-marquee--3 feature-marquee__bg-white"
+      >
+        <div class="feature__marquee">
+          <div class="icon-marquee">
+            <div class="icon-marquee__marquee" data-icon-marquee="">
+              <div class="icon-marquee__marquee-inner">
+                <div class="icon-marquee__icon features-icon" data-icon>
+                  <img width="50px" height="50px" src="./assets/images/homepage/SkinNow_50x.png" alt="" />
+      
+                  <span class="marquee__title">Skin Now</span>
+                </div>
+                          <div class="icon-marquee__icon features-icon" data-icon>
+                  <img width="50px" height="50px" src="./assets/images/homepage/Untitled_design_47_50x.png" alt="" />
+      
+                  <span class="marquee__title">Botanicals and Biocompatible</span>
+                </div>
+                          <div class="icon-marquee__icon features-icon" data-icon>
+                  <img width="50px" height="50px" src="./assets/images/homepage/formula_first_50x.png" alt="" />
+      
+                  <span class="marquee__title">Formula First</span>
+                </div>
+                          <div class="icon-marquee__icon features-icon" data-icon>
+                  <img width="50px" height="50px" src="./assets/images/homepage/Planet-_-pet-Friendly_50x.png" alt="" />
+      
+                  <span class="marquee__title">Planet &amp;amp; Pet Friendly</span>
+                </div>
+                          <div class="icon-marquee__icon features-icon" data-icon>
+                  <img width="50px" height="50px" src="./assets/images/homepage/Untitled_design_39_5af7e80e-b57c-4465-b2dd-9ec31d40bedf_50x.png" alt="" />
+      
+                  <span class="marquee__title">Purposeful</span>
+                </div>
+                 
+                <div class="icon-marquee__icon features-icon" data-icon>
+                  <img width="50px" height="50px" src="./assets/images/homepage/SkinNow_50x.png" alt="" />
+      
+                  <span class="marquee__title">Skin Now</span>
+                </div>
+                
+                <div class="icon-marquee__icon features-icon" data-icon>
+                  <img width="50px" height="50px" src="./assets/images/homepage/Untitled_design_47_50x.png" alt="" />
+      
+                  <span class="marquee__title">Botanicals and Biocompatible</span>
+                </div>
+                
+                <div class="icon-marquee__icon features-icon" data-icon>
+                  <img width="50px" height="50px" src="./assets/images/homepage/formula_first_50x.png" alt="" />
+      
+                  <span class="marquee__title">Formula First</span>
+                </div>
+                
+                <div class="icon-marquee__icon features-icon" data-icon>
+                  <img width="50px" height="50px" src="./assets/images/homepage/Planet-_-pet-Friendly_50x.png" alt="" />
+      
+                  <span class="marquee__title">Planet &amp;amp; Pet Friendly</span>
+                </div>
+                
+                <div class="icon-marquee__icon features-icon" data-icon>
+                  <img width="50px" height="50px" src="./assets/images/homepage/Untitled_design_39_5af7e80e-b57c-4465-b2dd-9ec31d40bedf_50x.png" alt="" />
+      
+                  <span class="marquee__title">Purposeful</span>
+                </div>
+                 
+                <div class="icon-marquee__icon features-icon" data-icon>
+                  <img width="50px" height="50px" src="./assets/images/homepage/SkinNow_50x.png" alt="" />
+      
+                  <span class="marquee__title">Skin Now</span>
+                </div>
+      
+                <div class="icon-marquee__icon features-icon" data-icon>
+                  <img width="50px" height="50px" src="./assets/images/homepage/Untitled_design_47_50x.png" alt="" />
+      
+                  <span class="marquee__title">Botanicals and Biocompatible</span>
+                </div>
+      
+                <div class="icon-marquee__icon features-icon" data-icon>
+                  <img width="50px" height="50px" src="./assets/images/homepage/formula_first_50x.png" alt="" />
+      
+                  <span class="marquee__title">Formula First</span>
+                </div>
+      
+                <div class="icon-marquee__icon features-icon" data-icon>
+                  <img width="50px" height="50px" src="./assets/images/homepage/Planet-_-pet-Friendly_50x.png" alt="" />
+      
+                  <span class="marquee__title">Planet &amp;amp; Pet Friendly</span>
+                </div>
+      
+                <div class="icon-marquee__icon features-icon" data-icon>
+                  <img width="50px" height="50px" src="./assets/images/homepage/Untitled_design_39_5af7e80e-b57c-4465-b2dd-9ec31d40bedf_50x.png" alt="" />
+      
+                  <span class="marquee__title">Purposeful</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="product-chatnow cc-animate-init -in cc-animate-complete section-padding">
         <div class="container">
-          <div class="align-center spaced-column">
-            <h2 class="majortitle in-content h1-style">
+          <div class="align-center spaced-column al-text-center">
+            <h2 class="majortitle in-content al-mb-8">
               Confused? Chat with our Skin Experts!
             </h2>
       

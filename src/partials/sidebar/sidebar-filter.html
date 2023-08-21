@@ -51,7 +51,8 @@
       <div class="filter-group">
         <a
           href="#"
-          class="filter-group__heading accordion-item__title" aria-expanded="true"
+          class="filter-group__heading accordion-item__title"
+          aria-expanded="true"
           data-toggle-target=".filter-group--3"
         >
           <div class="filter-group__heading__text">Price</div>
@@ -77,62 +78,40 @@
             <div class="filter-price-range cc-initialized">
               <div class="filter-price-range__input-row">
                 <div class="filter-price-range__input-container">
-                  <span class="filter-price-range__input-currency-symbol">₹</span>
+                  <span class="filter-price-range__input-currency-symbol"
+                    >₹</span
+                  >
                   <input
-                    class="filter-price-range__input filter-price-range__input--min"
-                    id="CCPriceRangeMin"
-                    name="filter.v.price.gte"
-                    placeholder="0"
-                    type="text"
-                    inputmode="numeric"
-                    pattern="[0-9]*"
-                    step="10"
+                    type="number"
                     min="0"
-                    max="4600"
-                    aria-label="From"
+                    max="9900"
+                    oninput="validity.valid||(value='0');"
+                    id="min_price"
+                    class="price-range-field filter-price-range__input"
                   />
                 </div>
                 <div class="filter-price-range__input-container">
-                  <span class="filter-price-range__input-currency-symbol">₹</span>
+                  <span class="filter-price-range__input-currency-symbol"
+                    >₹</span
+                  >
                   <input
-                    class="filter-price-range__input filter-price-range__input--max"
-                    id="CCPriceRangeMax"
-                    name="filter.v.price.lte"
-                    placeholder="4600"
-                    type="text"
-                    inputmode="numeric"
-                    pattern="[0-9]*"
-                    step="10"
+                    type="number"
                     min="0"
-                    max="4600"
-                    aria-label="To"
+                    max="10000"
+                    oninput="validity.valid||(value='10000');"
+                    id="max_price"
+                    class="price-range-field filter-price-range__input"
                   />
                 </div>
               </div>
-
-              <div class="filter-price-range__bar">
-                <div class="filter-price-range__bar-inactive"></div>
-                <div
-                  class="filter-price-range__bar-active"
-                  style="left: 0%; right: 0%"
-                ></div>
-                <div
-                  class="filter-price-range__control filter-price-range__control--min"
-                  aria-valuemin="0"
-                  aria-valuemax="4600"
-                  tabindex="0"
-                  aria-valuenow="0"
-                  style="left: 0%"
-                ></div>
-                <div
-                  class="filter-price-range__control filter-price-range__control--max"
-                  aria-valuemin="0"
-                  aria-valuemax="4600"
-                  tabindex="0"
-                  aria-valuenow="4600"
-                  style="left: 100%"
-                ></div>
-              </div>
+              <div
+                id="slider-range"
+                class="price-filter-range"
+                name="rangeInput"
+              ></div>
+              <button class="price-range-search" id="price-range-submit" style="display: none;">
+                Search
+              </button>
             </div>
           </div>
         </div>
@@ -140,7 +119,8 @@
       <div class="filter-group filter-group--layout-two-column">
         <a
           href="#"
-          class="filter-group__heading accordion-item__title" aria-expanded="true"
+          class="filter-group__heading accordion-item__title"
+          aria-expanded="true"
           data-toggle-target=".filter-group--4"
         >
           <div class="filter-group__heading__text">Product type</div>
@@ -239,7 +219,8 @@
       <div class="filter-group filter-group--layout-two-column">
         <a
           href="#"
-          class="filter-group__heading accordion-item__title" aria-expanded="true"
+          class="filter-group__heading accordion-item__title"
+          aria-expanded="true"
           data-toggle-target=".filter-group--5"
         >
           <div class="filter-group__heading__text">Skin Concerns</div>
@@ -400,9 +381,7 @@
                 value="Uneven Tone and Spots"
               />
 
-              <span class="filter-group__item-text"
-                >Uneven Tone and Spots</span
-              >
+              <span class="filter-group__item-text">Uneven Tone and Spots</span>
             </label>
           </div>
         </div>
@@ -410,7 +389,8 @@
       <div class="filter-group filter-group--layout-two-column">
         <a
           href="#"
-          class="filter-group__heading accordion-item__title" aria-expanded="true"
+          class="filter-group__heading accordion-item__title"
+          aria-expanded="true"
           data-toggle-target=".filter-group--6"
         >
           <div class="filter-group__heading__text">Skin Type</div>
@@ -492,7 +472,8 @@
       <div class="filter-group filter-group--layout-two-column">
         <a
           href="#"
-          class="filter-group__heading accordion-item__title" aria-expanded="true"
+          class="filter-group__heading accordion-item__title"
+          aria-expanded="true"
           data-toggle-target=".filter-group--7"
         >
           <div class="filter-group__heading__text">Collections</div>
@@ -554,7 +535,8 @@
       <div class="filter-group mobile-only">
         <a
           href="#"
-          class="filter-group__heading accordion-item__title" aria-expanded="true"
+          class="filter-group__heading accordion-item__title"
+          aria-expanded="true"
           data-toggle-target=".filter-group--sort"
         >
           <div class="filter-group__heading__text">Sort by</div>

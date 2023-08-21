@@ -70,7 +70,7 @@
         id="section-id-announcement-bar"
         class="announcement-bar"
         data-section-type="announcement-bar"
-        data-cc-animate
+        data-aos="fade-in"
       >
         <div class="container container__max">
           <div class="announcement-bar__left desk-only">
@@ -417,7 +417,7 @@
     <!-- / Announcement -->
     <!-- Navbar -->
     <div id="section-header" class="header-section section-page-header">
-      <div class="border_space_btm" data-section-type="header" data-cc-animate>
+      <div class="border_space_btm" data-section-type="header" data-aos="fade-in">
         <div id="page-header" class="page-header page-header--sticky">
           <div class="header-main container">
             <div class="header-main__left">
@@ -1447,7 +1447,7 @@
         <!-- Banner  -->
         <div class="login-section section-padding">
           <div class="container">
-            <div class="cc-animate-init -in cc-animate-complete" data-cc-animate="">
+            <div class="cc-animate-init -in cc-animate-complete" data-aos="fade-in" ="">
               <div class="form-wrapper form-wrapper--small">
                 <div id="customer">
                   <div class="auth__header">
@@ -1491,7 +1491,9 @@
                           size="16"
                         />
                         <div id="forgot_password" class="text-over-input__text">
-                          <a href="#" class="forget-your-password">Forgot your password?</a>
+                          <a href="#" class="forget-your-password"
+                            >Forgot your password?</a
+                          >
                         </div>
                       </div>
                     </div>
@@ -1507,7 +1509,11 @@
                 </div>
         
                 <div id="recover-password">
-                  <form method="post" action="./account/recover" accept-charset="UTF-8">
+                  <form
+                    method="post"
+                    action="./account/recover"
+                    accept-charset="UTF-8"
+                  >
                     <input
                       type="hidden"
                       name="form_type"
@@ -1538,9 +1544,7 @@
                         <button class="btn" type="submit">Submit</button>
                       </p>
                       <span class="note"
-                        ><a href="#" class="cancel-recover"
-                          >Cancel</a
-                        ></span
+                        ><a href="#" class="cancel-recover">Cancel</a></span
                       >
                     </div>
                   </form>

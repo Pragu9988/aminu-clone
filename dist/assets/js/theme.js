@@ -341,111 +341,6 @@
 
 /***/ }),
 
-/***/ 505:
-/***/ (() => {
-
-(function () {
-  document.addEventListener("DOMContentLoaded", function () {
-    const minInput = document.getElementById("CCPriceRangeMin");
-    const maxInput = document.getElementById("CCPriceRangeMax");
-    const minControl = document.querySelector(
-      ".filter-price-range__control--min"
-    );
-    const maxControl = document.querySelector(
-      ".filter-price-range__control--max"
-    );
-    const activeBar = document.querySelector(".filter-price-range__bar-active");
-
-    const minValue = parseInt(minInput.min);
-    const maxValue = parseInt(maxInput.max);
-
-    function updatePriceValues() {
-      const min = parseInt(minInput.value);
-      const max = parseInt(maxInput.value);
-
-      if (min >= minValue && max <= maxValue && min <= max) {
-        const minPercent = ((min - minValue) / (maxValue - minValue)) * 100;
-        const maxPercent = ((max - minValue) / (maxValue - minValue)) * 100;
-
-        minControl.style.left = minPercent + "%";
-        maxControl.style.left = maxPercent + "%";
-        activeBar.style.left = minPercent + "%";
-        activeBar.style.right = 100 - maxPercent + "%";
-      }
-    }
-
-    minInput.addEventListener("input", updatePriceValues);
-    maxInput.addEventListener("input", updatePriceValues);
-
-    if (minControl) {
-      minControl.addEventListener("mousedown", function (event) {
-        const startX = event.clientX;
-        const startLeft = parseFloat(minControl.style.left) || 0;
-
-        function onMouseMove(event) {
-          const offsetX = event.clientX - startX;
-          const newLeft = Math.max(
-            0,
-            Math.min(
-              100,
-              startLeft + (offsetX / minControl.parentElement.offsetWidth) * 100
-            )
-          );
-          minControl.style.left = newLeft + "%";
-          activeBar.style.left = newLeft + "%";
-
-          const minValue =
-            Math.round((newLeft / 100) * (maxValue - minValue)) + minValue;
-          minInput.value = minValue;
-        }
-
-        function onMouseUp() {
-          document.removeEventListener("mousemove", onMouseMove);
-          document.removeEventListener("mouseup", onMouseUp);
-        }
-
-        document.addEventListener("mousemove", onMouseMove);
-        document.addEventListener("mouseup", onMouseUp);
-      });
-    }
-
-    if (maxControl) {
-      maxControl.addEventListener("mousedown", function (event) {
-        const startX = event.clientX;
-        const startLeft = parseFloat(maxControl.style.left) || 100;
-
-        function onMouseMove(event) {
-          const offsetX = event.clientX - startX;
-          const newLeft = Math.max(
-            0,
-            Math.min(
-              100,
-              startLeft + (offsetX / maxControl.parentElement.offsetWidth) * 100
-            )
-          );
-          maxControl.style.left = newLeft + "%";
-          activeBar.style.right = 100 - newLeft + "%";
-
-          const maxValue =
-            Math.round((1 - newLeft / 100) * (maxValue - minValue)) + minValue;
-          maxInput.value = maxValue;
-        }
-
-        function onMouseUp() {
-          document.removeEventListener("mousemove", onMouseMove);
-          document.removeEventListener("mouseup", onMouseUp);
-        }
-
-        document.addEventListener("mousemove", onMouseMove);
-        document.addEventListener("mouseup", onMouseUp);
-      });
-    }
-  });
-})();
-
-
-/***/ }),
-
 /***/ 362:
 /***/ (() => {
 
@@ -456,44 +351,40 @@
   const quantityInput = document.querySelector(".cart-item__input");
   const priceElement = document.querySelector(".cart-item__price .money");
 
-  if (quantityInput) {
+  if (quantityInput && priceElement) {
     // Get the initial quantity value from the data attribute
     let quantity = parseInt(quantityInput.dataset.value);
-  }
 
-  if (priceElement) {
     // Get the price from the money element
     const price = parseFloat(
       priceElement.textContent.match(/\d+\.{0,1}\d*/)[0]
     );
-  }
 
-  // Function to update the quantity and price display
-  function updateQuantityDisplay() {
-    quantityInput.value = quantity;
-    priceElement.textContent = `Rs. ${price * quantity}`;
-  }
+    // Function to update the quantity and price display
+    function updateQuantityDisplay() {
+      quantityInput.value = quantity;
+      priceElement.textContent = `Rs. ${price * quantity}`;
+    }
 
-  // Event listener for the minus button
-  if (minusButton) {
-    minusButton.addEventListener("click", () => {
-      if (quantity > 1) {
-        quantity--;
+    // Event listener for the minus button
+    if (minusButton) {
+      minusButton.addEventListener("click", () => {
+        if (quantity > 1) {
+          quantity--;
+          updateQuantityDisplay();
+        }
+      });
+    }
+
+    // Event listener for the plus button
+    if (plusButton) {
+      plusButton.addEventListener("click", () => {
+        quantity++;
         updateQuantityDisplay();
-      }
-    });
-  }
+      });
+    }
 
-  // Event listener for the plus button
-  if (plusButton) {
-    plusButton.addEventListener("click", () => {
-      quantity++;
-      updateQuantityDisplay();
-    });
-  }
-
-  // Function to update the quantity if the input value changes manually
-  if (quantityInput) {
+    // Function to update the quantity if the input value changes manually
     quantityInput.addEventListener("change", () => {
       const newQuantity = parseInt(quantityInput.value);
       if (!isNaN(newQuantity) && newQuantity >= 1) {
@@ -661,7 +552,7 @@
 
 /***/ }),
 
-/***/ 840:
+/***/ 824:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -759,8 +650,6 @@ var customer = __webpack_require__(570);
 var accordion = __webpack_require__(668);
 // EXTERNAL MODULE: ./src/assets/js/components/filter.js
 var filter = __webpack_require__(618);
-// EXTERNAL MODULE: ./src/assets/js/components/price.js
-var price = __webpack_require__(505);
 // EXTERNAL MODULE: ./node_modules/@fancyapps/ui/dist/index.esm.js
 var index_esm = __webpack_require__(252);
 ;// CONCATENATED MODULE: ./src/assets/js/components/lightbox.js
@@ -781,6 +670,122 @@ var index_esm = __webpack_require__(252);
   });
 })();
 
+// EXTERNAL MODULE: ./node_modules/aos/dist/aos.js
+var aos = __webpack_require__(711);
+var aos_default = /*#__PURE__*/__webpack_require__.n(aos);
+;// CONCATENATED MODULE: ./src/assets/js/components/aos.js
+
+(function () {
+  aos_default().init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: "aos-init", // class applied after initialization
+    animatedClassName: "aos-animate", // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
+    easing: "ease", // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+  });
+})();
+
+// EXTERNAL MODULE: ./node_modules/jquery/dist/jquery.js
+var jquery = __webpack_require__(755);
+// EXTERNAL MODULE: ./node_modules/jquery-ui-slider/jquery-ui.js
+var jquery_ui = __webpack_require__(481);
+;// CONCATENATED MODULE: ./src/assets/js/components/price_range_script.js
+/* provided dependency */ var jQuery = __webpack_require__(755);
+
+
+
+(function ($) {
+  $(document).ready(function () {
+    $("#price-range-submit").hide();
+
+    $("#min_price,#max_price").on("change", function () {
+      $("#price-range-submit").show();
+
+      var min_price_range = parseInt($("#min_price").val());
+
+      var max_price_range = parseInt($("#max_price").val());
+
+      if (min_price_range > max_price_range) {
+        $("#max_price").val(min_price_range);
+      }
+
+      $("#slider-range").slider({
+        values: [min_price_range, max_price_range],
+      });
+    });
+
+    $("#min_price,#max_price").on("paste keyup", function () {
+      $("#price-range-submit").show();
+
+      var min_price_range = parseInt($("#min_price").val());
+
+      var max_price_range = parseInt($("#max_price").val());
+
+      if (min_price_range == max_price_range) {
+        max_price_range = min_price_range + 100;
+
+        $("#min_price").val(min_price_range);
+        $("#max_price").val(max_price_range);
+      }
+
+      $("#slider-range").slider({
+        values: [min_price_range, max_price_range],
+      });
+    });
+
+    $(function () {
+      $("#slider-range").slider({
+        range: true,
+        orientation: "horizontal",
+        min: 0,
+        max: 10000,
+        values: [0, 10000],
+        step: 100,
+
+        slide: function (event, ui) {
+          if (ui.values[0] == ui.values[1]) {
+            return false;
+          }
+
+          $("#min_price").val(ui.values[0]);
+          $("#max_price").val(ui.values[1]);
+        },
+      });
+
+      $("#min_price").val($("#slider-range").slider("values", 0));
+      $("#max_price").val($("#slider-range").slider("values", 1));
+    });
+
+    $("#slider-range,#price-range-submit").click(function () {
+      var min_price = $("#min_price").val();
+      var max_price = $("#max_price").val();
+
+      $("#searchResults").text(
+        "Here List of products will be shown which are cost between " +
+          min_price +
+          " " +
+          "and" +
+          " " +
+          max_price +
+          "."
+      );
+    });
+  });
+})(jQuery);
+
 ;// CONCATENATED MODULE: ./src/assets/js/theme.js
 
 
@@ -794,6 +799,8 @@ var index_esm = __webpack_require__(252);
 
 
 
+
+// import "./components/price";
 
 
 
@@ -961,7 +968,7 @@ var index_esm = __webpack_require__(252);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, [736], () => (__webpack_require__(840)))
+/******/ 	__webpack_require__.O(undefined, [736], () => (__webpack_require__(824)))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [736], () => (__webpack_require__(793)))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	

@@ -477,9 +477,12 @@
   max-width: 1200px;
   margin: auto;
   &__head {
-    display: grid;
-    grid-template-columns: 7fr 2fr 1.5fr 1.5fr;
-    font-size: var(--fs-350);
+    display: none;
+    @include mq(md) {
+      display: grid;
+      grid-template-columns: 7fr 2fr 1.5fr 1.5fr;
+      font-size: var(--fs-350);
+    }
   }
 
   &__heading {
@@ -494,8 +497,8 @@
     padding-bottom: 40px;
     @include mq(md) {
       padding-inline: 0;
+      display: grid;
     }
-    display: grid;
 
     &__title {
       @include mq(md) {
@@ -506,12 +509,37 @@
       }
     }
 
+    &__price,
+    &__total {
+      font-size: var(--fs-400);
+    }
+
+    &__close {
+      color: var(--clr-secondary-400);
+      font-size: var(--fs-400);
+
+      .remove-item svg {
+        fill: var(--clr-secondary-400);
+      }
+    }
+
+    &__total {
+      display: none;
+      @include mq(md) {
+        display: block;
+      }
+    }
+
     &__item {
-      grid-template-columns: 1fr 11fr;
+      @include mq(md) {
+        grid-template-columns: 1fr 11fr;
+      }
     }
     &__description {
-      display: grid;
-      grid-template-columns: 6fr 2fr 1.5fr 1.5fr;
+      @include mq(md) {
+        display: grid;
+        grid-template-columns: 6fr 2fr 1.5fr 1.5fr;
+      }
     }
 
     &__price-qty {
@@ -533,7 +561,11 @@
   padding-block: 2rem;
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    @include mq(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__left {

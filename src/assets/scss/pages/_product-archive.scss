@@ -4,6 +4,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &.product-archive {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
   .pagetitle {
     font-size: var(--fs-450);
     @include mq(md) {

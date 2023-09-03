@@ -44,6 +44,7 @@
     // Add a click event listener to the dropdown button
     if (dropdownButton) {
       dropdownButton.addEventListener("click", () => {
+        console.log("click", dropdownButton.getAttribute("aria-expanded"));
         const isExpanded =
           dropdownButton.getAttribute("aria-expanded") === "true";
 
@@ -60,6 +61,36 @@
       if (dropdownButton && !dropdownButton.contains(event.target)) {
         dropdownButton.setAttribute("aria-expanded", "false");
         dropdownOptions.style.display = "none";
+      }
+    });
+
+    // Get references to the necessary elements
+    const sortButton = document.querySelector(".select-dropdown__button");
+    const sortOptions = document.querySelector(".select-dropdown__options");
+    console.log("dd", sortButton);
+
+    // Add a click event listener to the dropdown button
+    if (sortButton) {
+      sortButton.addEventListener("click", () => {
+        console.log("click", sortButton.getAttribute("aria-expanded"));
+        const isExpanded = sortButton.getAttribute("aria-expanded") === "true";
+
+        // Toggle the "aria-expanded" attribute
+        sortButton.setAttribute("aria-expanded", !isExpanded);
+
+        // Toggle the visibility of the dropdown options
+        sortOptions.style.opacity = isExpanded ? 0 : 1;
+        sortOptions.style.visibility = isExpanded ? "hidden" : "visible";
+      });
+    }
+
+    // Close the dropdown when clicking outside of it
+    document.addEventListener("click", (event) => {
+      if (sortButton && !sortButton.contains(event.target)) {
+        sortButton.setAttribute("aria-expanded", "false");
+        // Toggle the visibility of the dropdown options
+        sortOptions.style.opacity = 0;
+        sortOptions.style.visibility = "hidden";
       }
     });
   });

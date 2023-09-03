@@ -27,6 +27,9 @@
     }
   }
   &__image {
+    img {
+      object-fit: cover
+    }
     .image-wrapper {
       @include aspect-ratio(400, 400);
     }

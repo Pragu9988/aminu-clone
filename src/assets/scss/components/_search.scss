@@ -2,7 +2,7 @@
 
 .main-search {
   position: fixed;
-  z-index: var(--zModal);
+  z-index: var(--zPopover);
   overflow: auto;
   top: 0;
   left: 0;

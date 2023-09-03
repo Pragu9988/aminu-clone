@@ -20,6 +20,45 @@
   }
 }
 
-.swiper, swiper-container {
+.swiper,
+swiper-container {
   z-index: 0;
+}
+
+.swiper {
+  position: relative;
+}
+
+.swiper-button,
+.swiper-nav {
+  position: absolute;
+  z-index: var(--zAbove);
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #000;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+
+  &.swiper-button-prev {
+    left: 24px;
+  }
+
+  &.swiper-button-next {
+    right: 24px;
+  }
+}
+
+.home-routine-section, .home-solution-section {
+  &__slides {
+    .swiper-slide {
+      @media (max-width: 768px) {
+        width: 80% !important;
+      }
+    }
+  }
 }

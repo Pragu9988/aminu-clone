@@ -1,9 +1,11 @@
 .select-dropdown {
   position: relative;
+  display: inline-block;
   &__button {
     position: relative;
     color: inherit;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     font-weight: 500;
     padding-right: 40px;
     z-index: 3;
@@ -23,9 +25,11 @@
     opacity: 0;
     position: absolute;
     z-index: 2;
-    top: -5px;
-    right: -10px;
-    min-width: calc(100% + 40px);
+    top: 0px;
+    right: -12px;
+    min-width: calc(100% + 20px);
+    // max-width: 230px;
+    text-align: left;
     background: #ffffff;
     padding-top: 49px;
     padding-bottom: 12px;

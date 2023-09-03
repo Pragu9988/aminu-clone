@@ -416,8 +416,96 @@
     </div>
     <!-- / Announcement -->
     <!-- Navbar -->
+    <!-- Search  -->
+    <div
+      id="main-search"
+      class="main-search main-search--with-suggestions"
+      data-live-search="true"
+      data-live-search-price="true"
+      data-live-search-vendor="false"
+      data-live-search-meta="true"
+      data-per-row-mob="1"
+    >
+      <div class="main-search__container container">
+        <button class="main-search__close button button--clear" aria-label="Close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-x"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+    
+        <form
+          class="main-search__form"
+          action="/search"
+          method="get"
+          autocomplete="off"
+        >
+          <input type="hidden" name="type" value="product" />
+          <input type="hidden" name="options[prefix]" value="last" />
+          <div class="main-search__input-container">
+            <input
+              class="main-search__input"
+              type="text"
+              name="q"
+              autocomplete="off"
+              placeholder="Search..."
+              aria-label="Search Store"
+            />
+          </div>
+          <button
+            class="main-search__button button button--clear"
+            type="submit"
+            aria-label="Submit"
+          >
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g
+                transform="translate(3.000000, 3.000000)"
+                stroke="currentColor"
+                stroke-width="1.5"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <circle cx="7.82352941" cy="7.82352941" r="7.82352941"></circle>
+                <line
+                  x1="13.9705882"
+                  y1="13.9705882"
+                  x2="18.4411765"
+                  y2="18.4411765"
+                  stroke-linecap="square"
+                ></line>
+              </g>
+            </svg>
+          </button>
+        </form>
+    
+        <div class="main-search__results"></div>
+    
+        <div class="main-search__track">
+          <a class="track__link" href="#">TRACK ORDER</a>
+        </div>
+      </div>
+    </div>
+    <!-- /Search  -->
     <div id="section-header" class="header-section section-page-header">
-      <div class="border_space_btm" data-section-type="header" data-aos="fade-in">
+      <div class="border_space_btm" data-section-type="header">
         <div id="site-header" class="site-header site-header--sticky">
           <div class="header-main container">
             <div class="header-main__left">
@@ -722,94 +810,6 @@
               <!-- / HeaderRight  -->
             </div>
           </div>
-          <!-- Search  -->
-          <div
-            id="main-search"
-            class="main-search main-search--with-suggestions"
-            data-live-search="true"
-            data-live-search-price="true"
-            data-live-search-vendor="false"
-            data-live-search-meta="true"
-            data-per-row-mob="1"
-          >
-            <div class="main-search__container container">
-              <button class="main-search__close button button--clear" aria-label="Close">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-x"
-                >
-                  <line x1="18" y1="6" x2="6" y2="18"></line>
-                  <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-              </button>
-          
-              <form
-                class="main-search__form"
-                action="/search"
-                method="get"
-                autocomplete="off"
-              >
-                <input type="hidden" name="type" value="product" />
-                <input type="hidden" name="options[prefix]" value="last" />
-                <div class="main-search__input-container">
-                  <input
-                    class="main-search__input"
-                    type="text"
-                    name="q"
-                    autocomplete="off"
-                    placeholder="Search..."
-                    aria-label="Search Store"
-                  />
-                </div>
-                <button
-                  class="main-search__button button button--clear"
-                  type="submit"
-                  aria-label="Submit"
-                >
-                  <svg
-                    width="24px"
-                    height="24px"
-                    viewBox="0 0 24 24"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <g
-                      transform="translate(3.000000, 3.000000)"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      fill="none"
-                      fill-rule="evenodd"
-                    >
-                      <circle cx="7.82352941" cy="7.82352941" r="7.82352941"></circle>
-                      <line
-                        x1="13.9705882"
-                        y1="13.9705882"
-                        x2="18.4411765"
-                        y2="18.4411765"
-                        stroke-linecap="square"
-                      ></line>
-                    </g>
-                  </svg>
-                </button>
-              </form>
-          
-              <div class="main-search__results"></div>
-          
-              <div class="main-search__track">
-                <a class="track__link" href="#">TRACK ORDER</a>
-              </div>
-            </div>
-          </div>
-          <!-- /Search  -->
         </div>
         <a
           href="index.html#"

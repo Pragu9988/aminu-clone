@@ -1,7 +1,7 @@
 import "./components/swiper";
 import "./components/navbar";
 import "./components/utils";
-import "./components/plyr";
+// import "./components/plyr";
 import "./components/popup";
 import "./components/tabs";
 import "./components/qty-counter";

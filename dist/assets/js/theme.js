@@ -13,34 +13,60 @@
 /***/ 668:
 /***/ (() => {
 
-(function () {
-  document.addEventListener("DOMContentLoaded", () => {
-    // Get all the accordion titles
-    const titles = document.querySelectorAll(
-      ".accordion-item__title"
-    );
-    console.log("title", titles)
+document.addEventListener("DOMContentLoaded", () => {
+  // Get all the accordion titles
+  const titles = document.querySelectorAll(".accordion-item__title");
+  console.log("title", titles);
 
-    if (titles && titles.length > 0) {
-      // Add a click event listener to each title
-      titles.forEach(function (title) {
-        title.addEventListener("click", function (e) {
-          e.preventDefault();
-          const isExpanded = this.getAttribute("aria-expanded") === "true";
-          // Toggle the expanded state
-          this.setAttribute("aria-expanded", !isExpanded);
+  if (titles && titles.length > 0) {
+    // Add a click event listener to each title
+    titles.forEach(function (title) {
+      title.addEventListener("click", function (e) {
+        e.preventDefault();
+        const isExpanded = this.getAttribute("aria-expanded") === "true";
+        // Toggle the expanded state
+        this.setAttribute("aria-expanded", !isExpanded);
 
-          // Toggle the visibility of the menu
-          const menu = this.nextElementSibling;
-          console.log("menu", menu, isExpanded);
-          if (isExpanded) {
-            menu.style.maxHeight = "0";
-          } else {
-            menu.style.maxHeight = menu.scrollHeight + "px";
-          }
-        });
+        // Toggle the visibility of the menu
+        const menu = this.nextElementSibling;
+        console.log("menu", menu, isExpanded);
+        if (isExpanded) {
+          menu.style.maxHeight = "0";
+        } else {
+          menu.style.maxHeight = menu.scrollHeight + "px";
+        }
       });
-    }
+    });
+  }
+});
+
+
+/***/ }),
+
+/***/ 361:
+/***/ (() => {
+
+// import AOS from "aos";
+(function () {
+  AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: "aos-init", // class applied after initialization
+    animatedClassName: "aos-animate", // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 500, // values from 0 to 3000, with step 50ms
+    easing: "ease-in-sine", // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
   });
 })();
 
@@ -272,7 +298,7 @@
 
     if (filterToggle) {
       filterToggle.addEventListener("click", () => {
-        filterDrawer.classList.toggle("active");
+        filterDrawer.parentNode.classList.toggle("active");
       });
     }
 
@@ -284,7 +310,7 @@
 
     const closeNavDrawer = () => {
       if (filterDrawer) {
-        filterDrawer.classList.remove("active");
+        filterDrawer.parentNode.classList.toggle("active");
       }
     };
   });
@@ -613,7 +639,7 @@
 
 /***/ }),
 
-/***/ 824:
+/***/ 804:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -653,46 +679,6 @@ swiper_esm/* default */.ZP.use([swiper_esm/* Navigation */.W_, swiper_esm/* Pagi
 var navbar = __webpack_require__(253);
 // EXTERNAL MODULE: ./src/assets/js/components/utils.js
 var utils = __webpack_require__(459);
-// EXTERNAL MODULE: ./node_modules/plyr/dist/plyr.min.js
-var plyr_min = __webpack_require__(443);
-var plyr_min_default = /*#__PURE__*/__webpack_require__.n(plyr_min);
-;// CONCATENATED MODULE: ./src/assets/js/components/plyr.js
-
-
-(function () {
-  const videos = document.querySelectorAll(".al-video-player");
-
-  if (videos) {
-    videos.forEach((video) => {
-      const options = video.dataset.plyr ? JSON.parse(video.dataset.plyr) : {};
-      const playr = new (plyr_min_default())(video, options);
-
-      // Update thumbnail
-      playr.on("ready", (event) => {
-        const thumbnailUrl = event.target.getAttribute("data-thumbnail-url");
-        const thumbnailElement = event.detail.plyr.elements.poster;
-
-        if (thumbnailElement && thumbnailUrl) {
-          thumbnailElement.style.backgroundImage = `url(${thumbnailUrl})`;
-        }
-      });
-
-      // Change play icon
-      // playr.on("ready", (event) => {
-      //   const playIconSvg =
-      //     event.detail.target.getAttribute("data-play-icon-svg");
-      //   const playIconElement = event.detail.target.elements.play;
-
-      //   if (playIconElement && playIconSvg) {
-      //     playIconElement.style.backgroundImage = `url("data:image/svg+xml;charset=utf-8,${encodeURIComponent(
-      //       playIconSvg
-      //     )}")`;
-      //   }
-      // });
-    });
-  }
-})();
-
 // EXTERNAL MODULE: ./src/assets/js/components/popup.js
 var popup = __webpack_require__(712);
 // EXTERNAL MODULE: ./src/assets/js/components/tabs.js
@@ -731,34 +717,8 @@ var index_esm = __webpack_require__(252);
   });
 })();
 
-// EXTERNAL MODULE: ./node_modules/aos/dist/aos.js
-var aos = __webpack_require__(711);
-var aos_default = /*#__PURE__*/__webpack_require__.n(aos);
-;// CONCATENATED MODULE: ./src/assets/js/components/aos.js
-
-(function () {
-  aos_default().init({
-    // Global settings:
-    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-    startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
-    initClassName: "aos-init", // class applied after initialization
-    animatedClassName: "aos-animate", // class applied on animation
-    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-    offset: 120, // offset (in px) from the original trigger point
-    delay: 0, // values from 0 to 3000, with step 50ms
-    duration: 400, // values from 0 to 3000, with step 50ms
-    easing: "ease", // default easing for AOS animations
-    once: false, // whether animation should happen only once - while scrolling down
-    mirror: false, // whether elements should animate out while scrolling past them
-    anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
-  });
-})();
-
+// EXTERNAL MODULE: ./src/assets/js/components/aos.js
+var aos = __webpack_require__(361);
 // EXTERNAL MODULE: ./node_modules/jquery/dist/jquery.js
 var jquery = __webpack_require__(755);
 // EXTERNAL MODULE: ./node_modules/jquery-ui-slider/jquery-ui.js
@@ -851,7 +811,7 @@ var jquery_ui = __webpack_require__(481);
 
 
 
-
+// import "./components/plyr";
 
 
 
@@ -930,18 +890,6 @@ var jquery_ui = __webpack_require__(481);
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -952,18 +900,6 @@ var jquery_ui = __webpack_require__(481);
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -1029,7 +965,7 @@ var jquery_ui = __webpack_require__(481);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, [736], () => (__webpack_require__(824)))
+/******/ 	__webpack_require__.O(undefined, [736], () => (__webpack_require__(804)))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [736], () => (__webpack_require__(793)))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	

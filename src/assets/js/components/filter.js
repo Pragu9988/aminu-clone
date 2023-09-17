@@ -6,7 +6,7 @@
 
     if (filterToggle) {
       filterToggle.addEventListener("click", () => {
-        filterDrawer.classList.toggle("active");
+        filterDrawer.parentNode.classList.toggle("active");
       });
     }
 
@@ -18,7 +18,7 @@
 
     const closeNavDrawer = () => {
       if (filterDrawer) {
-        filterDrawer.classList.remove("active");
+        filterDrawer.parentNode.classList.toggle("active");
       }
     };
   });

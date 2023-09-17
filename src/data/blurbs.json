@@ -3,69 +3,82 @@
     {
       "icon": "{{webRoot}}/assets/images/homepage/1880-moon-outline_f300a8bd-64fc-4094-a5d6-e25b0dcefb08_120x.gif",
       "title": "Breakouts & Acne-Prone",
-      "active": "active"
+      "active": "active",
+      "delay": "150"
     },
     {
       "icon": "{{webRoot}}/assets/images/homepage/1439-brightness-outline_8b652029-94e5-4f92-8509-33da5861f8a9_120x.gif",
       "title": "Uneven Tone & Spots",
-      "active": ""
+      "active": "",
+      "delay": "300"
     },
     {
       "icon": "{{webRoot}}/assets/images/homepage/45-clock-time-outline_120x.gif",
       "title": "Firmness & Fine Lines",
-      "active": ""
+      "active": "",
+      "delay": "450"
     },
     {
       "icon": "{{webRoot}}/assets/images/homepage/447-water-drop-outline_20743c2c-276e-420d-a472-0b89488cceaa_120x.gif",
       "title": "Dullness & Dehydration",
-      "active": ""
+      "active": "",
+      "delay": "600"
     },
     {
       "icon": "{{webRoot}}/assets/images/homepage/Heal_c4975dd9-c8bd-43ae-997f-ebeb7ae4b5f6_120x.gif",
       "title": "Sensitised & Redness",
-      "active": ""
+      "active": "",
+      "delay": "750"
     },
     {
       "icon": "{{webRoot}}/assets/images/homepage/Soften_f79188e3-d24a-4684-b16c-48107f3ea633_120x.gif",
       "title": "Blackheads & Rough Skin",
-      "active": ""
+      "active": "",
+      "delay": "900"
     },
     {
       "icon": "{{webRoot}}/assets/images/homepage/Protection_care-outline_d7641835-fd53-4044-84d7-265c7f1bb816_120x.gif",
       "title": "Protection & Maintenance",
-      "active": ""
+      "active": "",
+      "delay": "1050"
     },
     {
       "icon": "{{webRoot}}/assets/images/homepage/Balance_758bc9a2-a70a-412e-ae3d-4f517f9bca38_120x.gif",
       "title": "Pores & Congestion",
-      "active": ""
+      "active": "",
+      "delay": "1200"
     }
   ],
   "types": [
     {
       "icon": "{{webRoot}}/assets/images/homepage/Dry-Skin_1_90x.png",
       "title": "Dry",
-      "active": "active"
+      "active": "active",
+      "delay": "150"
     },
     {
       "icon": "{{webRoot}}/assets/images/homepage/Normal-Skin_752a7639-dbba-45d8-84c7-1436684a2c42_90x.png",
       "title": "Normal",
-      "active": ""
+      "active": "",
+      "delay": "300"
     },
     {
       "icon": "{{webRoot}}/assets/images/homepage/Combination-Skin_38bc8c26-abc7-46b5-8486-de3b86cd322a_90x.png",
       "title": "Combination",
-      "active": ""
+      "active": "",
+      "delay": "450"
     },
     {
       "icon": "{{webRoot}}/assets/images/homepage/Oily-Skin_9a51ecb0-3e0d-4069-b172-bcf13365741e_90x.png",
       "title": "Oily",
-      "active": ""
+      "active": "",
+      "delay": "600"
     },
     {
       "icon": "{{webRoot}}/assets/images/homepage/Sensitive-Skin_083cbfea-a5f8-4e8e-add6-f918cc3085c7_90x.png",
       "title": "Sensitive",
-      "active": ""
+      "active": "",
+      "delay": "750"
     }
   ],
   "features": [

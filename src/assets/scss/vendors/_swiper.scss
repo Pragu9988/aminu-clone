@@ -56,7 +56,7 @@ swiper-container {
 .home-routine-section, .home-solution-section {
   &__slides {
     .swiper-slide {
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         width: 80% !important;
       }
     }

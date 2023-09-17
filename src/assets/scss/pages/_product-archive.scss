@@ -34,49 +34,64 @@
 .filter-container {
   position: relative;
   padding-block: 1.5rem;
+  @include mq(lg) {
+    display: flex;
+  }
   .product-filter {
     background: #fff;
     border-right: 0.3px solid #dfe3e8;
     box-sizing: border-box;
     display: block;
     height: 100%;
-    left: -1px;
     overflow-x: hidden;
     overflow-y: auto;
     padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 60px);
     position: fixed;
     text-align: left;
     top: 0;
-    transform: translate(-100%);
+    right: 100%;
+    padding-inline: 1rem;
+    transform: translateX(100%);
     transition: transform 0.35s cubic-bezier(0.55, 0.03, 0.37, 0.96);
     width: 88%;
     will-change: transform;
     z-index: var(--zPopover);
     padding-top: 1rem;
+    flex: 0 0 auto;
     @include mq(md) {
-      position: absolute;
+      width: 50%;
+    }
+    @include mq(lg) {
+      position: relative;
       opacity: 0;
       visibility: hidden;
       transform: translate(0);
       z-index: 0;
-
-      & + .column-md-9 {
-        flex: 1 0 100%;
-        max-width: 100%;
-      }
-      &.active {
-        position: relative;
-        visibility: visible;
-        opacity: 1;
-
-        & + .column-md-9 {
-          flex: 1 0 75%;
-          max-width: 75%;
-        }
-      }
+      width: 0;
+      height: 0;
+      right: unset;
     }
-    &.active {
-      transform: translate(0);
+  }
+
+  .product-grid {
+    flex: 1 1 100%;
+  }
+
+  &.active {
+    .product-filter {
+      // position: relative;
+      visibility: visible;
+      opacity: 1;
+      width: 320px;
+      height: 100%;
+      @include mq(lg) {
+        padding-right: 3rem;
+      }
+
+      @media (max-width: 62em) {
+        right: 100%;
+        transform: translateX(-100%);
+      }
     }
   }
 

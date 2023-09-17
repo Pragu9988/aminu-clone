@@ -22,12 +22,16 @@
   font-weight: 500;
   font-size: var(--fs-350);
   &.container {
-    padding: 0 0.5rem;
+    @include mq(lg) {
+      padding: 0 0.5rem;
+    }
   }
 
   &__left,
   &__right {
-    flex: 2 0 0;
+    @include mq(lg) {
+      flex: 2 0 0;
+    }
   }
   &__center {
     flex: 1 1 auto;
@@ -75,7 +79,7 @@
     @include hover-effect();
   }
   &__link {
-    @include mq(md) {
+    @include mq(lg) {
       padding: 1rem;
     }
   }

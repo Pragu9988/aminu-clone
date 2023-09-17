@@ -10,7 +10,10 @@
     <meta name="author" content="" />
     <meta name="keywords" content="" />
     <!-- Remix Icon  -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   
     <!-- Favicon -->
     <link
@@ -43,6 +46,29 @@
   
     <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/css/theme.css" />
+  
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  
   
     <!-- Fix for custom scrollbar if JS is disabled-->
     <noscript>
@@ -1641,9 +1667,9 @@
       <!-- Content  -->
       <div class="b container">
         <div
-          class="columns filter-container filter-container--side filter-container--mobile-initialised filter-container--show-filters-desktop"
+          class="filter-container filter-container--side filter-container--mobile-initialised filter-container--show-filters-desktop active"
         >
-          <div class="columns-12 column-md-3 product-filter">
+          <div class="product-filter">
             <div class="filters">
               <div class="filters__inner sticky-content-container">
                 <div class="filters__heading">
@@ -2308,7 +2334,7 @@
               </div>
             </div>
           </div>
-          <div class="column-12 column-md-9">
+          <div class="product-grid">
             <div
               class="al-grid al-grid-cols-1 md:al-grid-cols-3 al-gap-8 product-list product-list--per-row-3 product-list--image-shape-shortest product-list--per-row-mob-2"
             >

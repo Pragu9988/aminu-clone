@@ -11,16 +11,20 @@
     {{> (config config.partials.navbar) configClassList=config.classes.navbar
     classList="" }}
     <!-- / Navbar-->
-    <main id="content" class="page-content page-contact" role="main">
-      <div class="contact-form__wrapper section-border">
+    <main id="content" class="page-content page-collection" role="main">
+      <div class="collection__wrapper section-spacing">
         <div class="container">
-          <div class="contact-form al-max-w-3xl al-mx-auto">
-            {{> forms/form-contact }}
+          <div class="auth__header">
+            <h2 class="title">All Collection</h2>
+          </div>
+          <div
+            class="collection__list al-grid al-grid-cols-1 md:al-grid-cols-3 al-gap-4"
+          >
+            {{#each collections.entries }} {{> cards/collection-card this }}
+            {{/each}}
           </div>
         </div>
       </div>
-
-      {{> contact/contact-info }}
     </main>
 
     <!-- Footer -->

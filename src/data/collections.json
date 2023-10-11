@@ -1,0 +1,20 @@
+{
+  "entries": [
+    {
+      "title": "Moisturizing Gel",
+      "img": "{{webRoot}}/assets/images/product/product-1.jpg"
+    },
+    {
+      "title": "Hydrating Serum",
+      "img": "{{webRoot}}/assets/images/product/product-2.jpg"
+    },
+    {
+      "title": "Brightening Cream",
+      "img": "{{webRoot}}/assets/images/product/product-3.jpg"
+    },
+    {
+      "title": "Nourishing Facial Oil",
+      "img": "{{webRoot}}/assets/images/product/product-4.jpg"
+    }
+  ]
+}

@@ -76,6 +76,7 @@ small,
 strong {
   --font-weight: 600;
   font-weight: var(--font-weight);
+  font-size: var(--fs-350);
 }
 
 a {
